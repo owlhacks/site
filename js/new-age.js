@@ -17,8 +17,8 @@
     });
 
     $(window).scroll(function(){
-      if($('.navbar-corner-icon').attr('src') !== './img/logo-red.png'){
-        $('.navbar-corner-icon').attr('src', './img/logo-red.png');
+      if($('.navbar-corner-icon').attr('src') !== './img/owlhacks-logo.png'){
+        $('.navbar-corner-icon').attr('src', './img/owlhacks-logo.png');
       }
     });
 
