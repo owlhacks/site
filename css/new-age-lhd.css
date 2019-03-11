@@ -224,7 +224,6 @@ header .device-container .screen img {
 }
 section {
   padding: 100px 0;
-  background: #fafafa;
   color: #ccc;
   height: 100%;
 }
@@ -515,7 +514,7 @@ body {
     color: #bdc3c7;
 }
 
-.sponsor-logo{
+.sponsorlg{
     height: 125px;
     width: auto;
     margin: 20px;
