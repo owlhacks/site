@@ -1,12 +1,22 @@
-# Default starter for Gridsome
-`
-### 1. Install Gridsome CLI tool if you don't have
+# owlhacks
 
-`npm install --global @gridsome/cli`
+> Temple University&#39;s Hackathon
 
-### 2. Create a Gridsome project
+## Build Setup
 
-1. `gridsome create my-gridsome-site` to install default starter </li>
-2. `cd my-gridsome-site` to open folder
-3. `gridsome develop` to start local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+``` bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm start
+
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
