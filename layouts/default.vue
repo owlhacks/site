@@ -1,5 +1,46 @@
 <template>
   <div>
+    <header class="bg-black">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+          <a class="navbar-brand" href="#">
+            <img
+              src="/owlhacks-logo.png"
+              alt="owlhacks-logo"
+              width="25"
+              height="25"
+            />
+            OwlHacks
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbarNav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://goo.gl/forms/iode42v8iq3S7qqI3"
+                  target="_blank"
+                  >Register</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sponsorship Guide</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
     <nuxt />
   </div>
 </template>
@@ -24,32 +65,36 @@ html {
   margin: 0;
 }
 
-.button--green {
+.button--black {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
+  border: 1px solid #212c38;
   color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
+  background-color: #212c38;
   text-decoration: none;
   padding: 10px 30px;
   margin-left: 15px;
 }
 
-.button--grey:hover {
+.button--black:hover {
   color: #fff;
-  background-color: #35495e;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+.bg-black {
+  background: #303030;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+}
+
+.nav__link {
+  margin-left: 20px;
 }
 </style>
