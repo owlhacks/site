@@ -72,7 +72,7 @@ html {
   color: #fff;
   background-color: #212c38;
   text-decoration: none;
-  padding: 10px 30px;
+  padding: 8px 24px;
   margin-left: 15px;
 }
 
@@ -87,7 +87,7 @@ a:focus {
 }
 
 .bg-black {
-  background: #303030;
+  background: #232323;
 }
 
 .navbar-brand {
