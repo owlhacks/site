@@ -1,35 +1,43 @@
 <template>
-  <section class="jumbo-container">
-    <div class="container">
-      <div class="text-light my-0 py-3">
-        <div class="row">
-          <div class="col-xl-6">
-            <img
-              src="/owlhacks-logo.png"
-              alt="owlhacks logo"
-              width="300"
-              height="300"
-            />
-            <h1 class="display-4">OwlHacks</h1>
-            <p class="lead">Temple University's 12 Hour Hackathon</p>
-          </div>
-          <div id="info" class="col-xl-6">
-            <p>
-              Who: College students with a passion for technology
-              <br />Where: SERC Lobby <br />When: Saturday, March 30th, 2019
-              <br />8AM - 10PM
-              <br />
-            </p>
-            <p class="lead">
-              <a class="btn btn-dark btn-lg" href="#" role="button">Register</a>
-            </p>
-            <p class="lead">
-              <a class="btn btn-dark btn-lg" href="#" role="button"
-                >Sponsorship Guide</a
-              >
-            </p>
-            <p>Organized by Temple ACM / Temple ACM-W / TUDev</p>
-          </div>
+  <section class="jumbo">
+    <div class="container text-light">
+      <div class="row py-5">
+        <div class="col-xl-6 my-3">
+          <h1 class="display-4">OwlHacks</h1>
+          <p style="font-size: 24px;">Temple University's 12 Hour Hackathon</p>
+          <p>
+            Who: College students with a passion for technology
+            <br />Where: SERC Lobby <br />When: Saturday, March 30th, 2019
+            <br />8AM - 10PM
+            <br />
+          </p>
+          <p>
+            <a
+              class="btn btn-dark btn-lg"
+              href="https://goo.gl/forms/iode42v8iq3S7qqI3"
+              role="button"
+              >Register</a
+            >
+          </p>
+          <p>
+            <a class="btn btn-dark btn-lg" href="#" role="button"
+              >Sponsorship Guide</a
+            >
+          </p>
+          <p>
+            Interested in sponsoring? Please email
+            <a href="mailto:mcginnr@temple.edu">mcginnr@temple.edu</a>
+          </p>
+          <p>Organized by Temple ACM / Temple ACM-W / TUDev</p>
+        </div>
+        <div class="col-xl-6">
+          <img
+            id="owl"
+            src="/owlhacks-logo.png"
+            alt="owlhacks logo"
+            width="400"
+            height="400"
+          />
         </div>
       </div>
     </div>
@@ -37,40 +45,32 @@
 </template>
 
 <style>
-.jumbo-container {
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.jumbo {
+  text-align: left;
+  /* a41e35 */
   background: #a41e35;
   background-image: url('~assets/pattern.svg');
 }
 
 @media (min-width: 992px) {
-  #info {
-    margin-top: 5%;
+  .jumbo {
+    padding-top: 4%;
+    padding-bottom: 3%;
+  }
+
+  #owl {
+    margin-top: 4%;
   }
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 75px;
-  /* color: #212c38; */
-  letter-spacing: 1px;
+#owl:hover {
+  filter: brightness(120%);
 }
 
-.subtitle {
-  font-weight: 400;
-  font-size: 35px;
-  /* color: #212c38; */
-  word-spacing: 5px;
-}
-
-.subtitle-sm {
-  font-weight: 300;
-  font-size: 22px;
+@media (max-width: 992px) {
+  #owl {
+    max-width: 300px;
+    max-height: 300px;
+  }
 }
 </style>
