@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header class="bg-black">
+    <header>
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black">
         <a class="navbar-brand" href="#">
           <img

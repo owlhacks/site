@@ -68,6 +68,7 @@
 <style>
 .sponsor-ctn {
   justify-content: center;
+  opacity: 1;
 }
 
 .sponsor-ctn img {
