@@ -11,11 +11,12 @@
           <h1 class="display-4">OwlHacks</h1>
           <p style="font-size: 24px;">Temple University's 12 Hour Hackathon</p>
           <p>
-            <b>Who:</b> College students with a passion for technology <br /><b
-              >Where:</b
-            ><a href="https://goo.gl/maps/YnJN7i4jKjp" target="__blank">
-              SERC Lobby - Temple University, Philadelphia, PA
-            </a>
+            <b>Who:</b> College students with a passion for technology
+            <br />
+            <b>Where:</b>
+            <a href="https://goo.gl/maps/YnJN7i4jKjp" target="__blank"
+              >SERC Lobby - Temple University, Philadelphia, PA</a
+            >
             <br />
             <b>When:</b> Saturday, March 30th, 2019 from 8AM - 10PM
             <br />
@@ -49,10 +50,11 @@
             id="owl"
             src="/owlhacks-logo.png"
             alt="owlhacks logo"
-            width="440"
-            height="440"
+            width="400"
+            height="400"
             @click="toggleVideo"
           />
+          <CountdownTimer date="2019-03-30 08:00:00"></CountdownTimer>
         </div>
       </div>
     </div>
@@ -60,7 +62,12 @@
 </template>
 
 <script>
+import CountdownTimer from '~/components/CountdownTimer.vue'
+
 export default {
+  components: {
+    CountdownTimer
+  },
   methods: {
     toggleVideo() {
       const video = document.getElementById('video')
@@ -74,7 +81,6 @@ export default {
 <style>
 .jumbo {
   text-align: center;
-  /* a41e35 */
   background: #a41e35;
   height: 100%;
   position: relative;
@@ -88,8 +94,12 @@ export default {
     text-align: left;
   }
 
+  .countdown {
+    margin-right: 50px;
+  }
+
   #owl {
-    margin-top: 6%;
+    margin-top: 2%;
   }
 }
 
