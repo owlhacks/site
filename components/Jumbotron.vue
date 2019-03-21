@@ -11,9 +11,13 @@
           <h1 class="display-4">OwlHacks</h1>
           <p style="font-size: 24px;">Temple University's 12 Hour Hackathon</p>
           <p>
-            Who: College students with a passion for technology
-            <br />Where: SERC Lobby <br />When: Saturday, March 30th, 2019 from
-            8AM - 10PM
+            <b>Who:</b> College students with a passion for technology <br /><b
+              >Where:</b
+            ><a href="https://goo.gl/maps/YnJN7i4jKjp" target="__blank">
+              SERC Lobby - Temple University, Philadelphia, PA
+            </a>
+            <br />
+            <b>When:</b> Saturday, March 30th, 2019 from 8AM - 10PM
             <br />
           </p>
           <p>
@@ -30,7 +34,11 @@
               >Sponsorship Guide</a
             >
           </p>
-          <p>
+          <p class="my-0">
+            Questions? Please contact
+            <a href="mailto:tudev@temple.edu">tudev@temple.edu</a>
+          </p>
+          <p style="margin-bottom: 2rem">
             Interested in sponsoring? Please email
             <a href="mailto:mcginnr@temple.edu">mcginnr@temple.edu</a>
           </p>
@@ -75,8 +83,8 @@ export default {
 
 @media (min-width: 992px) {
   .jumbo {
-    padding-top: 85px;
-    padding-bottom: 40px;
+    padding-top: 80px;
+    padding-bottom: 20px;
     text-align: left;
   }
 

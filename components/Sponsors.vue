@@ -24,7 +24,7 @@
             />
             <img
               src="/sponsors/title/lincolnfinancial-logo.png"
-              width="250"
+              width="280"
               height="90"
             />
           </div>
