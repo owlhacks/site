@@ -5,8 +5,8 @@
         <a class="navbar-brand" href="#">
           <img
             style="margin-bottom: 3px; margin-right: 5px;"
-            src="/owlhacks-logo.png"
-            alt="owlhacks-logo"
+            src="/owlhacks-icon.png"
+            alt="owlhacks-icon"
             width="26"
             height="25"
           />
