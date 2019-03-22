@@ -14,8 +14,8 @@
             <img src="/sponsors/title/cigna-logo.png" width="250" height="80" />
             <img
               src="/sponsors/title/elsevier-logo.png"
-              width="150"
-              height="150"
+              width="140"
+              height="140"
             />
             <img
               src="/sponsors/title/lockheedmartin-logo.png"
@@ -30,7 +30,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="sponsor-ctn">
         <h3 style="margin-top: 15px; color: #FFD700">Gold</h3>
         <div class="justify-content-md-center">
           <div class="col-xl-12">
@@ -43,7 +43,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="sponsor-ctn">
         <h3 style="color: #aeb3b7">Silver</h3>
         <div class="justify-content-md-center">
           <div class="col-xl-12">
@@ -53,11 +53,17 @@
               height="80"
             />
             <img
+              class="mx-0"
               src="/sponsors/silver/almac-logo.png"
               width="240"
               height="100"
             />
             <img src="/sponsors/silver/guru-logo.png" width="220" height="48" />
+            <img
+              src="/sponsors/silver/linode-logo.png"
+              width="220"
+              height="80"
+            />
           </div>
         </div>
       </div>

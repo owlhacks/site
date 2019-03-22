@@ -23,7 +23,7 @@
           </p>
           <p>
             <a
-              class="btn btn-dark btn-lg"
+              class="btn btn-red btn-lg"
               href="https://goo.gl/forms/iode42v8iq3S7qqI3"
               target="__blank"
               role="button"
@@ -31,7 +31,7 @@
             >
           </p>
           <p>
-            <a class="btn btn-dark btn-lg" href="#" role="button"
+            <a class="btn btn-red btn-lg" href="#" role="button"
               >Sponsorship Guide</a
             >
           </p>
@@ -89,13 +89,13 @@ export default {
 
 @media (min-width: 992px) {
   .jumbo {
-    padding-top: 80px;
-    padding-bottom: 20px;
+    padding-top: 4%;
+    padding-bottom: 2%;
     text-align: left;
   }
 
   .countdown {
-    margin-right: 50px;
+    margin-right: 40px;
   }
 
   #owl {
@@ -105,6 +105,7 @@ export default {
 
 #owl:hover {
   filter: brightness(120%);
+  cursor: pointer;
 }
 
 @media (max-width: 992px) {

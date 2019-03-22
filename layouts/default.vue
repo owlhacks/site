@@ -75,11 +75,27 @@ a:focus {
   background: #202020;
 }
 
+.btn-red {
+  color: #fff;
+  background-color: #a41e35;
+}
+
+.btn-red:hover {
+  color: #fff;
+}
+
 .navbar-brand {
   margin-left: 20px;
 }
 
 @media (min-width: 992px) {
+  .navbar {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+
+@media (min-width: 1200px) {
   .navbar {
     padding-left: 12%;
     padding-right: 12%;

@@ -1,19 +1,19 @@
 <template id="countdown-template">
   <div class="countdown">
     <div class="block">
-      <p class="digit">{{ days }}</p>
+      <p class="digit">{{ days | twoDigits }}</p>
       <p class="text">Days</p>
     </div>
     <div class="block">
-      <p class="digit">{{ hours }}</p>
+      <p class="digit">{{ hours | twoDigits }}</p>
       <p class="text">Hrs</p>
     </div>
     <div class="block">
-      <p class="digit">{{ minutes }}</p>
+      <p class="digit">{{ minutes | twoDigits }}</p>
       <p class="text">Mins</p>
     </div>
     <div class="block">
-      <p class="digit">{{ seconds }}</p>
+      <p class="digit">{{ seconds | twoDigits }}</p>
       <p class="text">Secs</p>
     </div>
   </div>
@@ -21,6 +21,17 @@
 
 <script>
 export default {
+  filters: {
+    twoDigits(value) {
+      if (value < 0) {
+        return '00'
+      }
+      if (value.toString().length <= 1) {
+        return `0${value}`
+      }
+      return value
+    }
+  },
   props: {
     date: {
       type: String
@@ -68,7 +79,7 @@ export default {
   flex-direction: column;
   margin: 0px 5px;
   padding: 5px 10px;
-  background: #303030;
+  background: #a41e35;
   border-radius: 3px;
 }
 
