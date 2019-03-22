@@ -31,8 +31,11 @@
             >
           </p>
           <p>
-            <a class="btn btn-red btn-lg" href="#" role="button"
-              >Sponsorship Guide</a
+            <nuxt-link
+              class="btn btn-red btn-lg"
+              role="button"
+              to="sponsorshipGuide"
+              >Sponsorship Guide</nuxt-link
             >
           </p>
           <p class="my-0">

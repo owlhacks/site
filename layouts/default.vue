@@ -2,7 +2,7 @@
   <div>
     <header>
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand">
           <img
             style="margin-bottom: 3px; margin-right: 5px;"
             src="/owlhacks-icon.png"
@@ -10,7 +10,7 @@
             width="26"
             height="25"
           />
-          OwlHacks
+          <nuxt-link to="/">OwlHacks</nuxt-link>
         </a>
         <button
           class="navbar-toggler"
@@ -33,8 +33,10 @@
                 >Register</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sponsorship Guide</a>
+            <li>
+              <nuxt-link class="nav-link" to="sponsorshipGuide"
+                >Sponsorship Guide</nuxt-link
+              >
             </li>
           </ul>
         </div>
@@ -62,6 +64,16 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+.navbar-brand a {
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+.navbar-brand a:hover,
+.navbar-brand a:active,
+.navbar-brand a:focus {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 a,
