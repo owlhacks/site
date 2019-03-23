@@ -87,7 +87,6 @@ export default {
   background: #a41e35;
   height: 100%;
   position: relative;
-  /* background-image: url('~assets/pattern.svg'); */
 }
 
 @media (min-width: 992px) {
@@ -115,6 +114,10 @@ export default {
   #owl {
     max-width: 300px;
     max-height: 300px;
+  }
+
+  .btn-red {
+    background: #99132a;
   }
 }
 

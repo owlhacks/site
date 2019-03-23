@@ -16,6 +16,16 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/owlhacks-icon.png' }]
   },
 
+  /* generate dynamic routes. 
+  add route for each page so they can be accessed independently 
+  without having to go through the main app page,
+  otherwise 404 error when refreshing etc */
+  generate: {
+    routes: [
+      '/sponsorshipGuide'
+    ]
+  },
+
   /*
    ** Customize the progress-bar color
    */

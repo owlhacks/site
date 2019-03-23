@@ -1,6 +1,6 @@
 # owlhacks
 
-> Temple University&#39;s Hackathon
+> Temple University&#39;s Hackathon Website
 
 ## Build Setup
 

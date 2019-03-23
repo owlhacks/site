@@ -1,13 +1,12 @@
 <template>
   <div>
-    <div class="sponsor-jumbo">
+    <div id="sponsor-jumbo">
       <div class="container" align="center">
         <img
           id="sponsor-owl"
           src="/owlhacks-logo.png"
           height="400"
           width="400"
-          style="margin-top: 3%;"
         />
         <h1 style="color: white;">OwlHacks Sponsorship</h1>
         <div
@@ -19,14 +18,14 @@
         </h4>
       </div>
     </div>
-    <div class="container">
+    <div class="container sponsor-info">
       <h1
         style="color: white; background-color: #444444; padding: 5px; margin-top: 15px;"
         align="center"
       >
         OwlHacks
       </h1>
-      <p align="left">
+      <p>
         Hackathons are programming marathons where students build services,
         gadgets, and apps to win prizes, and ultimately, recognition. Hackathons
         are a paradigm shift in technology education, and they have taken the
@@ -130,31 +129,52 @@
         OwlHacks organizer.
       </p>
     </div>
-    <sponsorChart />
+    <SponsorChart />
   </div>
 </template>
 
 <script>
-import sponsorChart from '~/components/sponsorChart.vue'
+import SponsorChart from '~/components/SponsorChart.vue'
 
 export default {
   components: {
-    sponsorChart
+    SponsorChart
+  },
+  head() {
+    return {
+      title: 'OwlHacks Sponsorship',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'OwlHacks Sponsorship Guide'
+        }
+      ]
+    }
   }
 }
 </script>
 
 <style>
-.sponsor-jumbo {
+#sponsor-jumbo {
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 6rem;
   background-color: #a41e35;
-  background-image: url(/pattern.svg);
+  background-image: url(/pattern-red.svg);
 }
 @media (max-width: 992px) {
   #sponsor-owl {
     max-width: 300px;
     max-height: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .sponsor-info {
+    max-width: 65%;
+  }
+  .sponsor-table {
+    max-width: 65%;
   }
 }
 .redtext {
