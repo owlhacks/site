@@ -1,8 +1,8 @@
 <template>
   <div>
     <header>
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black">
-        <a class="navbar-brand">
+      <b-navbar toggleable="lg" class="navbar-dark bg-black fixed-top">
+        <b-navbar-brand>
           <img
             style="margin-bottom: 3px; margin-right: 5px;"
             src="/owlhacks-icon.png"
@@ -11,36 +11,26 @@
             height="25"
           />
           <nuxt-link to="/">OwlHacks</nuxt-link>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="navbarNav" class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a
-                class="nav-link"
+        </b-navbar-brand>
+        <b-navbar-toggle target="nav_collapse" />
+        <b-collapse id="nav_collapse" is-nav>
+          <!-- Right aligned nav items -->
+          <b-navbar-nav class="ml-auto">
+            <b-navbar-nav align="end">
+              <b-nav-item
                 href="https://goo.gl/forms/iode42v8iq3S7qqI3"
                 target="_blank"
-                >Register</a
+                >Register</b-nav-item
               >
-            </li>
-            <li>
-              <nuxt-link class="nav-link" to="sponsorshipGuide"
-                >Sponsorship Guide</nuxt-link
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
+              <b-nav-item>
+                <nuxt-link class="text-grey" to="sponsorshipGuide"
+                  >Sponsorship Guide</nuxt-link
+                >
+              </b-nav-item>
+            </b-navbar-nav>
+          </b-navbar-nav>
+        </b-collapse>
+      </b-navbar>
     </header>
     <nuxt />
   </div>
@@ -66,13 +56,16 @@ html {
   margin: 0;
 }
 
-.navbar-brand a {
+.navbar-brand a,
+.text-grey {
   color: hsla(0, 0%, 100%, 0.5);
 }
-
 .navbar-brand a:hover,
 .navbar-brand a:active,
-.navbar-brand a:focus {
+.navbar-brand a:focus,
+.text-grey:hover,
+.text-grey:active,
+.text-grey:focus {
   color: rgba(255, 255, 255, 0.75);
 }
 
@@ -91,13 +84,20 @@ a:focus {
   color: #fff;
   background-color: #a41e35;
 }
-
 .btn-red:hover {
   color: #fff;
 }
 
 .navbar-brand {
   margin-left: 20px;
+}
+.navbar-toggler-icon {
+  width: 1.2em;
+}
+.navbar-toggler {
+  font-size: 1.2em;
+  border: none !important;
+  outline: none !important;
 }
 
 @media (min-width: 992px) {
@@ -113,7 +113,6 @@ a:focus {
     padding-right: 12%;
   }
 }
-
 .nav__link {
   margin-left: 20px;
 }
