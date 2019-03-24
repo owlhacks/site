@@ -1,72 +1,22 @@
-# locOWL-hack-day
-Temple's Local Hack Day.
+# owlhacks
 
-#### If pushing to this repo
-~~~
-git subtree push --prefix _site origin gh-pages
-~~~
+> Temple University&#39;s Hackathon Website
 
-Only push the _site subtree.  WE have to build it not github pages.
+## Build Setup
 
-#### To work on this
-* install ruby
-* install ruby-devkit
-* pull repo down
-* run bundler
-* get this problem V
+``` bash
+# install dependencies
+$ npm install
 
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-You have to manually edit jekyll-assets-autoprefixer gem.
+# build for production and launch server
+$ npm run build
+$ npm start
 
-~~~
-gem environment
-~~~
-Will show your installation path.  Navigate to:
-~~~
-<Gem Install Path>\jekyll-assets-autoprefixer-1.0.0.pre.alpha3\lib\jekyll\assets\autoprefixer.rb
-~~~
-Open with text editor and copy pasta this in there:
-~~~
-# 3rd-party
-require "jekyll/assets"
-require "autoprefixer-rails"
+# generate static project
+$ npm run generate
+```
 
-# internal
-require "jekyll/assets/autoprefixer/version"
-
-module Jekyll
-  module Assets
-    module Autoprefixer
-      CONFIG_FILES = %w(autoprefixer.yml _autoprefixer.yml)
-
-      class << self
-        def setup!
-          ::Jekyll::Assets.configure do |assets|
-            config  = read_config(assets)
-
-            ::AutoprefixerRails.install(assets, config)
-          end
-        end
-
-        private
-
-        def read_config(assets)
-          config_file = CONFIG_FILES
-            .map { |f| Pathname.new(assets.site.source).join f }
-            .find(&:exist?)
-
-          return {} unless config_file
-
-          YAML.load_file(config_file).reduce({}) do |h, (k, v)|
-            h.update k.to_sym => v
-          end
-        end
-      end
-
-      setup!
-    end
-  end
-end
-~~~
-
-You should be good to go from here on out.
+For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
