@@ -1,17 +1,17 @@
 <template>
   <div>
-    <Jumbotron />
+    <MainJumbotron />
     <SponsorLogos />
   </div>
 </template>
 
 <script>
-import Jumbotron from '~/components/Jumbotron.vue'
+import MainJumbotron from '~/components/MainJumbotron.vue'
 import SponsorLogos from '~/components/SponsorLogos.vue'
 
 export default {
   components: {
-    Jumbotron,
+    MainJumbotron,
     SponsorLogos
   }
 }

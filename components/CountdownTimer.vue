@@ -60,6 +60,10 @@ export default {
     }
   },
   mounted() {
+    /* convert date for ios b/c Y-m-d H:i:s is not supported */
+    const arr = this.date.split(/[- :]/)
+    this.date = new Date(arr[0], arr[1] - 1, arr[2], arr[3], arr[4], arr[5])
+
     window.setInterval(() => {
       this.now = Math.trunc(new Date().getTime() / 1000)
     }, 1000)
