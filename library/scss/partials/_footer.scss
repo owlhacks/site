@@ -1,0 +1,99 @@
+footer {
+    padding: 3rem 2rem;
+    border-top: 3px solid rgba(0, 0, 0, .1);
+    background: rgba(41, 43, 53, 1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-header {
+    color: #FFF;
+    letter-spacing: 1px;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    padding-top: 1em;
+    opacity: .6;
+    transition: 150ms linear;
+}
+
+.footer-header:hover {
+    opacity: 1;
+}
+
+.footer-logo {
+    max-width: 200px;
+    height: auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-links li {
+    padding: .2em 0;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .30);
+    font-size: .85rem;
+    transition: 150ms linear;
+}
+
+.footer-links li a:hover {
+    color: #FFF;
+}
+
+.footer-links-horizontal li {
+    display: inline-block;
+}
+
+.footer-links-horizontal li a {
+    display: block;
+    padding: 0 .25rem;
+}
+
+.footer-links-horizontal li:first-child a {
+    padding-left: 0;
+}
+
+.footer-links-horizontal li:not(:last-child) a::after {
+    content: '|';
+    color: rgba(0, 0, 0, .50);
+    margin-left: 1rem;
+}
+
+.footer-title {
+    color: rgba(255, 255, 255, .70);
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Arvo', serif;
+}
+
+.footer-social-container {
+    margin-top: 1rem;
+}
+
+.footer-social {
+    font-size: 1.4rem;
+    margin-right: 2px;
+    color: #6c6c6c;
+}
+
+.footer-social:hover {
+    color: #FFF;
+}
+
+.footer-text {
+    color: rgba(255, 255, 255, .30);
+    font-size: .8rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    padding-top: 1rem;
+}
+
+.footer-text p {
+    margin-bottom: .25rem;
+}
