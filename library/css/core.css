@@ -49,7 +49,7 @@ header {
     transition: 150ms linear;
 }
 .jumbo-logo {
-    max-width:450px;
+    max-width:250px;
     height:auto;
 }
 .owlhacks-nav .nav-item .nav-link {
@@ -500,6 +500,10 @@ footer {
     }
     .owlhacks-nav-small .nav-item .nav-link {
         font-size: 1em;
+    }
+    .jumbo-logo {
+        max-width:450px;
+        height:auto;
     }
 }
 
