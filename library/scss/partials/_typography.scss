@@ -1,6 +1,11 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Arvo', serif;
 }
-p {
+p, ul {
     font-family: 'Poppins', sans-serif;
+}
+ul {
+    li {
+        margin-top:.5rem;
+    }
 }

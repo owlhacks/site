@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -6,37 +5,384 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Arvo:700|Poppins:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    <link href="https://fonts.googleapis.com/css?family=Arvo:700|Poppins:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="library/css/core.css">
+    <link rel="stylesheet" href="library/css/base.min.css">
 
-    <title>OwlHacks 2020 | Temple University </title>
+    <title>OwlHacks 2020 | April 18-19 | Temple University </title>
+    <meta name="description" content="OwlHacks is Temple University's student organized 24 hour hackathon welcoming hundreds of students on April 18.">
+    <meta property="og:image" content="https://owlhacks.com/library/images/owlhacks-logo.png">
+    <meta property="og:title" content="OwlHacks 2020 | April 18-19 | Temple University">
+    <meta property="og:description" content="OwlHacks is Temple University's student organized 24 hour hackathon welcoming hundreds of students on April 18.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://owlhacks.com">
+    <meta property="og:site_name" content="OwlHacks 2020">
+    <meta property="og:locale" content="en_US">
 </head>
 
 <body>
 
     <header>
+        <nav class="navbar navbar-expand-lg owlhacks-navbar fixed-top" id="navContainer">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="library/images/owlhacks-logo.png" class="nav-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="nav-toggle"><i class="fas fa-bars"></i> Menu</span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav owlhacks-nav" id="scroll-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sponsors">Sponsors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#schedule">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div class="container-fluid">
             <div class="container header-content">
                 <div class="row align-items-center justify-content-between">
-                    <div class="col-md-12">
-                        <div class="page-jumbo text-center mb-5">
-                            <img src="library/images/owlhacks-logo.png" class="jumbo-logo mb-5">
-                            <h1><span>Landing Soon</span></h1>
-                            <p>Join us at Temple University for OwlHacks 2020.</p>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4dPUliN81DoyXmL1xVPHpVoumZNrn7IsiHtNNIKxGHJqacQ/viewform?usp=sf_link" class="btn btn-white mb-3">Volunteer Registration <i class="fas fa-angle-right fa-fw"></i></a>
-                            <p><small>&copy; OwlHacks 2019. Made with <i class="fas fa-heart "></i> in Philadelphia.</small></p>
+                    <div class="order-1 order-md-0 col-md-7">
+                        <div class="page-jumbo">
+                            <h1><span>Calling all</span> Night Owls</h1>
+                            <p>Join us at Temple University for OwlHacks 2020 from April 18-19.</p>
+                        </div>
+                    </div>
+                    <div class="order-0 order-md-1 col-md-3">
+                        <div id="cloud"></div>
+                        <div id="cloud"></div>
+                        <div id="moon"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-links row justify-content-center">
+                <a class="col-md-6 btn btn-header" href="sponsorship-guide/">
+                    <i class="fas fa-bullhorn fa-fw"></i> Sponsor Us <i class="fas fa-angle-right fa-fw"></i>
+                </a>
+                <a class="col-md-6 btn btn-header" href="https://forms.gle/refdoWMe8vB7kZGYA">
+                    <i class="fas fa-users fa-fw"></i> Volunteer <i class="fas fa-angle-right fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2><span>About</span></h2>
+                </div>
+                <div class="section-content">
+                    <p>OwlHacks is Temple University’s annual, student-organized hackathon. First
+                        hosted in 2019, OwlHacks received great projects, turnout, and support from
+                        our sponsors and university; OwlHacks 2020 is going further.</p>
+                    <p>With free food, workshops, panels, games, swag and more, OwlHacks is a
+                        fun and educational experience for all levels of technical proficiency. From
+                        freshman to seniors, and undergrads to grads, all are welcome at
+                        OwlHacks.
+                    </p>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </section>
+        <section class="sponsors" id="sponsors">
+            <div class="section-header">
+                <h2><span>Our Sponsors</span></h2>
+            </div>
+            <div class="container">
+                <div class="sponsor-logo-container">
+                    <h4>This year, OwlHacks is bigger than ever, and we need your help!</h4>
+                    <p class="mb-5">Check out our sponsorship guide to learn how you can help.</p>
+                    <a href="sponsorship-guide/" class="btn btn-gray">View Sponsorship Guide <i class="fas fa-angle-right"></i></a>
+                    <!--
+                    <p>Thank you to our 2019 sponsors.</p>
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-2">
+                            <img src="library/images/sponsors/vanguard-logo.png" class="sponsor-logo">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="library/images/sponsors/cigna-logo.png" class="sponsor-logo">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="library/images/sponsors/elsevier-logo.png" class="sponsor-logo">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="library/images/sponsors/lockheedmartin-logo.png" class="sponsor-logo">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="library/images/sponsors/lincolnfinancial-logo.png" class="sponsor-logo">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="library/images/sponsors/brooksource-logo.png" class="sponsor-logo">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="library/images/sponsors/emoney-logo.png" class="sponsor-logo">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="library/images/sponsors/google-logo.png" class="sponsor-logo">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="library/images/sponsors/almac-logo.png" class="sponsor-logo">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="library/images/sponsors/guru-logo.png" class="sponsor-logo">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="library/images/sponsors/linode-logo.png" class="sponsor-logo">
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </section>
+        <section class="schedule" id="schedule">
+            <div class="container">
+                <div class="section-header section-header--inverse">
+                    <h2><span>Schedule</span></h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-5">
+                        <div class="schedule-block">
+                            <h3>Saturday, April 18</h3>
+                            <table class="schedule-table">
+                                <tr>
+                                    <td>8:00 am</td>
+                                    <td>Registration Opens</td>
+                                </tr>
+                                <tr>
+                                    <td>9:00 am</td>
+                                    <td>Opening Ceremony</td>
+                                </tr>
+                                <tr>
+                                    <td>10:00 am</td>
+                                    <td>Team Formation</td>
+                                </tr>
+                                <tr>
+                                    <td>1:30 pm</td>
+                                    <td>Lunch</td>
+                                </tr>
+                                <tr>
+                                    <td>7:00 pm</td>
+                                    <td>Dinner</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="schedule-block">
+                            <h3>Sunday, April 19</h3>
+                            <table class="schedule-table">
+                                <tr>
+                                    <td>7:00 am</td>
+                                    <td>Breakfast</td>
+                                </tr>
+                                <tr>
+                                    <td>8:30 am</td>
+                                    <td>Judging</td>
+                                </tr>
+                                <tr>
+                                    <td>10:00 am</td>
+                                    <td>Closing Ceremony</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-content text-center mt-5">
+                    <p>Note: schedule may change as we approach April.</p>
+                </div>
+            </div>
+        </section>
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2><span>FAQ</span></h2>
+                </div>
+                <div class="accordion" id="faq-accordion">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-header" id="FaqOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed btn-faq d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            I am not good at coding, should I come?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="FaqOne" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        Yes, hackathons are a great way to learn and grow as a developer. If you are stuck on a problem, you will be able get help from some of our mentors.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="FaqTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Do I need a team?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="FaqTwo" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        No, you can work on a project by yourself or come to our team formation event and find some great people to work with there.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="FaqThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            What do I bring?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="FaqThree" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        You will need your student ID, a laptop and charger, and whatever else needed for your project. Optional: Printed resumes if you would like one of our sponsors to review it.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="FaqFour">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                            How do I get to OwlHacks?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="FaqFour" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        OwlHacks is being hosted in SERC, at 1925 N 12th St, Philadelphia, PA 19122. You can take the Broad Street line to the Cecil B. Moore station, or input the address via google maps to get all routes.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-header" id="FaqFive">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseOne">
+                                            What if I've never been to a hackathon?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="FaqFive" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        OwlHacks is beginner friendly! And we will be holding a “Surviving your first Hackathon” workshop.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="FaqSix">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseTwo">
+                                            What is there to do?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseSix" class="collapse" aria-labelledby="FaqSix" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        We will have a number of great workshops to attend. You can network and talk to great employers, hang out with friends, and enjoy free food and swag.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="FaqSeven">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                                            Do I have to make or demo something?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseSeven" class="collapse" aria-labelledby="FaqSeven" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        Nope!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="FaqEight">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseThree">
+                                            Where do I park?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseEight" class="collapse" aria-labelledby="FaqEight" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        There is free street parking around campus and 2 parking garages. The Liacouras parking garage is $20/day and located at: 1710 N 15th St, Philadelphia, PA 19121. The Montgomery Parking lot is $4/hour and located at: 1859 N 11th St, Philadelphia, PA 19122.
+                                        Travel reimbursement will not be provided this year.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </section>
     </main>
+    <footer>
+        <div class="container">
+            <div class="row pt-1 justify-content-center">
+                <div class="col-md-4 text-center">
+                    <div class="footer-header d-flex justify-content-center align-items-center">
+                        <img src="library/images/owlhacks-logo.png" class="footer-logo">
+                    </div>     
+                    <div class="footer-social-container">
+                        <a href="#" target="_blank" class="btn btn-social-icon footer-social transition"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/owlhacks2020/" target="_blank" class="btn btn-social-icon footer-social transition"><i class="fab fa-instagram"></i></a>
+                        <a href="https://discord.gg/kZFMpdW" target="_blank " class="btn btn-social-icon footer-social transition "><i class="fab fa-discord "></i></a>
+                        <a href="https://owlhacks2020.slack.com/" target="_blank " class="btn btn-social-icon footer-social transition "><i class="fab fa-slack "></i></a>
+                        <a href="mailto:owlhacks@temple.edu" target="_blank " class="btn btn-social-icon footer-social transition "><i class="fas fa-envelope "></i></a>
+                    </div>  
+                    <div class="footer-text align-content-center ">
+                        <p>&copy; OwlHacks <script>document.write(new Date().getFullYear())</script>. Temple Made.</p>
+                        <ul class="footer-links footer-links-horizontal">
+                            <li><a href="#">MLH Code of Conduct</a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    <script>
+    $('.nav-link, .navbar-brand').click(function() {
+        var sectionTo = $(this).attr('href');
+        $('html, body').animate({
+        scrollTop: $(sectionTo).offset().top
+        }, 1500);
+    });    
+    window.onscroll = function changeNav() {
+        var width = window.innerWidth
+        var scrollPosY = window.pageYOffset | document.body.scrollTop;
+        var navContainer = document.getElementById('navContainer');
+        var navBar = document.getElementById('scroll-nav');
+        if (window.innerWidth > 600) {
+            if (scrollPosY > 100) {
+                navBar.classList.add('owlhacks-nav-small');
+                navContainer.classList.add('owlhacks-navbar-small');
+            } else if (scrollPosY <= 100) {
+                navBar.classList.remove('owlhacks-nav-small');
+                navContainer.classList.remove('owlhacks-navbar-small');
+            }
+        }
+    }
+    </script>
+
 </body>
 </html>

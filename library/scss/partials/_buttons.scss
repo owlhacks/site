@@ -35,3 +35,15 @@
     background:#FFF;
     color:#000;
 }
+.btn-gray {
+    border-radius:25px;
+    color:$color--gray;
+    background:none;
+    transition: 150ms linear;
+    font-weight: bold;
+    border:3px solid $color--gray;
+}
+.btn-gray:hover {
+    background:$color--gray;
+    color:#FFF;
+}
