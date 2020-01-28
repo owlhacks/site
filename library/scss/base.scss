@@ -112,7 +112,33 @@ header {
     border:10px double $color--yellow;
     border-radius:50%;
 }
-
+.stat-list {
+    padding-top:3rem;
+    &__stat {
+        display:block;
+        background:rgba(255,255,255,.5);
+        box-shadow:0px 3px 10px rgba(0,0,0,.2);
+        border-radius:15px;          
+        padding:1rem;
+        text-align: center;
+        margin-bottom:2rem;
+        span {
+            display:block;
+            font-size:3rem;
+        }
+    }
+    &--small {
+        h3 {
+            span {
+                font-size:1.2rem;
+            }
+        }
+    }
+    p:last-child {
+        font-size:.85rem;
+        font-style: italic;
+    }
+}
 /*
  * Sponsors 
  */
@@ -148,6 +174,10 @@ header {
     .container {
         position: relative;
         z-index:5;
+    }
+    &--alt {
+        background:url(../images/students.jpg) center center no-repeat;
+        background-size: cover;
     }
 }
 .sponsor-impact {
