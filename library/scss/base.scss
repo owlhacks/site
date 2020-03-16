@@ -20,6 +20,34 @@
 body {
     background: rgba(61, 64, 78, 1);
 }
+.tualert {
+    display: flex;
+    justify-content: center;
+    flex-flow:row wrap;
+    position:relative;
+    z-index:999999;
+    background-color: #f1d30f;
+    background-image: repeating-linear-gradient(-45deg,transparent,transparent 35px,rgba(255,255,255,0.2) 0,rgba(255,255,255,0.2) 70px);
+    &__content {
+        text-align: center;
+        max-width:750px;
+        padding:.5rem;
+        span {
+            color:#A41E35;
+            font-size:2rem;
+        }
+        p {
+            font-size:1.4rem;
+            font-weight: bold;
+            text-transform: uppercase;  
+            color:#494949;
+            line-height: 26px;
+            a {
+                color:#A41E35;
+            }  
+        }
+    }
+}
 
 header {
     background-color: rgba(44, 85, 110, 1);
