@@ -30,7 +30,7 @@ header {
     background-color: rgba(44, 85, 110, 1);
     background: url(../images/star-bg.png) no-repeat center, linear-gradient(180deg, rgba(61, 64, 78, 1), 50%, rgba(264, 152, 135, 1), 90%, rgba(247, 194, 133, 1) 100%);
     background-size:cover;
-    height:100vh; /* remove later*/
+    height: 80vh;
 }
 .owlhacks-navbar {
     transition: 150ms linear;
