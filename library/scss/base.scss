@@ -217,6 +217,7 @@ header {
     padding:4rem 1rem;
 }
 .tier-table {
+    margin: 0;
     background:#FFF;
     border:2px solid $color--dark-gray;
     thead {
@@ -365,7 +366,11 @@ header {
     background: #FFF;
     color: #036;
 }
-
+/*
+ * SWAG
+ */
+#swag {
+}
 
 #section-cloud:after {
     content: '';
@@ -451,7 +456,11 @@ header {
 
 @media (max-width: 768px) {
     .navbar-toggler {
-        margin-right: 12.5% !important;
+        margin-right: 10% !important;
+    }
+    .page-jumbo h1 {
+        font-size: 2em;
+        margin-top:0;
     }
 }
 
@@ -472,14 +481,14 @@ header {
         padding: 30vh 0;
     }
     .page-jumbo h1 {
-        font-size: 3.5em;
+        font-size: 4em;
         margin-top:0;
     }
     .content-art {
         width:100%;
     }
     .navbar-toggler {
-        margin-right: 15%;
+        margin-right: 12.5%;
     }
 }
 

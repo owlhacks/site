@@ -1,0 +1,374 @@
+
+  @-webkit-keyframes shake {
+    10%,
+    90% {
+      -webkit-transform: translate3d(-1px, 0, 0);
+              transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+      -webkit-transform: translate3d(2px, 0, 0);
+              transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translate3d(-4px, 0, 0);
+              transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+      -webkit-transform: translate3d(4px, 0, 0);
+              transform: translate3d(4px, 0, 0);
+    }
+  }
+  
+  @keyframes shake {
+    10%,
+    90% {
+      -webkit-transform: translate3d(-1px, 0, 0);
+              transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+      -webkit-transform: translate3d(2px, 0, 0);
+              transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translate3d(-4px, 0, 0);
+              transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+      -webkit-transform: translate3d(4px, 0, 0);
+              transform: translate3d(4px, 0, 0);
+    }
+  }
+  
+  @-webkit-keyframes zoomin {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+  @keyframes zoomin {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+  .btn {
+    padding: 0.5rem 4rem;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    border-width: 3px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .btn:hover {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .btn--solid.btn--cherry {
+    background-color: #a51e36;
+    border-color: #a51e36;
+    color: #fff;
+  }
+  
+  .btn--solid.btn--cherry:hover {
+    background: none;
+    color: #a51e36;
+  }
+  
+  html,
+  body {
+    -webkit-font-smoothing: antialiased;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .sr-only {
+    position: absolute;
+    padding: 0;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+            clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+    position: absolute !important;
+    white-space: nowrap;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+  
+  .sr-only-focusable:active,
+  .sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+  
+  .skip-to-content:focus {
+    margin: 0;
+    clip: unset;
+    -webkit-clip-path: unset;
+            clip-path: unset;
+    height: auto;
+    width: 100%;
+    background: #222;
+    color: #fff;
+    z-index: 9999;
+    text-align: center;
+    -webkit-box-shadow: 0 2px 5px #333;
+            box-shadow: 0 2px 5px #333;
+  }
+  
+  .landing {
+    background: #f1ece5;
+    font-size: 1.7rem;
+  }
+  
+  .landing__wrap {
+    position: relative;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.7)), to(rgba(34, 34, 34, 0.7))), url("../img/placeholder.jpg");
+    background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../img/placeholder.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .landing__video {
+    padding: 2rem 2rem 0 2rem;
+  }
+  
+  .landing__cta {
+    padding: 2rem;
+    color: #fff;
+  }
+  
+  .landing__cta-content {
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .landing__quote {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 4rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .landing__quote-text {
+    font-size: 1.5rem;
+    font-style: italic;
+    border-top: solid 2px #b79b7c;
+    border-bottom: solid 2px #b79b7c;
+    position: relative;
+    margin: 2rem 0;
+    padding: 2rem 0;
+  }
+  
+  .landing__quote-text::before {
+    content: '\201C';
+    position: absolute;
+    top: -8rem;
+    left: 50%;
+    font-weight: 600;
+    font-size: 10rem;
+    color: #b79b7c;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  
+  .carousel__video {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    width: 100%;
+  }
+  
+  .carousel__video iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .carousel__cell {
+    height: auto;
+    width: 90%;
+    margin: 0 1rem 0 0;
+  }
+  
+  .hero {
+    background-size: cover;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url("../img/placeholder.jpg");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../img/placeholder.jpg");
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding: 2rem 1rem;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .hero--downloads {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url("../img/placeholder.jpg");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../img/placeholder.jpg");
+  }
+  
+  .hero__content {
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .hero__title {
+    font-size: 3rem;
+    line-height: 1.2;
+    position: relative;
+    padding: 0 0 1rem 0;
+  }
+  
+  .hero__title span {
+    display: block;
+    font-weight: 900;
+  }
+  
+  .hero__title::after {
+    content: '';
+    background: #a51e36;
+    height: 6px;
+    width: 8rem;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .hero__intro {
+    font-size: 1.6rem;
+    font-style: italic;
+    line-height: 1.7;
+    padding: 2rem 2rem 2rem 0;
+    border-radius: 5px;
+  }
+  
+  .hero__cta {
+    margin: 2rem 0 0 0;
+    width: 100%;
+    display: none;
+  }
+  
+  .landing .hero__cta {
+    display: inline-block;
+  }
+  
+  .filter {
+    padding-top: 4rem;
+  }
+  
+  .filter__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1;
+    position: relative;
+    padding: 0 0 1rem 0;
+  }
+  
+  .filter__title::after {
+    content: '';
+    background: #a51e36;
+    height: 6px;
+    width: 8rem;
+    border-radius: 6px;
+    left: 50%;
+    bottom: 0;
+    margin: 0 0 0 -4rem;
+    position: absolute;
+  }
+
+  
+  @media (min-width: 768px) {
+    .hero {
+      height: auto;
+      padding: 4rem 1rem;
+    }
+    .hero__cta {
+      display: inline-block;
+    }
+    .cards {
+      max-width: 1400px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .hero {
+      background-image: url("../img/hero.jpg");
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+    .hero--downloads {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url("https://www.fox.temple.edu/wp-content/themes/fox-arctic/assets/images/placeholder.jpg");
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("https://www.fox.temple.edu/wp-content/themes/fox-arctic/assets/images/placeholder.jpg");
+      background-size: cover;
+    }
+    .hero__intro {
+      background: rgba(255, 255, 255, 0.4);
+      padding: 2rem;
+      margin: 2rem 0 0 0;
+    }
+    .landing__video {
+      padding: 3rem;
+    }
+    .landing__cta {
+      padding: 3rem 0 3rem 3rem;
+      color: #fff;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .hero__cta {
+      width: 70%;
+    }
+  }
+  
