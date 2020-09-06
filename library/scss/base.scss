@@ -449,7 +449,11 @@ header {
     }
 }
 
-@media (min-width: 576px) {}
+@media (max-width: 768px) {
+    .navbar-toggler {
+        margin-right: 12.5% !important;
+    }
+}
 
 @media (min-width: 768px) {
     header {
@@ -468,11 +472,14 @@ header {
         padding: 30vh 0;
     }
     .page-jumbo h1 {
-        font-size: 5em;
+        font-size: 3.5em;
         margin-top:0;
     }
     .content-art {
         width:100%;
+    }
+    .navbar-toggler {
+        margin-right: 15%;
     }
 }
 
