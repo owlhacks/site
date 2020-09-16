@@ -653,7 +653,6 @@ header {
 .btn-white-outline {
   border: 3px solid rgba(255, 255, 255, 0.2);
   border-radius: 30px;
-  text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
   font-size: .9em;
