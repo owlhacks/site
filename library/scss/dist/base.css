@@ -318,6 +318,10 @@ header {
   letter-spacing: 1px;
 }
 
+.btn {
+  font-family: "Poppins", sans-serif;
+}
+
 .section-header {
   text-align: center;
   padding: 3rem 1rem;
@@ -555,10 +559,15 @@ header {
   background: rgba(0, 0, 0, 0.1);
 }
 
-.schedule-table tr td:last-of-type {
+.schedule-table tr td:nth-child(2) {
   color: #FFF;
   font-family: "Arvo", serif;
   font-weight: bolder;
+}
+
+.schedule-link {
+  font-size: 0.75em;
+  color: #fff;
 }
 
 .schedule-table tr:last-of-type td:first-of-type {
