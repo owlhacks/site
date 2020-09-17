@@ -428,7 +428,7 @@ header {
 
 .sponsor-logo-img {
   display: block;
-  max-width: 50%;
+  width: 30%;
   margin-left: auto;
   margin-right: auto;
 }
