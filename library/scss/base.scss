@@ -79,6 +79,9 @@ header {
     font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
 }
+.page-jumbo h3 {
+    text-shadow: 1px 4px 0px rgba(0, 0, 0, 0.1);
+}
 .btn {
     font-family: 'Poppins', sans-serif;
 }
@@ -182,11 +185,8 @@ header {
     margin-bottom: 4rem;
     text-align: center;
 }
-
-.sponsor-logo {
-    max-width: 300px;
-    height: auto;
-    padding:2rem;
+.sponsor-logo-img {
+    max-width: 50%;
 }
 .sponsor-intro {
     color: #FFF;
