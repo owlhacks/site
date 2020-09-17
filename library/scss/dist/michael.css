@@ -284,6 +284,24 @@ img {
   position: absolute;
 }
 
+.social-media {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+}
+
+.title-sponsor-social-links {
+  color: white;
+  font-size: 1em;
+  text-align: left;
+  margin: 1.5em;
+  list-style: none;
+}
+
+.title-sponsor-social-links > li > a {
+  color: white;
+}
+
 @media (min-width: 768px) {
   .hero {
     height: auto;

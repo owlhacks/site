@@ -427,7 +427,10 @@ header {
 }
 
 .sponsor-logo-img {
+  display: block;
   max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sponsor-intro {
