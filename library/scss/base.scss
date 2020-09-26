@@ -185,11 +185,24 @@ header {
     margin-bottom: 4rem;
     text-align: center;
 }
+.sponsor-logo-container > .row {
+    margin: 5%;
+    margin-bottom: 7.5%;
+}
 .sponsor-logo-img {
     display: block;
     width: 30%;
     margin-left: auto;
     margin-right: auto;
+}
+.title {
+    width: 100%;
+}
+.emerald {
+    width: 80%;
+}
+.gold {
+    width: 70%;
 }
 .sponsor-intro {
     color: #FFF;
