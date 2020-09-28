@@ -302,11 +302,11 @@ img {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  color: white;
+  background-color: white;
 }
 
 .title-sponsor-social-links {
-  color: white;
+  color: #333333;
   font-size: 1em;
   text-align: left;
   margin: 1.5em;
@@ -314,7 +314,7 @@ img {
 }
 
 .title-sponsor-social-links > li > a {
-  color: white;
+  color: #333333;
 }
 
 @media (min-width: 768px) {
