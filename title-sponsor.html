@@ -16,8 +16,8 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    <link href="https://fonts.googleapis.com/css?family=Arvo:700|Poppins:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="library/scss/base.css">
-    <link rel="stylesheet" href="library/scss/michael.css">
+    <link rel="stylesheet" href="library/css/base.min.css">
+    <link rel="stylesheet" href="library/css/landing.min.css">
     <link href="library/images/favicon.ico" rel="shortcut icon"/>
 
     <title>OwlHacks 2020 | October 17-18 | Temple University </title>
@@ -42,7 +42,7 @@
 -->
     <nav class="navbar navbar-expand-lg owlhacks-navbar sticky-top" id="navContainer">
         <div class="container">
-            <a class="navbar-brand" href="/index.html#header">
+            <a class="navbar-brand" href="index.html">
                 <img src="library/images/owlhacks-logo.png" class="nav-logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,7 +86,11 @@
                     <div class="col-lg-5 landing__cta container">
                         <div class="landing__cta-content d-flex flex-column">
                             <div class="hero__title"><span>RSM</span></div>	
-                            <p>Experience the power of being understood</p>				
+                                <p>Experience the power of being understood</p>	
+                                <div class="d-flex mt-3"> 
+                                    <a class="btn btn-white hero__cta mr-3" href="https://rsmus.com/who-we-are/our-values.html">Learn more</a>
+                                    <a class="btn btn-white hero__cta" href="https://jobs.rsmus.com/ListJobs/All">Apply!</a>
+                                </div>			
                             </div>
                     </div>			
                 </div>		
@@ -96,36 +100,34 @@
             <div class="landing__quote-text">
                 At RSM, our client-centric approach is grounded in our strong industry perspective and desire to deliver unparalleled client experiences. Our experienced advisors bring forth curiosity and collaboration while seeking new approaches to evolving business challenges, and we deliver value through relevant ideas and insights.
             </div>		
-            <div class="row justify-content-center align-items-center mt-5"> 
-                <a class="btn btn-white hero__cta" href="https://rsmus.com/who-we-are/our-values.html">Learn more</a>
-                <a class="btn btn-white hero__cta" href="https://jobs.rsmus.com/ListJobs/All">Apply!</a>
-            </div>
         </div>
         
-        <div class="container social-media">
-            <div class="section-header">
-                <img src="library\images\sponsors\RSM-logo-cropped.png" class="sponsor-logo-img" alt="RSM logo">
-                <h3>Follow RSM on social media</h3>
-            </div>
-            <ul class="title-sponsor-social-links">
-                <li>
-                    <a href="http://www.twitter.com/rsmusllp" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i> Twitter</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/company/rsm-us-llp" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/rsmusllp1" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i> YouTube</a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/rsmusllp/" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i> Facebook</a>
-                </li>
-                <li>
-                    <a href="http://rsm.us/2uN0zoR" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a>
-                </li>
-            </ul>
-        </div>
-        
+        <div class="social-media">
+            <div class="container">
+                <div class="section-header">
+                    <img src="library\images\sponsors\RSM-logo-cropped.png" class="sponsor-logo-img" alt="RSM logo">
+                    <h3>Connect with RSM on Social Media</h3>
+                </div>
+                <div class="title-sponsor-social-links">
+                    <a href="http://www.twitter.com/rsmusllp" target="_blank">
+                        <i class="fab fa-twitter" aria-hidden="true"></i> 
+                        <span>Twitter</span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/rsm-us-llp" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i> 
+                        <span>LinkedIn</span> 
+                    </a>                
+                    <a href="https://www.youtube.com/rsmusllp1" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i> 
+                        <span>YouTube</span>
+                    </a>
+                    <a href="https://www.facebook.com/rsmusllp/" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i> 
+                        <span>Facebook</span>
+                    </a>                
+                    <a href="http://rsm.us/2uN0zoR" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i> 
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>    
+        </div>      
     </main>
     <footer>
         <div class="container">
