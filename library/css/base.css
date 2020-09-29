@@ -91,7 +91,7 @@ ul li {
   background: rgba(61, 64, 78, 0.8);
   font-weight: bolder;
   font-size: 1.2em;
-  padding: 1rem;
+  padding: 1.5rem;
   transition: 150ms linear;
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
@@ -289,10 +289,11 @@ header {
   background-color: #2c556e;
   background: url(../images/star-bg.png) no-repeat center, linear-gradient(180deg, #3d404e, 50%, #ff9887, 90%, #f7c285 100%);
   background-size: cover;
+  position: relative;
 }
 
 .header-content {
-  padding: 10rem 1rem 5rem 1rem;
+  padding: 20rem 1rem 5rem 1rem;
   color: #FFF;
   text-align: center;
 }
@@ -779,7 +780,6 @@ header {
   }
   .header-content {
     text-align: left;
-    padding: 30vh 0;
   }
   .page-jumbo h1 {
     font-size: 4em;
@@ -790,6 +790,13 @@ header {
   }
   .navbar-toggler {
     margin-right: 12.5%;
+  }
+  .header-button-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
   }
 }
 
