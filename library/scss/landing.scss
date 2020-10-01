@@ -265,9 +265,10 @@ img {
 }
 
 .hero__cta {
-  width: 100%;
-  padding:.5rem;
-  font-size:1.3rem;
+  width: 80%;
+  padding: .5rem;
+  margin: .5rem;
+  font-size: 1.3rem;
 }
 
 .landing .hero__cta {
@@ -301,11 +302,13 @@ img {
 .social-media {
   background-color: white;
 }
+
 .title-sponsor-social-links {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   padding-bottom:3rem;
+  list-style: none;
   a {
     display: flex;
     align-items: center;
@@ -314,9 +317,8 @@ img {
     text-align: center;
     text-decoration: none;
     margin:2rem;
-    padding:1rem;
     color:rgba(61, 64, 78, 1);
-    border:4px solid rgba(61, 64, 78, 1);
+    border: 0;
     border-radius:30px;
     width:150px;
     height:150px;

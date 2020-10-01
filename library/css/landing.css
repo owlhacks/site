@@ -206,8 +206,9 @@ img {
 }
 
 .hero__cta {
-  width: 100%;
+  width: 80%;
   padding: .5rem;
+  margin: .5rem;
   font-size: 1.3rem;
 }
 
