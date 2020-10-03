@@ -56,7 +56,7 @@ header {
     position: relative;
 }
 .header-content {
-    padding: 20rem 1rem 5rem 1rem;
+    padding: 10rem 1rem 5rem 1rem;
     color: #FFF;
     text-align: center;
 }
@@ -84,6 +84,7 @@ header {
     text-shadow: 1px 4px 0px rgba(0, 0, 0, 0.1);
 }
 .btn {
+    font-size: 1em;
     font-family: 'Poppins', sans-serif;
 }
 .section-header {
@@ -191,19 +192,25 @@ header {
     margin-bottom: 7.5%;
 }
 .sponsor-logo-img {
+    max-width: 600px;
     display: block;
-    width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
 .title {
-    width: 100%;
+    width: 75%;
 }
 .emerald {
-    width: 95%;
+    width: 100%;
+}
+.platnium {
+    width: 90%;
 }
 .gold {
-    width: 90%;
+    width: 80%;
+}
+.thanks {
+    width: 40%;
 }
 .sponsor-intro {
     color: #FFF;
@@ -366,6 +373,7 @@ header {
     background: #846063;
     border-radius: 25px 25px 25px 0;
     color: #FFF;
+    font-size: 0.8em;
 }
 
 .accordion .card .card-body {
