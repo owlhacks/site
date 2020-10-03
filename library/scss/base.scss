@@ -348,7 +348,9 @@ header {
 .schedule-table tr:last-of-type td:first-of-type {
     border-bottom-right-radius: 25px;
 }
-
+.google-calendar {
+    border-radius: 1em;
+}
 /*
  * FAQ
  */
@@ -373,7 +375,7 @@ header {
     background: #846063;
     border-radius: 25px 25px 25px 0;
     color: #FFF;
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
 .accordion .card .card-body {

@@ -265,10 +265,11 @@ img {
 }
 
 .hero__cta {
-  width: 80%;
-  padding: .5rem;
-  margin: .5rem;
-  font-size: 1.3rem;
+  box-sizing: border-box;
+  width: 46%;
+  padding: 1% 2%;
+  margin: 1% 2%;
+  font-size: 1.2rem;
 }
 
 .landing .hero__cta {
@@ -352,8 +353,15 @@ img {
     text-align: center;
     margin-left: 0;
   }
+  .hero__cta {
+    width: 100%;
+    padding: .5%;
+    margin: .5%;
+    font-size: 1.2rem;
+  }
   .landing__quote {
     padding: 1.5rem;
+    padding-top: 4em;
   }
   .landing__quote-text {
     font-size: 1.1rem;
