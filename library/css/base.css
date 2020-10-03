@@ -484,7 +484,7 @@ header {
 }
 
 .title {
-  width: 100%;
+  width: 650px;
 }
 
 .emerald-header {
@@ -492,7 +492,7 @@ header {
 }
 
 .emerald {
-  width: 100%;
+  width: 450px;
 }
 
 .platinum-header {
@@ -500,7 +500,7 @@ header {
 }
 
 .platinum {
-  width: 100%;
+  width: 400px;
 }
 
 .gold-header {
@@ -508,12 +508,12 @@ header {
 }
 
 .gold {
-  width: 80%;
+  width: 350px;
 }
 
 .thanks {
-  width: 50%;
-  display: inline;
+  width: 250px;
+  padding: 5%;
 }
 
 .sponsor-intro {
