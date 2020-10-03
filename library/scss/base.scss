@@ -188,29 +188,45 @@ header {
     text-align: center;
 }
 .sponsor-logo-container > .row {
-    margin: 5%;
+    margin: 2.5%;
+}
+.sponsor-logo-container > div {
     margin-bottom: 7.5%;
 }
+
 .sponsor-logo-img {
-    max-width: 600px;
-    display: inline;
+    max-width: 500px;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
+.btn-sponsor {
+    font-size: 1.2em;
+}
 .title {
-    width: 75%;
+    width: 100%;
+}
+.emerald-header {
+    color: rgb(0, 87, 12);
 }
 .emerald {
     width: 100%;
 }
+.platinum-header {
+    color: rgb(97, 97, 97);
+}
 .platinum {
-    width: 90%;
+    width: 100%;
+}
+.gold-header {
+    color: rgb(131, 96, 0);
 }
 .gold {
     width: 80%;
 }
 .thanks {
-    width: 30%;
+    width: 50%;
+    display: inline;
 }
 .sponsor-intro {
     color: #FFF;

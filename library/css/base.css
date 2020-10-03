@@ -465,27 +465,46 @@ header {
 }
 
 .sponsor-logo-container > .row {
-  margin: 5%;
+  margin: 2.5%;
+}
+
+.sponsor-logo-container > div {
   margin-bottom: 7.5%;
 }
 
 .sponsor-logo-img {
-  max-width: 600px;
-  display: inline;
+  max-width: 500px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+.btn-sponsor {
+  font-size: 1.2em;
+}
+
 .title {
-  width: 75%;
+  width: 100%;
+}
+
+.emerald-header {
+  color: #00570c;
 }
 
 .emerald {
   width: 100%;
 }
 
+.platinum-header {
+  color: #616161;
+}
+
 .platinum {
-  width: 90%;
+  width: 100%;
+}
+
+.gold-header {
+  color: #836000;
 }
 
 .gold {
@@ -493,7 +512,8 @@ header {
 }
 
 .thanks {
-  width: 30%;
+  width: 50%;
+  display: inline;
 }
 
 .sponsor-intro {
