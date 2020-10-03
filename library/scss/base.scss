@@ -204,31 +204,29 @@ header {
     font-size: 1.2em;
 }
 .title {
-    width: 650px;
+    width: 100%;
 }
 .emerald-header {
     color: rgb(0, 87, 12);
 }
 .emerald {
-    width: 450px;
+    width: 100%;
 }
-
 .platinum-header {
     color: rgb(97, 97, 97);
 }
 .platinum {
-    width: 400px;
+    width: 100%;
 }
 .gold-header {
     color: rgb(131, 96, 0);
 }
 .gold {
-    width: 350px;
+    width: 80%;
 }
 .thanks {
-    width: 250px;
-    padding: 5%;
-
+    width: 50%;
+    display: inline;
 }
 .sponsor-intro {
     color: #FFF;
