@@ -142,7 +142,10 @@ img {
 }
 
 .landing__video {
-  padding: 2rem 2rem 0 2rem;
+  display: block;
+  padding-left: auto;
+  padding-right: auto;
+  margin-right: 0;
 }
 
 .landing__cta {
@@ -192,7 +195,6 @@ img {
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
-  height: 0;
   width: 100%;
 }
 

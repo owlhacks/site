@@ -219,13 +219,24 @@ header {
     width: 100%;
 }
 .gold-header {
-    color: rgb(131, 96, 0);
+    color: rgb(134, 102, 14);
 }
 .gold {
     width: 80%;
 }
+.silver-header {
+    color: rgb(119, 119, 119);
+}
+.silver {
+    width: 60%;
+}
+.special-thanks-to {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .thanks {
-    width: 40%;
+    width: 50%;
     margin: 0;
 }
 .sponsor-intro {
@@ -510,6 +521,7 @@ header {
         font-size: 2em;
         margin-top:0;
     }
+    
 }
 
 @media (min-width: 768px) {
@@ -544,6 +556,7 @@ header {
         width:100%;
         overflow:hidden;
     }
+
 }
 
 @media (min-width: 992px) {

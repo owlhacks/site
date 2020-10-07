@@ -465,7 +465,7 @@ header {
 }
 
 .sponsor-logo-container > .row {
-  margin: 2.5%;
+  margin: 0.5%;
 }
 
 .sponsor-logo-container > div {
@@ -504,16 +504,35 @@ header {
 }
 
 .gold-header {
-  color: #836000;
+  color: #86660e;
 }
 
 .gold {
   width: 80%;
 }
 
+.silver-header {
+  color: #777777;
+}
+
+.silver {
+  width: 60%;
+}
+
+.special-thanks-to {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .thanks {
   width: 50%;
-  display: inline;
+  margin: 0;
 }
 
 .sponsor-intro {
