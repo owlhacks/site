@@ -263,6 +263,8 @@ footer {
 }
 
 body {
+  overflow-x: hidden;
+  width: 100%;
   background: #3d404e;
 }
 
@@ -464,12 +466,18 @@ header {
   text-align: center;
 }
 
-.sponsor-logo-container > .row {
+.sponsor-logo-container .row {
   margin: 0.5%;
 }
 
-.sponsor-logo-container > div {
+.sponsor-logo-container div {
   margin-bottom: 7.5%;
+  padding: 1em;
+}
+
+.sponsor-logo-container h4 {
+  padding-top: 1em;
+  border-top: 1px #222 solid;
 }
 
 .sponsor-logo-img {

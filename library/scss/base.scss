@@ -18,6 +18,8 @@
 }
 
 body {
+    overflow-x: hidden;
+    width: 100%;
     background: rgba(61, 64, 78, 1);
 }
 .tualert {
@@ -186,12 +188,17 @@ header {
 .sponsor-logo-container {
     margin-bottom: 4rem;
     text-align: center;
-}
-.sponsor-logo-container > .row {
-    margin: 0.5%;
-}
-.sponsor-logo-container > div {
-    margin-bottom: 7.5%;
+    .row {
+        margin: 0.5%;
+    }
+    div {
+        margin-bottom: 7.5%;
+        padding: 1em;
+    }
+    h4 {
+        padding-top: 1em;
+        border-top: 1px #222 solid;
+    }
 }
 
 .sponsor-logo-img {
@@ -411,7 +418,9 @@ header {
     color: #000;
     border-radius: 0 0 25px 0;
 }
-
+.btn-special {
+    
+}
 .btn-white-outline {
     border: 3px solid rgba(255, 255, 255, .2);
     border-radius: 30px;

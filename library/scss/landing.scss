@@ -169,6 +169,14 @@ img {
   padding: 4rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
+  .btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p {
+    margin: 0 20%;
+    max-width: 60%;
+  }
 }
 
 .landing__quote-text {
@@ -210,8 +218,7 @@ img {
 
 .carousel__cell {
   height: auto;
-  width: 90%;
-  margin: 0 1rem 0 0;
+  width: 100%;
 }
 
 .hero {
@@ -268,11 +275,12 @@ img {
 
 .hero__cta {
   box-sizing: border-box;
-  width: 46%;
   padding: 1% 2%;
   margin: 1% 2%;
   font-size: 1.2rem;
+  min-width: 46%;
 }
+
 
 .landing .hero__cta {
   display: inline-block;
@@ -358,17 +366,26 @@ img {
   .hero__cta {
     width: 100%;
     padding: .5%;
-    margin: .5%;
+    margin: 0.25em;
+    margin-top: 1em;
     font-size: 1.2rem;
   }
   .landing__quote {
     padding: 1.5rem;
     padding-top: 4em;
+    div {
+      margin: 0.5em;
+    }
+    p {
+      margin: 1%;
+      max-width: 98%;
+    }
   }
   .landing__quote-text {
     font-size: 1.1rem;
-    margin: 0rem 0;
-    padding: 1rem 0;
+    margin: 0;
+    margin-bottom: 5em;
+    padding: 1em 0;
   }
 }
 
