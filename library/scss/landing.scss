@@ -200,6 +200,20 @@ img {
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
+#open-positions {
+  .container {
+    width: 100%;
+    padding-bottom: 3em;
+  }
+  .btn-position {
+    display: block;
+    text-align: left;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em;
+  }
+}
 
 .carousel__video {
   overflow: hidden;
