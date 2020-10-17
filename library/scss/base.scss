@@ -238,13 +238,13 @@ header {
     width: 60%;
 }
 .special-thanks-to {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
 }
 .thanks {
-    width: 50%;
-    margin: 0;
+    width: 40%;
+    margin: 5% 30%;
 }
 .sponsor-intro {
     color: #FFF;

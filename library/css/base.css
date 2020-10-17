@@ -528,19 +528,14 @@ header {
 }
 
 .special-thanks-to {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0;
 }
 
 .thanks {
-  width: 50%;
-  margin: 0;
+  width: 40%;
+  margin: 5% 30%;
 }
 
 .sponsor-intro {
