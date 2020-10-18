@@ -816,6 +816,22 @@ header {
           animation: float 3s infinite;
 }
 
+.small-text {
+  font-size: 12pt !important;
+  color:  #3d404e;
+  padding: 2%;
+}
+
+.small-text a {
+  color: white;
+}
+
+
+.small-text a:hover {
+  color: #f7c285;
+  text-decoration: none;
+}
+
 @-webkit-keyframes float {
   0%,
   100% {
