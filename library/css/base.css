@@ -437,6 +437,7 @@ header {
   padding: 1rem;
   text-align: center;
   margin-bottom: 2rem;
+  height: 90%;
 }
 
 .stat-list__stat span {
@@ -819,7 +820,7 @@ header {
 .small-text {
   font-size: 12pt !important;
   color:  #3d404e;
-  padding: 2%;
+  padding: 5%;
 }
 
 .small-text a {
