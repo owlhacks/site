@@ -1,1 +1,4 @@
 node_modules
+
+/library/scss/*.css
+/library/scss/*.css.map

@@ -288,11 +288,11 @@ body {
 .tualert__content {
   text-align: center;
   max-width: 750px;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .tualert__content span {
-  color: #A41E35;
+  color: #a41e35;
   font-size: 2rem;
 }
 
@@ -305,7 +305,7 @@ body {
 }
 
 .tualert__content p a {
-  color: #A41E35;
+  color: #a41e35;
 }
 
 header {
@@ -318,7 +318,7 @@ header {
 
 .header-content {
   padding: 10rem 1rem 5rem 1rem;
-  color: #FFF;
+  color: #fff;
   text-align: center;
 }
 
@@ -335,13 +335,13 @@ header {
   display: block;
   font-size: 2rem;
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 1px;
 }
 
 .page-jumbo p {
   font-size: 1.2em;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 1px;
 }
 
@@ -351,7 +351,7 @@ header {
 
 .btn {
   font-size: 1em;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .section-header {
@@ -360,9 +360,9 @@ header {
 }
 
 .section-header h2 {
-  color: #FFF;
+  color: #fff;
   font-weight: bold;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 .section-header h2 span {
@@ -376,7 +376,7 @@ header {
 }
 
 .section-header--inverse h2 span {
-  background: #FFF;
+  background: #fff;
 }
 
 .section-content {
@@ -385,7 +385,7 @@ header {
 }
 
 .about {
-  color: #FFF;
+  color: #fff;
   padding: 4rem 1rem 9rem 1rem;
   font-size: 1.25em;
   background: url(../images/group.jpg) center center no-repeat;
@@ -419,7 +419,7 @@ header {
   width: 50%;
   height: auto;
   padding: 2rem;
-  background: #FFF;
+  background: #fff;
   border: 10px double #f7c285;
   border-radius: 50%;
 }
@@ -437,7 +437,6 @@ header {
   padding: 1rem;
   text-align: center;
   margin-bottom: 2rem;
-  height: 90%;
 }
 
 .stat-list__stat span {
@@ -450,7 +449,7 @@ header {
 }
 
 .stat-list p:last-child {
-  font-size: .85rem;
+  font-size: 0.85rem;
   font-style: italic;
 }
 
@@ -458,7 +457,7 @@ header {
  * Sponsors 
  */
 .sponsors {
-  background: #FFF;
+  background: #fff;
   padding: 4rem 1rem;
 }
 
@@ -540,7 +539,7 @@ header {
 }
 
 .sponsor-intro {
-  color: #FFF;
+  color: #fff;
   padding: 3rem 1rem 8rem 1rem;
   background: url(../images/volunteers.jpg) center center no-repeat;
   background-size: cover;
@@ -569,7 +568,7 @@ header {
 }
 
 .sponsor-impact {
-  background: #FFF;
+  background: #fff;
   padding: 4rem 1rem 8rem 1rem;
 }
 
@@ -579,13 +578,13 @@ header {
 
 .tier-table {
   margin: 0;
-  background: #FFF;
+  background: #fff;
   border: 2px solid #292b35;
 }
 
 .tier-table thead {
   background: #292b35;
-  color: #FFF;
+  color: #fff;
   font-size: 1.2rem;
 }
 
@@ -603,7 +602,7 @@ header {
 }
 
 .tier-table thead th:nth-child(3) {
-  background: #FFD700;
+  background: #ffd700;
   color: #000;
 }
 
@@ -613,31 +612,31 @@ header {
 }
 
 .tier-table thead th:nth-child(5) {
-  background: #9D2235;
+  background: #9d2235;
 }
 
 .tier-table__pricing {
-  background: #FFF;
+  background: #fff;
   font-weight: bold;
 }
 
 .tier-table__pricing th {
-  font-size: .9rem;
-  letter-spacing: .1rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   font-weight: bolder;
 }
 
 .tier-table__heading {
   background: #292b35;
-  color: #FFF;
-  font-size: .8rem;
-  letter-spacing: .1rem;
+  color: #fff;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
 }
 
 .tier-table__heading th {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .tier-table tbody tr td {
@@ -664,7 +663,7 @@ header {
   margin-bottom: 0;
   background: #f7c285;
   display: inline-block;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 25px 25px 25px 0;
 }
 
@@ -682,19 +681,19 @@ header {
 }
 
 .schedule-table tr td:first-of-type {
-  color: #FFF;
+  color: #fff;
   font-weight: bolder;
   background: rgba(0, 0, 0, 0.1);
 }
 
 .schedule-table tr td:nth-child(2) {
-  color: #FFF;
-  font-family: 'Arvo', serif;
+  color: #fff;
+  font-family: "Arvo", serif;
   font-weight: bolder;
 }
 
 .schedule-link {
-  font-size: .75em;
+  font-size: 0.75em;
   color: #fff;
 }
 
@@ -728,7 +727,7 @@ header {
 .accordion .card .card-header h2 button {
   background: #846063;
   border-radius: 25px 25px 25px 0;
-  color: #FFF;
+  color: #fff;
   font-size: 0.6em;
 }
 
@@ -744,14 +743,14 @@ header {
   border-radius: 30px;
   letter-spacing: 1px;
   font-weight: bold;
-  font-size: .9em;
-  color: #FFF;
+  font-size: 0.9em;
+  color: #fff;
   -webkit-transition: 150ms linear;
   transition: 150ms linear;
 }
 
 .btn-white-outline:hover {
-  background: #FFF;
+  background: #fff;
   color: #036;
 }
 
@@ -759,7 +758,7 @@ header {
  * SWAG
  */
 #section-cloud:after {
-  content: '';
+  content: "";
   z-index: 999;
   border-radius: 25px;
   max-width: 100px;
@@ -774,7 +773,7 @@ header {
 }
 
 #cloud:after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 999;
   border-radius: 25px;
@@ -801,8 +800,8 @@ header {
   width: 5px;
   border-radius: 100%;
   background-color: #fff;
-  -webkit-box-shadow: 200px 100px 0 0 #fff, 180px 50px 0 0 #fff, -30px 120px 0 0 #fff, -45px 50px 0 0 #fff, 110px -30px 0 0 #fff, 100px -40px 0 -1px #fff, 150px 120px 0 -1px #fff, 35px -55px 0 -1px #fff, 0px -30px 0 0 #fff, 200px 0px 0 0 #fff, 205px 90px 0 -1px #fff, 250px -50px 0 -1px #fff, -100px 90px 0 0px #fff, -90px -50px 0 -1px #fff;
-          box-shadow: 200px 100px 0 0 #fff, 180px 50px 0 0 #fff, -30px 120px 0 0 #fff, -45px 50px 0 0 #fff, 110px -30px 0 0 #fff, 100px -40px 0 -1px #fff, 150px 120px 0 -1px #fff, 35px -55px 0 -1px #fff, 0px -30px 0 0 #fff, 200px 0px 0 0 #fff, 205px 90px 0 -1px #fff, 250px -50px 0 -1px #fff, -100px 90px 0 0px #fff, -90px -50px 0 -1px #fff;
+  -webkit-box-shadow: 200px 100px 0 0 #fff, 180px 50px 0 0 #fff, -30px 120px 0 0 #fff, -45px 50px 0 0 #fff, 110px -30px 0 0 #fff, 100px -40px 0 -1px #fff, 150px 120px 0 -1px #fff, 35px -55px 0 -1px #fff, 0px -30px 0 0 #fff, 200px 0px 0 0 #fff, 205px 90px 0 -1px #fff, 250px -50px 0 -1px #fff, -100px 90px 0 0px #fff, -90px -50px 0 -1px #fff;
+          box-shadow: 200px 100px 0 0 #fff, 180px 50px 0 0 #fff, -30px 120px 0 0 #fff, -45px 50px 0 0 #fff, 110px -30px 0 0 #fff, 100px -40px 0 -1px #fff, 150px 120px 0 -1px #fff, 35px -55px 0 -1px #fff, 0px -30px 0 0 #fff, 200px 0px 0 0 #fff, 205px 90px 0 -1px #fff, 250px -50px 0 -1px #fff, -100px 90px 0 0px #fff, -90px -50px 0 -1px #fff;
 }
 
 #moon {
@@ -817,20 +816,8 @@ header {
           animation: float 3s infinite;
 }
 
-.small-text {
-  font-size: 12pt !important;
-  color:  #3d404e;
-  padding: 5%;
-}
-
-.small-text a {
-  color: white;
-}
-
-
-.small-text a:hover {
-  color: #f7c285;
-  text-decoration: none;
+#owl-drawing {
+  display: none;
 }
 
 @-webkit-keyframes float {
@@ -874,6 +861,28 @@ header {
   50% {
     -webkit-transform: translateX(-5px);
             transform: translateX(-5px);
+  }
+}
+
+@-webkit-keyframes slow-float-vertical {
+  0%,
+  100% {
+    transfrom: translateY(3px);
+  }
+  50% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+}
+
+@keyframes slow-float-vertical {
+  0%,
+  100% {
+    transfrom: translateY(3px);
+  }
+  50% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
   }
 }
 
@@ -943,11 +952,39 @@ header {
     width: 100%;
     overflow: hidden;
   }
+  #owl-drawing {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 8rem;
+  }
+  #owl-on-branch {
+    max-width: 32rem;
+    max-height: auto;
+  }
+  #owl-eyes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 32rem;
+    max-height: auto;
+    -webkit-animation: slow-float-vertical 3s infinite;
+            animation: slow-float-vertical 3s infinite;
+  }
+  #owl-leaves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 32rem;
+    max-height: auto;
+    -webkit-animation: slow-float 3s infinite;
+            animation: slow-float 3s infinite;
+  }
 }
 
 @media (min-width: 992px) {
   #cloud:after {
-    content: '';
+    content: "";
     position: absolute;
     z-index: 999;
     border-radius: 25px;
