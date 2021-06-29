@@ -621,17 +621,18 @@ header {
     display: block;
     position: absolute;
     left: 0;
-    bottom: 8rem;
+    top: 20rem;
   }
   #owl-on-branch {
-    max-width: 32rem;
+    max-width: 28rem;
     max-height: auto;
+    z-index: -9999;
   }
   #owl-eyes {
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 32rem;
+    max-width: 28rem;
     max-height: auto;
     animation: slow-float-vertical 3s infinite;
   }
@@ -639,7 +640,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 32rem;
+    max-width: 28rem;
     max-height: auto;
     animation: slow-float 3s infinite;
   }
