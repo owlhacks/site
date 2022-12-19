@@ -17,6 +17,10 @@ ul li {
 }
 
 
+#challengestrackfontcolor{
+  color:white;
+}
+
 .owlhacks-navbar {
   -webkit-transition: 150ms linear;
   transition: 150ms linear;
@@ -1051,7 +1055,5 @@ header {
   }
 }
 
-#challengestrackfontcolor{
-  color:white;
-}
+
 /*# sourceMappingURL=base.css.map */
