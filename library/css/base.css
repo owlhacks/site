@@ -16,6 +16,7 @@ ul li {
   margin-top: .5rem;
 }
 
+
 .owlhacks-navbar {
   -webkit-transition: 150ms linear;
   transition: 150ms linear;
@@ -600,9 +601,6 @@ header {
   padding: 4rem 1rem 8rem 1rem;
 }
 
-.challengestrackfontcolor{
-  color:white;
-}
 
 .sponsor-tiers {
   padding: 4rem 1rem;
@@ -1051,5 +1049,9 @@ header {
   .container {
     max-width: 1300px;
   }
+}
+
+.challengestrackfontcolor{
+  color:white;
 }
 /*# sourceMappingURL=base.css.map */
