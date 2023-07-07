@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="library/css/base.css">
     <link href="library/images/favicon.ico" rel="shortcut icon"/>
 
-    <title>OwlHacks 2023 | February 11-12 | Temple University </title>
+    <title>OwlHacks 2023 | September 23-24 | Temple University </title>
     <meta name="description" content="OwlHacks is Temple University's student organized 24 hour hackathon welcoming hundreds of students on September 23.">
     <meta property="og:image" content="https://owlhacks.com/library/images/students.jpg">
     <meta property="og:title" content="OwlHacks 2023 | September 23-24 | Temple University">
@@ -334,7 +334,6 @@
                 </div>
             </div>
         </div>
-
         </div>
         </section>
         </section>
@@ -344,7 +343,73 @@
                     <h2><span>Team</span></h2>
                 </div>
                 <div class="accordion" id="team-accordion">
+                    <style>
+                        /* "Convert" to Horizontal List */
+                        .card-body.horizontal-layout {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            background-color: #f2f2f2; /* Set the background color to gray */
+                            padding: 50px; /* Add some spacing around each item */
+                        }
+
+                        .card-body.horizontal-layout > div {
+                            flex: 1; /* Distribute available space equally among items */
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            text-align: center;
+                            margin: 0 50px; /* Add margin to create space between pictures */
+                        }
+
+                        .card-body.horizontal-layout > div img {
+                            width: 100%; /* Adjust the width of the images as desired */
+                            height: auto; /* Automatically adjust the height while maintaining the aspect ratio */
+                            object-fit: contain; /* Fit the entire image within the container */
+                            border-radius: 50px; /* Add border radius for a rounded appearance */
+                            padding: 1rem;
+                            float: left;
+                            margin: 0 60px;
+                        }
+
+                        .card-body.horizontal-layout > div span {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            text-align: left;
+                            float: left;
+                            padding: 50px; /* Add some spacing around each item */
+                            color: white;
+                        }
+
+                        .row.justify-content-center {
+                            display: flex;
+                            flex-wrap: wrap; /* Allow the team sections to wrap to the next line */
+                            justify-content: center;
+                            align-items: flex-start;
+                        }
+                    </style>
                     <div class="row justify-content-center">
+                        <script>
+                            window.addEventListener('DOMContentLoaded', (event) => {
+                                // Show Director's details by default
+                                onClickShow('collapseTeamOne');
+                            });
+
+                            function onClickShow(Directors) {
+                                const collapseElements = document.querySelectorAll('[data-toggle="collapse"]');
+                                collapseElements.forEach((element) => {
+                                    const target = element.dataset.target;
+                                    const teamSection = document.querySelector(target);
+                                    if (Directors === target) {
+                                        teamSection.classList.add('show');
+                                    } else {
+                                        teamSection.classList.remove('show');
+                                    }
+                                });
+                            }
+                        </script>
+
                         <div class="col-md-2">
                             <div class="card">
                                 <div class="card-header d-flex justify-content-between align-items-center">
@@ -355,8 +420,19 @@
                                     </h2>
                                 </div>
                                 <div id="collapseTeamOne" class="collapse" aria-labelledby="teamOne">
-                                    <div class="card-body">
-                                        <span style="color: white;">Stephen MacNeil, Andrew Tran & Seth Bernstein</span>
+                                    <div class="card-body horizontal-layout">
+                                        <div>
+                                            <img src="library/images/Stephen.jpeg" class="img-display" alt="..." style="width:100%">
+                                            <span style="color: white;">Stephen MacNeil</span>
+                                        </div>
+                                        <div>
+                                            <img src="library/images/Seth.jpeg" class="img-display" alt="..." style="width:100%">
+                                            <span style="color: white;">Seth Bernstein</span>
+                                        </div>
+                                        <div>
+                                            <img src="library/images/Andrew.jpg" class="img-display" alt="..." style="width:100%">
+                                            <span style="color: white;">Andrew Tran</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -371,8 +447,15 @@
                                     </h2>
                                 </div>
                                 <div id="collapseTeamTwo" class="collapse" aria-labelledby="teamTwo">
-                                    <div class="card-body">
-                                        <span style="color: white;">Egi Rama & Kenneth Angelikas</span>
+                                    <div class="card-body horizontal-layout">
+                                        <div>
+                                            <img src="library/images/Egi.jpg" class="img-display" alt = "..." style="width:100%">
+                                            <span style="color: white;">Egi Rama</span>
+                                        </div>
+                                        <div>
+                                            <img src="library/images/Kenneth.jpeg" class="img-display" alt = "..." style="width:100%">
+                                            <span style="color: white;">Kenneth Angelikas</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -387,8 +470,15 @@
                                     </h2>
                                 </div>
                                 <div id="collapseTeamThree" class="collapse" aria-labelledby="teamThree">
-                                    <div class="card-body">
-                                        <span style="color: white;">Egi Rama & Kenneth Angelikas</span>
+                                    <div class="card-body horizontal-layout">
+                                        <div>
+                                            <img src="library/images/Chiku.png" class="img-display" alt = "..." style="width:100%">
+                                            <span style="color: white;">Chiku Okechukwu</span>
+                                        </div>
+                                        <div>
+                                            <img src="library/images/Sharron.jpg" class="img-display" alt = "..." style="width:100%">
+                                            <span style="color: white;">Sharron Tum</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -403,8 +493,15 @@
                                     </h2>
                                 </div>
                                 <div id="collapseTeamFour" class="collapse" aria-labelledby="teamFour">
-                                    <div class="card-body">
-                                        <span style="color: white;">Jihye Lee & Christine Kapp</span>
+                                    <div class="card-body horizontal-layout">
+                                        <div>
+                                            <img src="library/images/Jihye.JPG" class="img-display" alt = "..." style="width:100%">
+                                            <span style="color: white;">Jihye Lee</span>
+                                        </div>
+                                        <div>
+                                            <img src="library/images/Christine.png" class="img-display" alt = "..." style="width:100%">
+                                            <span style="color: white;">Christine Kapp</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -419,8 +516,15 @@
                                     </h2>
                                 </div>
                                 <div id="collapseTeamFive" class="collapse" aria-labelledby="teamFive">
-                                    <div class="card-body">
-                                        <span style="color: white;">Noel Chacko & Sophie Chen</span>
+                                    <div class="card-body horizontal-layout">
+                                        <div>
+                                            <img src="library/images/Noel.png" class="img-display" alt = "..." style="width:100%">
+                                            <span style="color: white;">Noel Chacko</span>
+                                        </div>
+                                        <div>
+                                            <img src="library/images/SophieChen.jpg" class="img-display" alt = "..." style="width:100%">
+                                            <span style="color: white;">Sophie Chen</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -435,13 +539,31 @@
                                     </h2>
                                 </div>
                                 <div id="collapseTeamSix" class="collapse" aria-labelledby="teamSix">
-                                    <div class="card-body"> <span style="color: white;">Oscar Levin</span><br>
-                                        <a href="https://owlhacks.com" target="_blank">OwlsHack</a>
+                                    <div class="card-body horizontal-layout">
+                                        <div>
+                                            <img src="library/images/Oscar.jpg" class="img-display" alt = "..." style="width:100%">
+                                            <span style="color: white;">Oscar Levin</span>
+                                            <a href="https://owlhacks.com" target="_blank">OwlHacks</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <script>
+                        const collapseElements = document.querySelectorAll('[data-toggle="collapse"]');
+                        collapseElements.forEach((element) => {
+                            element.addEventListener('click', () => {
+                                const currentCollapse = document.querySelector(element.dataset.target);
+                                const collapses = document.querySelectorAll('.collapse.show');
+                                collapses.forEach((collapse) => {
+                                    if (collapse !== currentCollapse) {
+                                        collapse.classList.remove('show');
+                                    }
+                                });
+                            });
+                        });
+                    </script>
                 </div>
                 <div class="text-center mt-5 pt-5">
                     <!-- <a href="https://calendar.google.com/calendar/u/0?cid=Y19zY3RqZGU2dTRtNDhvbXJoZnNtOWZhOHExNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" class="btn btn-gray">Add to Google Calendar <i class="fas fa-angle-right"></i></a> -->
