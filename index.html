@@ -31,6 +31,8 @@
 </head>
 
 <body>
+
+
     <!--
     <div class="tualert">
         <div class="tualert__content">
@@ -338,7 +340,85 @@
         </section>
         </section>
         <section class="team" id="team">
-            <div class="container">
+            <style>
+                .title{
+                    font-family: sans-serif;
+                    color: #dc2d5e;
+                    text-align: center;
+                }
+                .tabContainer{
+                    width: 100%;
+                    height: 350px;
+                }
+                .tabContainer .buttonContainer{
+                    height: 15%;
+                }
+                .tabContainer .buttonContainer button{
+                    width: 25%;
+                    height: 100%;
+                    float: left;
+                    border: none;
+                    outline:none;
+                    cursor: pointer;
+                    padding: 10px;
+                    font-family: sans-serif;
+                    font-size: 18px;
+                    background-color: #eee;
+                }
+                .tabContainer .buttonContainer button:hover{
+                    background-color: #d7d4d4;
+                }
+                .tabContainer .tabPanel{
+                    height: 85%;
+                    background-color: gray;
+                    color: white;
+                    text-align: center;
+                    padding-top: 105px;
+                    box-sizing: border-box;
+                    font-family: sans-serif;
+                    font-size: 22px;
+                    display: none;
+                }
+            </style>
+            <script>
+                    var tabButtons=document.querySelectorAll(".tabContainer .buttonContainer button");
+                    var tabPanels=document.querySelectorAll(".tabContainer  .tabPanel");
+            
+                    function showPanel(panelIndex,colorCode) {
+                        tabButtons.forEach(function(node){
+                            node.style.backgroundColor="";
+                            node.style.color="";
+                        });
+                        tabButtons[panelIndex].style.backgroundColor=colorCode;
+                        tabButtons[panelIndex].style.color="white";
+                        tabPanels.forEach(function(node){
+                            node.style.display="none";
+                        });
+                        tabPanels[panelIndex].style.display="block";
+                        tabPanels[panelIndex].style.backgroundColor=colorCode;
+                    }
+                    console.log("hello andrew")
+                    showPanel(0,'#f44336');
+                </script>
+            <h1 class="title">Tabs</h1>
+            <div class="tabContainer">
+                <div class="buttonContainer">
+                    <button onclick="showPanel(0,'#f44336')">Tab 1</button>
+                    <button onclick="showPanel(1,'#4caf50')">Tab 2</button>
+                    <button onclick="showPanel(2,'#2196f3')">Tab 3</button>
+                    <button onclick="showPanel(3,'#ff5722')">Tab 4</button>
+                </div>
+                <div class="tabPanel">Tab 1:Content</div>
+                <div class="tabPanel">Tab 2:Content</div>
+                <div class="tabPanel">Tab 3:Content</div>
+                <div class="tabPanel">Tab 4:Content</div>
+            </div>
+
+
+
+
+            
+            <!-- <div class="container">
                 <div class="section-header section-header--inverse">
                     <h2><span>Team</span></h2>
                 </div>
@@ -587,7 +667,7 @@
                 <div class="text-center mt-5 pt-5">
                     <!-- <a href="https://calendar.google.com/calendar/u/0?cid=Y19zY3RqZGU2dTRtNDhvbXJoZnNtOWZhOHExNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" class="btn btn-gray">Add to Google Calendar <i class="fas fa-angle-right"></i></a> -->
                 </div>
-            </div>
+            </div> -->
         </section>
 
 
