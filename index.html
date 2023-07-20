@@ -346,20 +346,18 @@
                     <style>
                         /* "Convert" to Horizontal List */
                         .card-body.horizontal-layout {
-                            display: flex;
-                            justify-content: flex-start;
+                            display: flex; /* Shifts rostered members vertically */
+                            justify-content: flex-start; /* Shift the team sections to the left */
                             align-items: flex-start;
-                            background-color: #f2f2f2; /* Set the background color to gray */
-                            padding: 50px; /* Add some spacing around each item */
+                            margin-left: -75px; /* Shift the team sections to the left by adding negative margin */
                         }
 
                         .card-body.horizontal-layout > div {
                             flex: 1; /* Distribute available space equally among items */
                             display: flex;
-                            flex-direction: column;
+                            flex-direction: column; /* This keeps the names displayed in the bottom of each picture */
                             align-items: center;
                             text-align: center;
-                            margin: 0 50px; /* Add margin to create space between pictures */
                         }
 
                         .card-body.horizontal-layout > div img {
@@ -367,19 +365,40 @@
                             height: auto; /* Automatically adjust the height while maintaining the aspect ratio */
                             object-fit: contain; /* Fit the entire image within the container */
                             border-radius: 50px; /* Add border radius for a rounded appearance */
-                            padding: 1rem;
-                            float: left;
-                            margin: 0 60px;
+                            margin-bottom: -80px; /* Add some spacing between the image and the name */
+                            transform: scale(1.3); /* Increase the image size by 30% */
                         }
 
                         .card-body.horizontal-layout > div span {
                             display: flex;
-                            flex-direction: column;
-                            align-items: flex-start;
-                            text-align: left;
-                            float: left;
-                            padding: 50px; /* Add some spacing around each item */
+                            align-items: center;
+                            text-align: center;
+                            padding: 5rem; /* Add some spacing around each item */
                             color: white;
+                        }
+
+                        .accordion .card {
+                            background-color: transparent; /* Set the background color to transparent */
+                            border: none; /* Remove the border */
+                        }
+
+                        .btn-team {
+                            color: white; /* Set the text color to white */
+                            background-color: transparent; /* Set the background color to transparent */
+                            border: none; /* Remove the border */
+                        }
+
+                        .btn-team:hover {
+                            color: white; /* Set the text color to white on hover */
+                        }
+
+                        .btn-team:focus {
+                            color: white; /* Set the text color to white when focused */
+                            box-shadow: none; /* Remove the box shadow when focused */
+                        }
+
+                        .btn-team[aria-expanded="true"] {
+                            color: white; /* Set the text color to white when expanded */
                         }
 
                         .row.justify-content-center {
