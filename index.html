@@ -11,13 +11,16 @@
 
         gtag('config', 'UA-156996726-1');
     </script>
+    <script src="styles.css" defer></script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    <link href="https://fonts.googleapis.com/css?family=Arvo:700|Poppins:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="library/css/base.css">
-    <link href="library/images/favicon.ico" rel="shortcut icon"/>
+    <link rel="stylesheet" type="text/css" href="library/css/base.css">
+    <link href="library/images/favicon.ico" rel="shortcut icon">
+    <link href="styles.css" rel="stylesheet">
 
     <title>OwlHacks 2023 | September 23-24 | Temple University </title>
     <meta name="description" content="OwlHacks is Temple University's student organized 24 hour hackathon welcoming hundreds of students on September 23.">
@@ -340,8 +343,13 @@
         </section>
         </section>
         <section class="team" id="team">
+            <div class="container">
+                <div class = "section-header section-header--inverse">
+                    <h2><span>Our Team</span></h2>
+                </div>
+            </div>
             <style>
-                .title{
+                .title {
                     font-family: sans-serif;
                     color: #dc2d5e;
                     text-align: center;
@@ -380,44 +388,56 @@
                     display: none;
                 }
             </style>
-            <script>
-                    var tabButtons=document.querySelectorAll(".tabContainer .buttonContainer button");
-                    var tabPanels=document.querySelectorAll(".tabContainer  .tabPanel");
-            
-                    function showPanel(panelIndex,colorCode) {
-                        tabButtons.forEach(function(node){
-                            node.style.backgroundColor="";
-                            node.style.color="";
-                        });
-                        tabButtons[panelIndex].style.backgroundColor=colorCode;
-                        tabButtons[panelIndex].style.color="white";
-                        tabPanels.forEach(function(node){
-                            node.style.display="none";
-                        });
-                        tabPanels[panelIndex].style.display="block";
-                        tabPanels[panelIndex].style.backgroundColor=colorCode;
-                    }
-                    console.log("hello andrew")
-                    showPanel(0,'#f44336');
-                </script>
-            <h1 class="title">Tabs</h1>
+
             <div class="tabContainer">
                 <div class="buttonContainer">
-                    <button onclick="showPanel(0,'#f44336')">Tab 1</button>
-                    <button onclick="showPanel(1,'#4caf50')">Tab 2</button>
-                    <button onclick="showPanel(2,'#2196f3')">Tab 3</button>
-                    <button onclick="showPanel(3,'#ff5722')">Tab 4</button>
+                    <button onclick="showPanel(0, '#C0C0C0')">Directors</button>
+                    <button onclick="showPanel(1,'#C0C0C0')">Sponsorships</button>
+                    <button onclick="showPanel(2,'#C0C0C0')">Design</button>
+                    <button onclick="showPanel(3,'#C0C0C0')">Logistics</button>
+                    <button onclick="showPanel(4,'#C0C0C0')">PR</button>
+                    <button onclick="showPanel(5,'#C0C0C0')">Website</button>
+
                 </div>
-                <div class="tabPanel">Tab 1:Content</div>
-                <div class="tabPanel">Tab 2:Content</div>
-                <div class="tabPanel">Tab 3:Content</div>
-                <div class="tabPanel">Tab 4:Content</div>
+                <div class="tabPanel">
+                    <img src="library/images/Stephen.jpeg" class="img-display" alt="..." style="width:15%">
+                    Stephen MacNeil
+                    <img src="library/images/Seth.jpeg" class="img-display" alt="..." style="width:15%">
+                    Seth Bernstein
+                    <img src="library/images/Andrew.jpg" class="img-display" alt="..." style="width:15%">
+                    Andrew Tran
+                </div>
+                <div class="tabPanel">
+                    <img src="library/images/Egi.jpg" class="img-display" alt = "..." style="width:15%">
+                    Egi Rama
+                    <img src="library/images/Kenneth.jpeg" class="img-display" alt = "..." style="width:15%">
+                    Kenneth Angelikas
+                </div>
+                <div class="tabPanel">
+                    <img src="library/images/Chiku.png" class="img-display" alt = "..." style="width:15%">
+                    Chiku Okechukwu
+                    <img src="library/images/Sharron.jpg" class="img-display" alt = "..." style="width:15%">
+                    Sharron Tum
+                </div>
+                <div class="tabPanel">
+                    <img src="library/images/Jihye.JPG" class="img-display" alt = "..." style="width:15%">
+                    Jihye Lee
+                    <img src="library/images/Christine.png" class="img-display" alt = "..." style="width:15%">
+                    Christine Kapp
+                </div>
+                <div class="tabPanel">
+                    <img src="library/images/Noel.png" class="img-display" alt = "..." style="width:15%">
+                    Noel Chacko
+                    <img src="library/images/SophieChen.jpg" class="img-display" alt = "..." style="width:15%">
+                    Sophie Chen
+                </div>
+                <div class="tabPanel">
+                    <img src="library/images/Oscar.jpg" class="img-display" alt = "..." style="width:100%">
+                    Oscar Levin
+                </div>
             </div>
+            <script src="script.js"></script>
 
-
-
-
-            
             <!-- <div class="container">
                 <div class="section-header section-header--inverse">
                     <h2><span>Team</span></h2>
