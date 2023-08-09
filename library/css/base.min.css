@@ -270,11 +270,11 @@ body {
   color: #a41e35;
 }
 header {
-  background-color: #2c556e;
+  background-color: #000000;
   background: url(../images/star-bg.png) no-repeat center,
-    -webkit-gradient(linear, left top, left bottom, from(#3d404e), color-stop(50%), color-stop(#ff9887), color-stop(90%), to(#f7c285));
+    -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(50%), color-stop(#4F00D0), color-stop(90%), to(#0AFAB7));
   background: url(../images/star-bg.png) no-repeat center,
-    linear-gradient(180deg, #3d404e, 50%, #ff9887, 90%, #f7c285 100%);
+    linear-gradient(180deg, #000000, 50%, #4F00D0, 90%, #0AFAB7 100%);
   background-size: cover;
   position: relative;
 }
