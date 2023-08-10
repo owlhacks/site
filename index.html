@@ -74,7 +74,7 @@
                             <a class="nav-link" href="#challenges">Challenges</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#team">Team</a>
+                            <a class="nav-link" href="#teamSection">Team</a>
                         </li>
 						<!-- <li class="nav-item">
                             <a class="nav-link" href="https://owlhacks.com/booths.html">Virtual Booths</a>
@@ -342,127 +342,39 @@
         </div>
         </section>
         </section>
-        <section class="team" id="team">
+        <section class = "teamSection" id = "teamSection">
             <div class="container">
                 <div class = "section-header section-header--inverse">
                     <h2><span>Our Team</span></h2>
                 </div>
             </div>
-            <style>
-                .title {
-                    font-family: sans-serif;
-                    color: #dc2d5e;
-                    text-align: center;
-                }
-                .tabContainer{
-                    width: 100%;
-                    height: 350px;
-                }
-                .tabContainer .buttonContainer{
-                    height: 15%;
-                }
-                .tabContainer .buttonContainer button{
-                    width: 16.65%;
-                    height: 100%;
-                    float: left;
-                    border: none;
-                    outline:none;
-                    cursor: pointer;
-                    padding: 10px;
-                    font-family: sans-serif;
-                    font-size: 18px;
-                    background-color: #eee;
-                }
-                .tabContainer .buttonContainer button:hover{
-                    background-color: #d7d4d4;
-                }
-                .tabContainer .tabPanel{
-                    height: 85%;
-                    background-color: gray;
-                    color: white;
-                    text-align: center;
-                    padding-top: 105px;
-                    box-sizing: border-box;
-                    font-family: sans-serif;
-                    font-size: 22px;
-                    display: none;
-                }
-                .tab container .standard-image {
-                    width: 15%; /* Set desired width for all images*/
-                }
-            </style>
 
-            <style>
-                .tabPanel {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                }
-
-                .team-member {
-                    text-align: center;
-                    margin: 15px;
-                }
-
-                .tabPanel img {
-                    width: auto;
-                    height: 200px; /* You can adjust this value to the desired height */
-                    margin-bottom: 10px; /* Optional - add some margin between images */
-                    margin-top: -10px;
-                }
-
-                .team-member .name {
-                    font-family: sans-serif;
-                    font-size: 18px;
-                }
-            </style>
-
-            <div class="tabContainer">
-                <div class="buttonContainer">
-                    <button onclick="showPanel(0, '#C0C0C0')">Directors</button>
-                    <button onclick="showPanel(1,'#C0C0C0')">Sponsorships</button>
-                    <button onclick="showPanel(2,'#C0C0C0')">Design</button>
-                    <button onclick="showPanel(3,'#C0C0C0')">Logistics</button>
-                    <button onclick="showPanel(4,'#C0C0C0')">PR</button>
-                    <button onclick="showPanel(5,'#C0C0C0')">Website</button>
-
+            <div class="teamTabContainer">
+                <div class="teamButtonContainer">
+                    <button onclick="showPanel(0)">Directors</button>
+                    <button onclick="showPanel(1)">Sponsorships</button>
+                    <button onclick="showPanel(2)">Logistics</button>
+                    <button onclick="showPanel(3)">Outreach</button>
+                    <button onclick="showPanel(4)">Design</button>
+                    <button onclick="showPanel(5)">Website</button>
                 </div>
-                <div class="tabPanel">
-                    <img src="library/images/Stephen.jpeg" class="img-display" alt="..." style="width:15%">
-                    Stephen MacNeil
-                    <img src="library/images/Seth.jpeg" class="img-display" alt="..." style="width:15%">
-                    Seth Bernstein
-                    <img src="library/images/Andrew.jpg" class="img-display" alt="..." style="width:15%">
-                    Andrew Tran
+                <div class="teamTabPanel">
+                    <img src="library/images/GroupDirectors-2.png" alt="..." style="width:60%; padding-top: 15;">
                 </div>
-                <div class="tabPanel">
-                    <img src="library/images/Egi.jpg" class="img-display" alt = "..." style="width:15%">
-                    Egi Rama
-                    <img src="library/images/Kenneth.jpeg" class="img-display" alt = "..." style="width:15%">
-                    Kenneth Angelikas
+                <div class="teamTabPanel">
+                    <img src="library/images/GroupSponsorhip.png" alt="..." style="width:60%; padding-top: 15;">
                 </div>
-                <div class="tabPanel">
-                    <img src="library/images/Chiku.png" class="img-display" alt = "..." style="width:15%">
-                    Chiku Okechukwu
-                    <img src="library/images/Sharron.jpg" class="img-display" alt = "..." style="width:15%">
-                    Sharron Tum
+                <div class="teamTabPanel">
+                    <img src="library/images/GroupLogistics.png" alt="..." style="width:60%; padding-top: 15;">
                 </div>
-                <div class="tabPanel">
-                    <img src="library/images/Jihye.JPG" class="img-display" alt = "..." style="width:15%">
-                    Jihye Lee
-                    <img src="library/images/Christine.png" class="img-display" alt = "..." style="width:15%">
-                    Christine Kapp
+                <div class="teamTabPanel">
+                    <img src="library/images/GroupOutreach.png" alt="..." style="width:60%; padding-top: 15;">
                 </div>
-                <div class="tabPanel">
-                    <img src="library/images/Noel.png" class="img-display" alt = "..." style="width:15%">
-                    Noel Chacko
-                    <img src="library/images/SophieChen.jpg" class="img-display" alt = "..." style="width:15%">
-                    Sophie Chen
+                <div class="teamTabPanel">
+                    <img src="library/images/GroupDesign.png" alt="..." style="width:60%; padding-top: 15;">
                 </div>
-                <div class="tabPanel">
-                    <img src="library/images/Oscar.jpg" class="img-display" alt = "..." style="width:100%">
-                    Oscar Levin
+                <div class="teamTabPanel">
+                    <img src="library/images/GroupWeb.png" alt="..." style="width:60%; padding-top: 15;">
                 </div>
             </div>
             <script src="script.js"></script>

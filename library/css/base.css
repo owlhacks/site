@@ -1059,3 +1059,41 @@ header {
 
 
 /*# sourceMappingURL=base.css.map */
+
+/* TEAM SECTION */
+
+.teamTabContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Styling for the button container */
+.teamButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.teamButtonContainer button {
+  background-color: #d28282;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.teamButtonContainer button:hover {
+  background-color: #808080;
+}
+
+/* Styling for the tab panels */
+.teamTabPanel {
+  display: none;
+  text-align: center;
+  background-color: transparent;
+}
