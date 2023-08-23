@@ -315,8 +315,8 @@ body {
 
 header {
   background-color: #000000;
-  background: url(../images/star-bg.png) no-repeat center, -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(50%), color-stop(#4F00D0), color-stop(90%), to(#0AFAB7));
-  background: url(../images/star-bg.png) no-repeat center, linear-gradient(180deg, #000000, 50%, #4F00D0, 90%, #0AFAB7 100%);
+  /* background: url(../images/star-bg.png) no-repeat center, -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(50%), color-stop(#4F00D0), color-stop(90%), to(#0AFAB7)); */
+  background: url(../images/star-bg.png) no-repeat center, linear-gradient(180deg, #000000, 50%, #000000, 90%, #000000 100%);
   background-size: cover;
   position: relative;
 }
@@ -433,8 +433,8 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#4F00D0), color-stop(50%), to(#000000));
-  background: linear-gradient(180deg, #4F00D0, 50%, #000000);
+  /* background: -webkit-gradient(linear, left top, left bottom, from(#4F00D0), color-stop(50%), to(#000000)); */
+  background: no-repeat center, linear-gradient(180deg, #000000, 20%, #1f162e, 60%, #261b39 100%);
 }
 
 .about .container {
@@ -491,8 +491,8 @@ header {
  */
 .sponsors {
   background: #000000;
-  background: url(../images/star-bg.png) no-repeat center, -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(50%), color-stop(#4F00D0), color-stop(90%), to(#0AFAB7));
-  background: url(../images/star-bg.png) no-repeat center, linear-gradient(180deg, #000000, 50%, #4F00D0, 90%, #0AFAB7 100%);
+  /* background: url(../images/star-bg.png) no-repeat center, -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(50%), color-stop(#4F00D0), color-stop(90%), to(#0AFAB7)); */
+  background:  no-repeat center, linear-gradient(180deg, #261b39, 30%, #402e5e, 60%, #533e74 100%);
   background-size: cover;
   padding: 4rem 1rem;
 }
@@ -500,6 +500,7 @@ header {
 .sponsor-logo-container {
   margin-bottom: 4rem;
   text-align: center;
+  color: #ffffff
 }
 
 .sponsor-logo-container .row {
@@ -590,7 +591,7 @@ header {
   width: 100%;
   height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#3d404e), color-stop(50%), to(rgba(255, 152, 135, 0.75)));
-  background: linear-gradient(180deg, #3d404e, 50%, rgba(255, 152, 135, 0.75));
+  background: linear-gradient(180deg, #533e74, 50%, #533e74);
 }
 
 .sponsor-intro .container {
@@ -682,11 +683,11 @@ header {
 }
 
 /*
- * Schedule 
+ * Schedule and Track colors
  */
-.schedule {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#3d404e), color-stop(50%), color-stop(#ff9887), color-stop(90%), to(#f7c285));
-  background-image: linear-gradient(180deg, #3d404e, 50%, #ff9887, 90%, #f7c285 100%);
+.schedule { 
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3d404e), color-stop(50%), color-stop(#000000), color-stop(90%), to(#000000));
+  background-image: linear-gradient(180deg, #533e74, 20%, #8349e0 50%, #9f64c8 100%);
   padding: 4rem 1rem 10rem 1rem;
 }
 
@@ -698,7 +699,7 @@ header {
   color: #000;
   font-weight: bold;
   margin-bottom: 0;
-  background: #f7c285;
+  background: #f7c285; 
   display: inline-block;
   padding: 0.5rem 1rem;
   border-radius: 25px 25px 25px 0;
@@ -742,12 +743,16 @@ header {
   border-radius: 1em;
 }
 
+.teamSection {
+  background-color: #9f64c8;
+}
+
 /*
  * FAQ
  */
 .faq {
   padding-bottom: 10em;
-  background: #f7c285;
+  background: #9f64c8;
 }
 
 .accordion .card {
@@ -762,7 +767,7 @@ header {
 }
 
 .accordion .card .card-header h2 button {
-  background: #846063;
+  background: #0AFBB7;
   border-radius: 25px 25px 25px 0;
   color: #fff;
   font-size: 0.6em;
@@ -770,7 +775,7 @@ header {
 
 .accordion .card .card-body {
   background: rgba(255, 255, 255, 0.1);
-  border-left: 5px solid #846063;
+  border-left: 5px solid #0AFBB7;
   color: #000;
   border-radius: 0 0 25px 0;
 }
@@ -1077,7 +1082,7 @@ header {
 }
 
 .teamButtonContainer button {
-  background-color: #d28282;
+  background-color: #0AFBB7;
   border: none;
   padding: 10px 20px;
   margin: 0 10px;
@@ -1085,10 +1090,12 @@ header {
   font-size: 16px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  color: #000000
 }
 
-.teamButtonContainer button:hover {
-  background-color: #808080;
+.teamButtonContainer button:hover, button :active {
+  background-color: #0AFBB7;
+  color: #000000
 }
 
 /* Styling for the tab panels */
