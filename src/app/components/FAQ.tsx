@@ -10,7 +10,7 @@ export default function FAQ({}: Props) {
   return (
     <section className="h-screen w-screen p-6">
       <div className=" space-y-3 text-skin-base flex flex-col items-center">
-        <h1 className="text-6xl font-black uppercase text-center">
+        <h1 className="text-5xl md:text-6xl font-black uppercase text-center">
           Frequently Asked Questions
         </h1>
         <Accordion.Root
@@ -64,7 +64,7 @@ export default function FAQ({}: Props) {
                 maxiumum comfiness!
                 <div className="mt-3">
                   Food and snacks will be provided throughout the event, but
-                  feel free to also bring your own as well!
+                  feel free to also bring your own!
                 </div>
               </AccordionContent>
             </AccordionItem>
@@ -125,7 +125,7 @@ const AccordionItem = ({
 }) => {
   return (
     <Accordion.Item
-      className="mt-px overflow-hidden first:mt-0 focus-within:relative focus-within:z-10"
+      className="overflow-hidden first:mt-0 focus-within:relative focus-within:z-10"
       value={value}
     >
       {children}
@@ -135,8 +135,8 @@ const AccordionItem = ({
 
 const AccordionTrigger = ({ children }: { children: ReactNode }) => {
   return (
-    <Accordion.Header className="flex">
-      <Accordion.Trigger className="group flex h-12 flex-1 cursor-pointer items-center justify-between px-5 font-bold text-skin-base hover:bg-skin-light rounded-xl">
+    <Accordion.Header className="flex mt-3">
+      <Accordion.Trigger className="group flex h-12 flex-1 cursor-pointer items-center justify-between px-5 font-bold text-skin-base hover:bg-skin-light rounded-xl text-left">
         {children}
         <ChevronDownIcon
           aria-hidden
