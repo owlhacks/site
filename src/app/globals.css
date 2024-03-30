@@ -24,10 +24,12 @@
   --color-text-secondary: #C2C2C2;
   --color-text-muted: #8F8F8F;
   --color-border-base: #e0e0e0;
+  --color-border-hover: #292929;
 }
 
 * {
   min-width: 0;
+  scroll-behavior: smooth;
 }
 
 html, body { 
@@ -37,6 +39,62 @@ html, body {
 body {
   position: relative;
 }
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.125rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.625rem;
+}
+
+p {
+  font-size: 1.25rem; 
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+  
+  h2 {
+    font-size: 4.25rem;
+  }
+  
+  h3 {
+    font-size: 3.5rem;
+  }
+  
+  h4 {
+    font-size: 2.75rem;
+  }
+  
+  h5 {
+    font-size: 2rem;
+  }
+  
+  h6 {
+    font-size: 1.25rem;
+  }
+}
+
+
 
 @layer utilities {
   .text-balance {

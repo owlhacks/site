@@ -1,13 +1,25 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "next-themes";
-import Providers from "./providers/Providers";
+import Providers from "./_providers/Providers";
+import localFont from "next/font/local";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "800", "900"],
+});
+
+const satoshi = localFont({
+  src: [
+    {
+      path: "../../public/font/Satoshi-Variable.woff2",
+      style: "normal",
+    },
+  ],
+});
 
 export const metadata: Metadata = {
-  title: "OwlHacks 2025",
+  title: "OwlHacks 2024",
   description: "Temple's Student Run Hackathon",
 };
 
@@ -18,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={satoshi.className}>
         <Providers>{children}</Providers>
       </body>
     </html>
