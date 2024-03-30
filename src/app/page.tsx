@@ -1,17 +1,23 @@
 "use client";
 import React from "react";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import FAQ from "./components/FAQ";
+import Hero from "./_components/Hero/hero";
+import About from "./_components/About/about";
+import FAQ from "./_components/FAQ/FAQ";
+import Team from "./_components/Team/team";
+import Sponsors from "./_components/Sponsors/sponsors";
+import Footer from "./_components/Footer/footer";
 
 type Props = {};
 
 export default function page({}: Props) {
   return (
     <main className="">
-      <Hero></Hero>
-      <About></About>
-      <FAQ></FAQ>
+      <Hero />
+      <About />
+      <Sponsors />
+      <FAQ />
+      <Team />
+      <Footer />
     </main>
   );
 }

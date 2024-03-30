@@ -18,6 +18,7 @@ const config: Config = {
       borderColor: {
         skin: {
           base: "var(--color-border-base)",
+          hover: "var(--color-border-hover)",
         },
       },
       backgroundColor: {
@@ -54,12 +55,17 @@ const config: Config = {
           height: "0px",
         },
       },
+      scroll: {
+        to: {
+          transform: "translate(-100%)",
+        },
+      },
     },
     animation: {
-      slideDown: "slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)",
+      slideDown: "slideDown 350ms cubic-bezier(0.87, 0, 0.13, 1)",
       slideUp: "slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)",
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-gradient-mask-image")],
 };
 export default config;
