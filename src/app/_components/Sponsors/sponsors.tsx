@@ -3,7 +3,7 @@ import SectionHeading from "../Sections/SectionHeading";
 import SectionContent from "../Sections/SectionContent";
 import Heading from "../Typography/Heading";
 import Text from "../Typography/Text";
-import Button from "@/app/Button/Button";
+import Button from "@/app/_components/Button/Button";
 
 type Props = {};
 
