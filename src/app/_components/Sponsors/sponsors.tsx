@@ -14,7 +14,13 @@ export default function Sponsors({}: Props) {
       <Text className="font-bold text-center" size="large">
         OwlHacks is made possible by its sponsors.
       </Text>
-      <Button height={50} onClick={() => {}}>
+      <Button
+        height={50}
+        onClick={() => {}}
+        ismotion
+        variants={{ onclick: { scale: 1.1 } }}
+        whileTap="onclick"
+      >
         Become a Sponsor
       </Button>
     </SectionContent>
