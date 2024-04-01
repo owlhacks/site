@@ -40,7 +40,7 @@ export default function TeamMember(props: TeamMemberProps) {
         <Avatar.Image
           src={`/team/${image}`}
           alt={name}
-          className={`w-20 h-20 object-cover object-top rounded-full cursor-pointer ${className}`}
+          className={`w-20 h-20 object-cover object-top rounded-full ${className}`}
         />
         <Avatar.Fallback delayMs={600}>{initials}</Avatar.Fallback>
       </Avatar.Root>

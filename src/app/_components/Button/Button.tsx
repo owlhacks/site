@@ -26,7 +26,7 @@ export default function Button(props: ButtonProps) {
   return (
     <ButtonComponent
       style={{ width: `${width}px` ?? null, height: `${height}px` ?? null }}
-      className={`border-2 border-skin-inverted hover:bg-skin-btn-hover bg-transparent px-4 py-2 rounded-2xl ${className}`}
+      className={`select-none border-2 border-skin-inverted hover:bg-skin-btn-hover bg-transparent px-4 py-2 rounded-2xl ${className}`}
       {...props}
     >
       {children}

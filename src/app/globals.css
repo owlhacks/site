@@ -23,6 +23,10 @@
   --color-border-light: #191919;
   --color-border-lighter: #292929;
   --color-border-inverted: #e0e0e0;
+
+  scrollbar-color: var(--color-body-fill);
+  scrollbar-arrow-color: var(--color-body-fill);
+  scrollbar-face-color: var(--color-text-base);
 }
 
 * {
@@ -103,4 +107,17 @@ p {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-body-fill);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-text-base);
+  border-radius: 100vw;
 }

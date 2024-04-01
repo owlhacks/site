@@ -12,8 +12,23 @@ type TeamDialogContentProps = {
   TeamMemberProps: TeamMemberProps;
 };
 
+const CircleVariants = {
+  initial: {
+    opacity: 0,
+  },
+  hover: {
+    opacity: 1,
+    scale: [0, 1],
+    transition: {
+      duration: 0.3,
+    },
+  },
+};
+
 export default function TeamDialogContent(props: TeamDialogContentProps) {
   const { open, setOpen, onClose, TeamMemberProps } = props;
+
+  const MotionClose = motion(Close);
 
   return (
     <Content
@@ -26,24 +41,28 @@ export default function TeamDialogContent(props: TeamDialogContentProps) {
         setOpen(false);
       }}
     >
-      <Close onClick={onClose} className="float-right">
+      <MotionClose
+        onClick={onClose}
+        className="float-right w-10 h-10 relative m-2"
+        initial="initial"
+        whileHover="hover"
+      >
         <motion.div
-          whileTap={{ scale: 1.1 }}
-          className="rounded-full hover:bg-skin-lighter h-10 w-10 hover:shadow-lg items-center justify-center flex m-2"
+          className="relative rounded-full bg-skin-lighter shadow-lg w-full h-full"
+          variants={CircleVariants}
+        />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 384 512"
+          className="text-skin-base absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+          height="1.2em"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 384 512"
-            className="text-skin-base"
-            height="1.2em"
-          >
-            <path
-              fill="currentColor"
-              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
-            />
-          </svg>
-        </motion.div>
-      </Close>
+          <path
+            fill="currentColor"
+            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+          />
+        </svg>
+      </MotionClose>
 
       <div className="flex flex-col p-3 gap-y-2">
         <div className="flex items-center rounded-xl">
@@ -54,7 +73,7 @@ export default function TeamDialogContent(props: TeamDialogContentProps) {
             {TeamMemberProps.name}
           </Text>
         </div>
-        <div className="rounded-xl bg-skin-body flex flex-col p-2">
+        <div className="rounded-xl p-2">
           <Text size="medium" className="font-bold uppercase">
             About Me
           </Text>
@@ -62,7 +81,7 @@ export default function TeamDialogContent(props: TeamDialogContentProps) {
             {TeamMemberProps.description ?? "Nothing to put here!"}
           </Text>
         </div>
-        <div className="rounded-xl bg-skin-body flex flex-col p-2">
+        <div className="rounded-xl bg-skin-body p-2">
           <Text size="medium" className="font-bold uppercase">
             Role
           </Text>

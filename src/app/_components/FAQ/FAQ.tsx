@@ -2,7 +2,6 @@ import React, { ReactNode } from "react";
 import * as Accordion from "@radix-ui/react-accordion";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import SectionHeading from "../Sections/SectionHeading";
 import SectionContent from "../Sections/SectionContent";
 import Text from "../Typography/Text";
