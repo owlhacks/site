@@ -3,33 +3,35 @@
 @tailwind utilities;
 
 :root {
-  --color-sky-fill: #2177cf;
-  --color-body-fill: #e0e0e0;
-  --color-body-inverted: #131313;
-  --color-body-light: #D6D6D6;
-  --color-text-base: #131313; 
-  --color-button-hover:#CCCCCC;
-  --color-text-muted: #8F8F8F;
-  --color-border-base: #131313;
-  --color-discord: #3b4270; 
-}
-/* sky fill: #221240 */
-[data-theme='dark'] {
-  --color-sky-fill: #2177cf;
+  --color-theme-primary: #EF3054;
+  --color-theme-secondary: #fd8585;
+
   --color-body-fill: #131313;
+  --color-body-light: #191919;
+  --color-body-lighter: #292929;
   --color-body-inverted: #e0e0e0;
-  --color-body-light: #292929;
-  --color-button-hover:#292929;
+  --color-sky-fill: #c2e5e7;
+
+  --color-button: #191919;
+  --color-button-hover:#191919;
+
   --color-text-base: #e0e0e0;
   --color-text-secondary: #C2C2C2;
   --color-text-muted: #8F8F8F;
-  --color-border-base: #e0e0e0;
-  --color-border-hover: #292929;
+
+  --color-border-base: #131313;
+  --color-border-light: #191919;
+  --color-border-lighter: #292929;
+  --color-border-inverted: #e0e0e0;
 }
 
 * {
   min-width: 0;
   scroll-behavior: smooth;
+}
+
+nav {
+  background-color: var(--color-body-fill);
 }
 
 html, body { 
@@ -38,6 +40,7 @@ html, body {
 
 body {
   position: relative;
+  background-color: var(--color-body-fill);
 }
 
 h1 {

@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react";
+import { motion, MotionProps } from "framer-motion";
 
 type ButtonProps = {
   width?: number;
@@ -6,18 +7,29 @@ type ButtonProps = {
   onClick: React.MouseEventHandler<HTMLButtonElement>;
   children: ReactNode;
   className?: string;
-};
+} & (
+  | {
+      ismotion: true;
+      animate?: MotionProps["animate"];
+      initial?: MotionProps["initial"];
+      whileTap?: MotionProps["whileTap"];
+      variants?: MotionProps["variants"];
+    }
+  | { ismotion?: false }
+);
 
 export default function Button(props: ButtonProps) {
-  const { width, height, onClick, children, className } = props;
+  const { width, height, children, className, ismotion } = props;
+
+  const ButtonComponent = ismotion ? motion.button : "button";
 
   return (
-    <button
+    <ButtonComponent
       style={{ width: `${width}px` ?? null, height: `${height}px` ?? null }}
-      onClick={onClick}
-      className={`border-2 border-skin-base hover:bg-skin-btn-hover bg-transparent px-4 py-2 rounded-2xl ${className}`}
+      className={`border-2 border-skin-inverted hover:bg-skin-btn-hover bg-transparent px-4 py-2 rounded-2xl ${className}`}
+      {...props}
     >
       {children}
-    </button>
+    </ButtonComponent>
   );
 }

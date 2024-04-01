@@ -1,0 +1,77 @@
+import React from "react";
+import { Content, Close } from "@radix-ui/react-popover";
+import type { TeamMemberProps } from "@/app/_lib/data";
+import Text from "../../Typography/Text";
+import TeamMember from "../TeamMember";
+import { motion, AnimatePresence } from "framer-motion";
+
+type TeamDialogContentProps = {
+  open: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  onClose: React.MouseEventHandler;
+  TeamMemberProps: TeamMemberProps;
+};
+
+export default function TeamDialogContent(props: TeamDialogContentProps) {
+  const { open, setOpen, onClose, TeamMemberProps } = props;
+
+  return (
+    <Content
+      side="top"
+      className="rounded-xl w-80 h-96 bg-skin-light border-8 border-skin-light bg-[linear-gradient(90deg,_hsla(303,_79%,_76%,_0.1)_0%,_hsla(360,_86%,_67%,_0.1)_100%)]"
+      onPointerDownOutside={() => {
+        setOpen(!open);
+      }}
+      onCloseAutoFocus={() => {
+        setOpen(false);
+      }}
+    >
+      <Close onClick={onClose} className="float-right">
+        <motion.div
+          whileTap={{ scale: 1.1 }}
+          className="rounded-full hover:bg-skin-lighter h-10 w-10 hover:shadow-lg items-center justify-center flex m-2"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+            className="text-skin-base"
+            height="1.2em"
+          >
+            <path
+              fill="currentColor"
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+            />
+          </svg>
+        </motion.div>
+      </Close>
+
+      <div className="flex flex-col p-3 gap-y-2">
+        <div className="flex items-center rounded-xl">
+          <div className="border-4 border-skin-light flex rounded-full m-2">
+            <TeamMember {...TeamMemberProps} />
+          </div>
+          <Text size="large" className="font-semibold">
+            {TeamMemberProps.name}
+          </Text>
+        </div>
+        <div className="rounded-xl bg-skin-body flex flex-col p-2">
+          <Text size="medium" className="font-bold uppercase">
+            About Me
+          </Text>
+          <Text size="small">
+            {TeamMemberProps.description ?? "Nothing to put here!"}
+          </Text>
+        </div>
+        <div className="rounded-xl bg-skin-body flex flex-col p-2">
+          <Text size="medium" className="font-bold uppercase">
+            Role
+          </Text>
+          <Text size="small">{TeamMemberProps.role}</Text>
+        </div>
+        <div className="flex gap-x-3"></div>
+      </div>
+
+      <div className=""></div>
+    </Content>
+  );
+}

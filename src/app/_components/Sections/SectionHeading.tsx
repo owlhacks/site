@@ -5,7 +5,7 @@ export default function SectionHeading({ children }: { children: ReactNode }) {
   return (
     <Heading
       variant="h2"
-      className="text-center font-black tracking-wider uppercase select-none"
+      className="text-center font-black tracking-wider uppercase select-none text-skin-primary"
     >
       {children}
     </Heading>
