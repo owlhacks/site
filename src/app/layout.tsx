@@ -7,6 +7,7 @@ import localFont from "next/font/local";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "600", "700", "800", "900"],
+  fallback: ["system-ui", "Roboto", "sans-serif"],
 });
 
 const satoshi = localFont({
@@ -16,6 +17,7 @@ const satoshi = localFont({
       style: "normal",
     },
   ],
+  fallback: ["system-ui", "Roboto", "sans-serif"],
 });
 
 export const metadata: Metadata = {

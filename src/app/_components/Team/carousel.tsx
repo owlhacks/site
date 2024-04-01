@@ -28,7 +28,7 @@ export default function Carousel(props: CarouselProps) {
           (member, index) => (
             <motion.li
               key={index}
-              className="p-2 overflow-hidden"
+              className="p-2 overflow-hidden cursor-pointer"
               whileTap={{ scale: 0.9 }}
               whileHover={{ scale: 1.1 }}
               onClick={() => {

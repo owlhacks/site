@@ -1,17 +1,31 @@
 import Link from "next/link";
 import React from "react";
 import Text from "../Typography/Text";
+import { ChevronUpIcon } from "@radix-ui/react-icons";
+import { motion } from "framer-motion";
+import { scrollToSection } from "@/app/_utilities/scrolling";
 
 type Props = {};
 
 export default function Footer({}: Props) {
+  const MotionChevronUpIcon = motion(ChevronUpIcon);
+
   return (
     <footer className="mx-auto h-40 overflow-hidden">
       <div className="h-px bg-skin-light" />
       <div className="flex flex-col items-center pt-2 justify-center px-10 py-4 h-full gap-y-3">
-        <div className="flex text-skin-base gap-4">
+        <div className="flex flex-col text-center md:flex-row text-skin-base">
           <Text className="font-semibold text-skin-muted" size="medium">
-            OwlHacks © 2024&nbsp;&#x2022;&nbsp;Made with 💖 by&nbsp;
+            OwlHacks © 2024
+          </Text>
+          <Text
+            className="font-semibold text-skin-muted hidden md:block"
+            size="medium"
+          >
+            &nbsp;&#x2022;&nbsp;
+          </Text>
+          <Text size="medium" className="font-semibold text-skin-muted">
+            Made with 💖 by&nbsp;
             <Link href="https://github.com/owlhacks" className="underline">
               the OwlHacks Team
             </Link>
@@ -80,6 +94,28 @@ export default function Footer({}: Props) {
               />
             </svg>
           </Link>
+        </div>
+        <div
+          className="flex gap-3 items-center cursor-pointer hover:scale-110 ease-in-out duration-100"
+          onClick={() => scrollToSection("home")}
+        >
+          <Text className="font-semibold text-skin-muted" size="medium">
+            Back to Top
+          </Text>
+          <motion.svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            className="w-3 h-3  text-skin-muted"
+            animate={{
+              y: [0, 3, 0],
+              transition: { ease: "linear", repeat: Infinity, duration: 1 },
+            }}
+          >
+            <path
+              fill="currentColor"
+              d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
+            />
+          </motion.svg>
         </div>
       </div>
     </footer>

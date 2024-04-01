@@ -1,4 +1,5 @@
 "use client";
+import { scrollToSection } from "@/app/_utilities/scrolling";
 import Link from "next/link";
 import React from "react";
 
@@ -11,16 +12,16 @@ type NavLinkProps = {
 function NavLink({ heading, href, border }: NavLinkProps) {
   return (
     <li>
-      <Link
-        className={`select-none inline-flex items-center justify-center p-2 rounded-lg hover:bg-skin-btn-hover font-semibold ${
+      <div
+        className={`cursor-pointer select-none inline-flex items-center justify-center p-2 rounded-lg hover:bg-skin-btn-hover font-semibold ${
           border
             ? "border-skin-inverted border-[1px] border-opacity-70 hover:border-opacity-100"
             : ""
         }`}
-        href={href}
+        onClick={() => scrollToSection(href)}
       >
         {heading}
-      </Link>
+      </div>
     </li>
   );
 }
@@ -43,11 +44,11 @@ export default function Navigation() {
         <div className="text-skin-base font-bold">Menu</div>
       </div>
       <ul className="md:flex flex-row hidden items-center justify-between h-full w-full capitalize gap-x-2">
-        <NavLink heading="about" href="#about" />
-        <NavLink heading="sponsors" href="#sponsors" />
-        <NavLink heading="FAQ" href="#faq" />
-        <NavLink heading="team" href="#team" />
-        <NavLink heading="sign up" href="#signup" border />
+        <NavLink heading="about" href="about" />
+        <NavLink heading="sponsors" href="sponsors" />
+        <NavLink heading="FAQ" href="faq" />
+        <NavLink heading="team" href="team" />
+        <NavLink heading="sign up" href="signup" border />
       </ul>
     </nav>
   );
