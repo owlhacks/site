@@ -1,15 +1,15 @@
 import React from "react";
 import { Content, Close } from "@radix-ui/react-popover";
-import type { TeamMemberProps } from "@/app/_lib/data";
 import Text from "../../Typography/Text";
-import TeamMember from "../TeamMember";
 import { motion, AnimatePresence } from "framer-motion";
+import Member from "../TeamMember/Member";
+import { MemberProps } from "../TeamMember/Member";
 
 type TeamDialogContentProps = {
   open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
   onClose: React.MouseEventHandler;
-  TeamMemberProps: TeamMemberProps;
+  TeamMemberProps: MemberProps;
 };
 
 const CircleVariants = {
@@ -33,7 +33,7 @@ export default function TeamDialogContent(props: TeamDialogContentProps) {
   return (
     <Content
       side="top"
-      className="rounded-xl w-80 h-96 bg-skin-light border-8 border-skin-light bg-[linear-gradient(90deg,_hsla(303,_79%,_76%,_0.1)_0%,_hsla(360,_86%,_67%,_0.1)_100%)]"
+      className="mb-3 rounded-xl bg-skin-light border-8 border-skin-light bg-[linear-gradient(90deg,_hsla(303,_79%,_76%,_0.1)_0%,_hsla(360,_86%,_67%,_0.1)_100%)]"
       onPointerDownOutside={() => {
         setOpen(!open);
       }}
@@ -67,7 +67,7 @@ export default function TeamDialogContent(props: TeamDialogContentProps) {
       <div className="flex flex-col p-3 gap-y-2">
         <div className="flex items-center rounded-xl">
           <div className="border-4 border-skin-light flex rounded-full m-2">
-            <TeamMember {...TeamMemberProps} />
+            <Member {...TeamMemberProps} />
           </div>
           <Text size="large" className="font-semibold">
             {TeamMemberProps.name}

@@ -1,4 +1,6 @@
-export const TeamMembers: TeamMemberProps[] = [
+import { MemberProps } from "../_components/Team/TeamMember/Member";
+
+export const TeamMembers: MemberProps[] = [
   {
     name: "Chiku Nwenyi",
     initials: "CN",
@@ -36,13 +38,3 @@ export const TeamMembers: TeamMemberProps[] = [
     role: "",
   },
 ];
-
-export type TeamMemberProps = {
-  name: string;
-  initials?: string;
-  image: string;
-  role: string;
-  description?: string;
-  links?: [{ string: string }];
-  className?: string;
-};
