@@ -1,7 +1,7 @@
 import React, { ReactNode, useEffect, useRef } from "react";
 import { Root, Trigger, Portal } from "@radix-ui/react-popover";
 import TeamDialogContent from "./TeamDialogContent";
-import type { TeamMemberProps } from "@/app/_lib/data";
+import type { MemberProps } from "../TeamMember/Member";
 
 type TeamDialogProps = {
   children: ReactNode;
