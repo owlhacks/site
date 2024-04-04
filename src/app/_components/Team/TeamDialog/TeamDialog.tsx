@@ -8,7 +8,7 @@ type TeamDialogProps = {
   open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
   onClose: React.MouseEventHandler;
-  TeamMemberProps: TeamMemberProps;
+  TeamMemberProps: MemberProps;
 };
 
 export default function TeamDialog(props: TeamDialogProps) {
