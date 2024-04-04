@@ -1,5 +1,4 @@
 import * as Avatar from "@radix-ui/react-avatar";
-import MemberTooltip from "./MemberTooltip";
 
 export type MemberProps = {
   name: string;
