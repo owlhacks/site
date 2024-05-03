@@ -32,8 +32,8 @@ export const TeamMembers: MemberProps[] = [
     role: "",
   },
   {
-    name: "Meng Phuykong",
-    initials: "MP",
+    name: "Phuykong Meng",
+    initials: "PM",
     image: "mengphuykong.webp",
     role: "",
   },
