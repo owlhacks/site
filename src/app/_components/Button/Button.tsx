@@ -15,7 +15,7 @@ type ButtonProps = {
       whileTap?: MotionProps["whileTap"];
       variants?: MotionProps["variants"];
     }
-  | { ismotion?: false }
+  | { ismotion?: false}
 );
 
 export default function Button(props: ButtonProps) {
