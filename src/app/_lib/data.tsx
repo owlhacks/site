@@ -2,9 +2,9 @@ import { MemberProps } from "../_components/Team/TeamMember/Member";
 
 export const TeamMembers: MemberProps[] = [
   {
-    name: "Chiku Nwenyi",
-    initials: "CN",
-    image: "chikunwenyi.webp",
+    name: "Chiku Okechukwu",
+    initials: "CO",
+    image: "chikuokechukwu.webp",
     role: "",
   },
   {
@@ -35,6 +35,120 @@ export const TeamMembers: MemberProps[] = [
     name: "Phuykong Meng",
     initials: "PM",
     image: "mengphuykong.webp",
+    role: "",
+  },
+  {
+    name: "Adyan Chowdhury",
+    initials: "AC",
+    image: "adyanchowdhury.webp",
+    role: "",
+  },
+  {
+    name: "Christine Kapp",
+    initials: "CK",
+    image: "christinekapp.webp",
+    role: "",
+  },
+  {
+    name: "Chyanne Polycarpe",
+    initials: "CP",
+    image: "chyannepolycarpe.webp",
+    role: "",
+  },
+  {
+    name: "Emmanuel Ortiz",
+    initials: "EO",
+    image: "emmanuelortiz.webp",
+    role: "",
+  },
+  {
+    name: "Jihye Lee",
+    initials: "JL",
+    image: "jihyelee.webp",
+    role: "",
+  },
+  {
+    name: "Julia Conigliari",
+    initials: "JC",
+    image: "juliaconigliari.webp",
+    role: "",
+  },
+  {
+    name: "Kenneth Angelikas",
+    initials: "KA",
+    image: "kennethangelikas.webp",
+    role: "",
+  },
+  {
+    name: "Kush Patel",
+    initials: "KP",
+    image: "kushpatel.webp",
+    role: "",
+  },
+  {
+    name: "Magdalena Rogalska",
+    initials: "MR",
+    image: "magdalenarogalska.webp",
+    role: "",
+  },
+  {
+    name: "Megha Joshi",
+    initials: "MJ",
+    image: "meghajoshi.webp",
+    role: "",
+  },
+  {
+    name: "Oscar Levin",
+    initials: "OL",
+    image: "oscarlevin.webp",
+    role: "",
+  },
+  {
+    name: "Ryan Stanton",
+    initials: "RS",
+    image: "ryanstanton.webp",
+    role: "",
+  },
+  {
+    name: "Shrey Patel",
+    initials: "SP",
+    image: "shreypatel.webp",
+    role: "",
+  },
+  {
+    name: "Sophie Chen",
+    initials: "SC",
+    image: "sophiechen.webp",
+    role: "",
+  },
+  {
+    name: "Sophie Metille",
+    initials: "SM",
+    image: "sophiemetille.webp",
+    role: "",
+  },
+  {
+    name: "Stephen MacNeil",
+    initials: "SM",
+    image: "stephenmacneil.webp",
+    role: "",
+  },
+  {
+    name: "Susan Daniel",
+    initials: "SD",
+    image: "susandaniel.webp",
+    role: "",
+  },
+  {
+    name: "Timilehin Olofinyolemi",
+    initials: "TO",
+    image: "timilehinolofinyolemi.webp",
+    role: "",
+  },
+  {
+    name: "Yatri Patel",
+    initials: "YP",
+    image: "yatripatel.webp",
     role: "",
   },
 ];
