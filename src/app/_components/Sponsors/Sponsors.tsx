@@ -11,7 +11,10 @@ export default function Sponsors({}: Props) {
   return (
     <SectionContent sectionId="sponsors">
       <SectionHeading>Sponsors</SectionHeading>
-      <Text className="font-bold text-center" size="large">
+      <Text
+        className="font-bold text-center text-skin-secondary tracking-tight"
+        size="large"
+      >
         OwlHacks is made possible by its sponsors.
       </Text>
       <Button
