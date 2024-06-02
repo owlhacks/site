@@ -5,8 +5,6 @@ import { motion } from "framer-motion";
 
 import { useScrollBlock } from "@/app/_utilities/useScrollBlock";
 
-import { generateRandomFact } from "@/app/_lib/facts";
-
 type Props = {};
 
 export default function SplashScreen({}: Props) {
