@@ -1,16 +1,16 @@
-"use client"
+"use client";
 
-import React from 'react'
-import {motion } from 'framer-motion'
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
-import { useScrollBlock } from '@/app/_utilities/useScrollBlock'
+import { useScrollBlock } from "@/app/_utilities/useScrollBlock";
 
-type Props = {}
+import { generateRandomFact } from "@/app/_lib/facts";
 
-export default function SplashScreen({} : Props) {
+type Props = {};
 
-
- const [blockScroll, allowScroll] = useScrollBlock()
+export default function SplashScreen({}: Props) {
+  const [blockScroll, allowScroll] = useScrollBlock();
 
   // Animation
   const blackBox = {
@@ -55,27 +55,30 @@ export default function SplashScreen({} : Props) {
 
   return (
     <motion.div
-      className="absolute z-50 w-full bg-black"
+      className="fixed z-50 w-full bg-black"
       initial="initial"
       animate="animate"
       variants={blackBox}
-      onAnimationStart={() => { blockScroll() }}
-      onAnimationComplete={() => { allowScroll() }}
+      onAnimationStart={() => {
+        blockScroll();
+      }}
+      onAnimationComplete={() => {
+        allowScroll();
+      }}
     >
-      <motion.svg variants={textContainer}
-        className="absolute text-center left-0 right-0 w-full h-full z-50">
-
-
-          <motion.text
-            className="text-4xl font-bold fill-white"
-            textAnchor="middle"
-            x="50%"
-            y="50%"
-          >
-            OwlHack
-          </motion.text>
+      <motion.svg
+        variants={textContainer}
+        className="absolute text-center left-0 right-0 w-full h-full z-50"
+      >
+        <motion.text
+          className="text-4xl font-bold fill-white"
+          textAnchor="middle"
+          x="50%"
+          y="50%"
+        >
+          OwlHacks
+        </motion.text>
       </motion.svg>
     </motion.div>
-    )
+  );
 }
-
