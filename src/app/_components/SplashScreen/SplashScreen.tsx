@@ -53,7 +53,7 @@ export default function SplashScreen({}: Props) {
 
   return (
     <motion.div
-      className="fixed z-50 w-full bg-black"
+      className="fixed z-50 w-full bg-skin-base"
       initial="initial"
       animate="animate"
       variants={blackBox}
