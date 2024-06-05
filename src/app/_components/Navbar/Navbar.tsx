@@ -129,10 +129,10 @@ export default function Navigation() {
   return (
     <>
       {/* mobile navbar */}
-      <nav className="sm:hidden block absolute">
+      <nav className="sm:hidden block absolute z-40">
         <motion.div
-          className={`space-y-1 bg-skin-base rounded-br-lg p-7 absolute z-50 ${
-            isOpen && "opacity-90"
+          className={`space-y-1 rounded-br-lg p-7 absolute ${
+            !isOpen && "bg-skin-base"
           }`}
           onClick={() => {
             setIsOpen(!isOpen);
