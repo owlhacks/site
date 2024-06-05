@@ -13,7 +13,7 @@ export default function Hero({}: Props) {
       <Navigation></Navigation>
       <SectionContent sectionId="home">
         <div
-          className="rounded-2xl bg-skin-sky h-screen w-full block"
+          className="rounded-2xl bg-[#563853] w-full lg:h-[950px] h-[400px] block"
           id="sky"
         ></div>
       </SectionContent>
