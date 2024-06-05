@@ -95,7 +95,7 @@ end of variants
 function NavLink({ heading, href, border, svgProps, children }: NavLinkProps) {
   return (
     <li
-      className={`cursor-pointer inline-flex items-center justify-center rounded-lg hover:bg-skin-btn-hover px-3 ${
+      className={`text-skin-base cursor-pointer inline-flex items-center justify-center rounded-lg hover:bg-skin-btn-hover px-3 ${
         border
           ? "border-skin-inverted border-[1px] border-opacity-70 hover:border-opacity-100"
           : ""
@@ -133,7 +133,7 @@ export default function Navigation() {
       {/* mobile navbar */}
       <nav className="sm:hidden block z-40 fixed">
         <motion.div
-          className={`space-y-1 rounded-br-lg p-7 absolute z-50 ${
+          className={`space-y-1 rounded-full px-3 py-4 fixed bottom-0 right-0 m-4  z-50 bg-skin-primary ${
             !isOpen && "bg-skin-base"
           }`}
           onClick={() => {
@@ -141,17 +141,17 @@ export default function Navigation() {
           }}
         >
           <motion.span
-            className={`w-7 h-0.5 bg-skin-inverted block rounded-lg`}
+            className={`w-6 h-0.5 bg-skin-inverted block rounded-lg`}
             variants={topLine}
             animate={isOpen ? "open" : "closed"}
           />
           <motion.span
-            className={`w-7 h-0.5 bg-skin-inverted block rounded-lg`}
+            className={`w-6 h-0.5 bg-skin-inverted block rounded-lg`}
             variants={middleLine}
             animate={isOpen ? "open" : "closed"}
           />
           <motion.span
-            className={`w-7 h-0.5 bg-skin-inverted block rounded-lg`}
+            className={`w-6 h-0.5 bg-skin-inverted block rounded-lg`}
             variants={bottomLine}
             animate={isOpen ? "open" : "closed"}
           />
@@ -167,6 +167,11 @@ export default function Navigation() {
               exit="closed"
             >
               <ul className="flex flex-col h-full justify-center items-start space-y-5 mx-10">
+                <div className="p-2  rounded-2xl">
+                  <Text size="medium" className="text-skin-base font-bold">
+                    Menu
+                  </Text>
+                </div>
                 <NavLink heading="About" href="about" />
                 <NavLink heading="Sponsors" href="sponsors" />
 
