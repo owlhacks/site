@@ -133,7 +133,7 @@ export default function Navigation() {
       {/* mobile navbar */}
       <nav className="sm:hidden block z-40 fixed">
         <motion.div
-          className={`space-y-1 rounded-full px-3 py-4 fixed bottom-0 right-0 m-4  z-50 bg-skin-primary ${
+          className={`space-y-1 rounded-full px-4 py-5 fixed bottom-0 right-0 m-4  z-50 bg-skin-primary ${
             !isOpen && "bg-skin-base"
           }`}
           onClick={() => {
@@ -141,17 +141,17 @@ export default function Navigation() {
           }}
         >
           <motion.span
-            className={`w-6 h-0.5 bg-skin-inverted block rounded-lg`}
+            className={`w-7 h-1 bg-skin-inverted block rounded-lg`}
             variants={topLine}
             animate={isOpen ? "open" : "closed"}
           />
           <motion.span
-            className={`w-6 h-0.5 bg-skin-inverted block rounded-lg`}
+            className={`w-7 h-1 bg-skin-inverted block rounded-lg`}
             variants={middleLine}
             animate={isOpen ? "open" : "closed"}
           />
           <motion.span
-            className={`w-6 h-0.5 bg-skin-inverted block rounded-lg`}
+            className={`w-7 h-1 bg-skin-inverted block rounded-lg`}
             variants={bottomLine}
             animate={isOpen ? "open" : "closed"}
           />
