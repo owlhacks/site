@@ -31,6 +31,8 @@ const config: Config = {
           light: "var(--color-body-light)",
           lighter: "var(--color-border-lighter)",
           inverted: "var(--color-body-inverted)",
+          primary: "var(--color-theme-primary)",
+          secondary: "var(--color-text-secondary)",
           sky: "var(--color-sky-fill)",
           btn: "var(--color-button)",
           "btn-hover": "var(--color-button-hover)",
