@@ -19,7 +19,7 @@ type NavLinkProps = {
 */
 const topLine = {
   open: {
-    rotate: 45,
+    rotate: 135,
     y: 8,
     transition: {
       type: "tween",
@@ -38,9 +38,13 @@ const topLine = {
 const middleLine = {
   open: {
     opacity: 0,
-    x: -25,
+    x: -15,
     transition: {
-      duration: 0.25,
+      type: "spring",
+      damping: 5,
+      stiffness: 100,
+      mass: 0.1,
+      duration: 0.15,
     },
   },
   closed: {
@@ -55,7 +59,7 @@ const middleLine = {
 
 const bottomLine = {
   open: {
-    rotate: -45,
+    rotate: -135,
     y: -8,
     transition: {
       type: "tween",
@@ -131,9 +135,9 @@ export default function Navigation() {
   return (
     <>
       {/* mobile navbar */}
-      <nav className="sm:hidden block z-40 fixed">
+      <nav className="sm:hidden block z-40 fixed select-none">
         <motion.div
-          className={`space-y-1 rounded-full px-4 py-5 fixed bottom-0 right-0 m-4 z-50 bg-skin-primary ${
+          className={`space-y-1 rounded-full px-4 py-5 fixed bottom-0 right-0 m-4 z-50 bg-skin-primary cursor-pointer ${
             !isOpen && "bg-skin-base"
           }`}
           onClick={() => {
