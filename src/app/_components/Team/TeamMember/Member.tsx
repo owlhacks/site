@@ -6,7 +6,8 @@ export type MemberProps = {
   image: string;
   role: string;
   description?: string;
-  links?: [{ string: string }];
+  linkedinUrl: string;
+  githubUrl?: string;
   className?: string;
 };
 

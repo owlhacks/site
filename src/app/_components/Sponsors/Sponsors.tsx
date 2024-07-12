@@ -17,6 +17,13 @@ export default function Sponsors({}: Props) {
       >
         OwlHacks is made possible by its sponsors.
       </Text>
+
+      <div className="flex items-center">
+          <img
+          className="w-52 h-52"
+          src="https://static.mlh.io/brand-assets/sponsors/stand-out-stickers/stand-out-stickers-logo.svg" alt="" />
+      </div>
+
       <Button
         height={50}
         onClick={() => {}}
