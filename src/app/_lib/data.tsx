@@ -76,13 +76,6 @@ export const TeamMembers: MemberProps[] = [
     linkedinUrl: "https://www.linkedin.com/in/danielsbicalho/",
   },
   {
-    name: "Emmanuel Ortiz",
-    initials: "EO",
-    image: "emmanuelortiz.webp",
-    role: "",
-    linkedinUrl: "",
-  },
-  {
     name: "Hena Patel",
     initials: "HP",
     image: "henapatel.webp",
@@ -90,18 +83,11 @@ export const TeamMembers: MemberProps[] = [
     linkedinUrl: "https://www.linkedin.com/in/henapatel3124/",
   },
   {
-    name: "Jihye Lee",
-    initials: "JL",
-    image: "jihyelee.webp",
-    role: "",
-    linkedinUrl: "",
-  },
-  {
     name: "Julia Conigliari",
     initials: "JC",
     image: "juliaconigliari.webp",
     role: "",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/julia-conigliari/",
   },
   {
     name: "Kenneth Angelikas",
@@ -125,25 +111,11 @@ export const TeamMembers: MemberProps[] = [
     linkedinUrl: "https://www.linkedin.com/in/kushpatel00/",
   },
   {
-    name: "Magdalena Rogalska",
-    initials: "MR",
-    image: "magdalenarogalska.webp",
-    role: "",
-    linkedinUrl: "",
-  },
-  {
     name: "Megha Joshi",
     initials: "MJ",
     image: "meghajoshi.webp",
     role: "",
     linkedinUrl: "http://linkedin.com/in/megha-joshi-578609250",
-  },
-  {
-    name: "Oscar Levin",
-    initials: "OL",
-    image: "oscarlevin.webp",
-    role: "",
-    linkedinUrl: "",
   },
   {
     name: "Owswayne Smith",
@@ -157,7 +129,7 @@ export const TeamMembers: MemberProps[] = [
     initials: "RS",
     image: "ryanstanton.webp",
     role: "",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/ryan-stanton-8b3850221/",
   },
   {
     name: "Shrey Patel",
@@ -221,5 +193,6 @@ export const TeamMembers: MemberProps[] = [
     image: "yashipatel.webp",
     role: "",
     linkedinUrl: "https://www.linkedin.com/in/yashi-patel1027/",
+    githubUrl: "https://github.com/yashipat"
   }
 ];
