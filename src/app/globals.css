@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --color-theme-primary: #EF3054;
-  --color-theme-secondary: #fd8585;
+  --color-theme-primary: #39A78E;
+  --color-theme-secondary: #3EB69A;
 
   --color-body-fill: #181818;
   --color-body-light: #202020;
@@ -38,7 +38,7 @@ nav {
   background-color: var(--color-body-fill);
 }
 
-html, body { 
+html, body {
   overflow-x: hidden;
 }
 
@@ -72,30 +72,30 @@ h6 {
 }
 
 p {
-  font-size: 1.25rem; 
+  font-size: 1.25rem;
 }
 
 @media (min-width: 768px) {
   h1 {
     font-size: 5rem;
   }
-  
+
   h2 {
     font-size: 4.25rem;
   }
-  
+
   h3 {
     font-size: 3.5rem;
   }
-  
+
   h4 {
     font-size: 2.75rem;
   }
-  
+
   h5 {
     font-size: 2rem;
   }
-  
+
   h6 {
     font-size: 1.25rem;
   }

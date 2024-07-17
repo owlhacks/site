@@ -19,6 +19,7 @@ export default function Team({}: Props) {
         <div className="flex flex-wrap gap-5 justify-center">
           { TeamMembers.map((member) => (
             <TeamCard
+              key={member.name}
               name={member.name}
               role={member.role}
               image={member.image}

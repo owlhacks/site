@@ -49,7 +49,7 @@ export default function Carousel(props: CarouselProps) {
                   image={member.image}
                   role={member.role}
                   description={member.description}
-                  links={member.links}
+                  linkedinUrl={member.linkedinUrl}
                   className="group-hover:border-8 border-skin-light ease-in-out duration-100"
                 />
               </TeamDialog>

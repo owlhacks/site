@@ -3,7 +3,7 @@ import Link from "next/link";
 import { MemberProps } from "../TeamMember/Member";
 
 export default function TeamCard(props : MemberProps) {
-  console.log(props)
+
   return (
       <div className="w-[15rem] border border-skin-lighter bg-skin-light rounded-lg">
         <div className="flex flex-col h-full justify-between  items-center p-10">
