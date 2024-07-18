@@ -9,10 +9,24 @@ export const TeamMembers: MemberProps[] = [
     linkedinUrl: "https://www.linkedin.com/in/chiku-okechukwu-19942523b/",
   },
   {
+    name: "Egi Rama",
+    initials: "ER",
+    image: "egirama.webp",
+    role: "Director",
+    linkedinUrl: "https://www.linkedin.com/in/egi-rama-094a531b9/",
+  },
+  {
+    name: "Christine Kapp",
+    initials: "CK",
+    image: "christinekapp.webp",
+    role: "Director",
+    linkedinUrl: "https://www.linkedin.com/in/christine-kapp-658b41238",
+  },
+  {
     name: "Seth Bernstein",
     initials: "SB",
     image: "sethbernstein.webp",
-    role: "Director",
+    role: "",
     linkedinUrl: "https://www.linkedin.com/in/seth-bernstein-b23a36200/",
     githubUrl: ""
   },
@@ -32,13 +46,6 @@ export const TeamMembers: MemberProps[] = [
     linkedinUrl: "https://www.linkedin.com/in/noel-chacko/",
   },
   {
-    name: "Egi Rama",
-    initials: "ER",
-    image: "egirama.webp",
-    role: "",
-    linkedinUrl: "https://www.linkedin.com/in/egi-rama-094a531b9/",
-  },
-  {
     name: "Phuykong Meng",
     initials: "PM",
     image: "mengphuykong.webp",
@@ -53,13 +60,6 @@ export const TeamMembers: MemberProps[] = [
     role: "",
     linkedinUrl: "https://www.linkedin.com/in/adyan-chowdhury/",
     githubUrl: "https://github.com/adyan1025"
-  },
-  {
-    name: "Christine Kapp",
-    initials: "CK",
-    image: "christinekapp.webp",
-    role: "",
-    linkedinUrl: "https://www.linkedin.com/in/christine-kapp-658b41238",
   },
   {
     name: "Chyanne Polycarpe",

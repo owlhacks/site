@@ -12,10 +12,19 @@ export default function Hero({}: Props) {
     <>
       <Navigation></Navigation>
       <SectionContent sectionId="home">
-        <div
+        <Image
+          src="/hero_content/background.png"
+          alt="Hero Logo"
+          width={1920}
+          height={1080}
+          quality={100}
+          className="rounded-2xl w-full lg:h-[750px] h-[500px] block"
+
+        />
+        {/* <div
           className="rounded-2xl bg-[#563853] w-full lg:h-[950px] h-[400px] block"
           id="sky"
-        ></div>
+        ></div> */}
       </SectionContent>
     </>
   );
