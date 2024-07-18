@@ -69,9 +69,9 @@ export const TeamMembers: MemberProps[] = [
     linkedinUrl: "https://www.linkedin.com/in/chyanne-polycarpe/",
   },
   {
-    name: "Daniel Bicahlo",
+    name: "Daniel Bicalho",
     initials: "DB",
-    image: "danielbicahlo.webp",
+    image: "danielbicalho.webp",
     role: "",
     linkedinUrl: "https://www.linkedin.com/in/danielsbicalho/",
   },
@@ -120,7 +120,7 @@ export const TeamMembers: MemberProps[] = [
   {
     name: "Owswayne Smith",
     initials: "OS",
-    image: "owswaynesmith.webp",
+    image: "oswaynesmith.webp",
     role: "",
     linkedinUrl: "https://www.linkedin.com/in/oswayne-smith-628b29265/",
   },
