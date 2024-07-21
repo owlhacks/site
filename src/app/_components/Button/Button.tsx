@@ -15,19 +15,28 @@ type ButtonProps = {
       whileTap?: MotionProps["whileTap"];
       variants?: MotionProps["variants"];
     }
-  | { ismotion?: false}
+  | { ismotion?: false }
 );
 
 export default function Button(props: ButtonProps) {
   const { width, height, children, className, ismotion } = props;
+  let motionProps = {};
 
+  if (ismotion) {
+    motionProps = {
+      animate: props.animate,
+      initial: props.initial,
+      whileTap: props.whileTap,
+      variants: props.variants,
+    };
+  }
   const ButtonComponent = ismotion ? motion.button : "button";
 
   return (
     <ButtonComponent
       style={{ width: `${width}px` ?? null, height: `${height}px` ?? null }}
       className={`select-none border-2 border-skin-inverted hover:bg-skin-btn-hover bg-transparent px-4 py-2 rounded-2xl ${className}`}
-      {...props}
+      {...motionProps}
     >
       {children}
     </ButtonComponent>
