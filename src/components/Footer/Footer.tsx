@@ -1,9 +1,10 @@
 import Link from "next/link";
 import React from "react";
-import Text from "../Typography/Text";
+
+import Text from "@/components/Typography/Text";
 import { ChevronUpIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
-import { scrollToSection } from "@/app/_utilities/scrolling";
+import { scrollToSection } from "@/utilities/scrolling";
 
 type Props = {};
 
@@ -37,7 +38,7 @@ export default function Footer({}: Props) {
             target="_blank"
           >
             <svg
-              className="min-w-[2rem] text-skin-muted hover:text-skin-base"
+              className="min-w-8 text-skin-muted hover:text-skin-base"
               aria-hidden="true"
               focusable="false"
               height="1.3em"

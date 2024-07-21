@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-import { useScrollBlock } from "@/app/_utilities/useScrollBlock";
+import { useScrollBlock } from "@/utilities/useScrollBlock";
 
 type Props = {};
 

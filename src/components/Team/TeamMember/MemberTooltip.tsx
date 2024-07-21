@@ -1,6 +1,6 @@
 import * as Tooltip from "@radix-ui/react-tooltip";
 import { ReactNode } from "react";
-import Text from "../../Typography/Text";
+import Text from "@/components/Typography/Text";
 
 type TooltipProps = {
   title: string;

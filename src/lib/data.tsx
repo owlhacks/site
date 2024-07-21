@@ -1,4 +1,4 @@
-import { MemberProps } from "../_components/Team/TeamMember/Member";
+import { MemberProps } from "@/components/Team/TeamMember/Member";
 
 export const TeamMembers: MemberProps[] = [
   {
@@ -28,7 +28,7 @@ export const TeamMembers: MemberProps[] = [
     image: "sethbernstein.webp",
     role: "",
     linkedinUrl: "https://www.linkedin.com/in/seth-bernstein-b23a36200/",
-    githubUrl: ""
+    githubUrl: "",
   },
   {
     name: "Andrew Tran",
@@ -51,7 +51,7 @@ export const TeamMembers: MemberProps[] = [
     image: "mengphuykong.webp",
     role: "",
     linkedinUrl: "https://www.linkedin.com/in/phuykong-meng/",
-    githubUrl: "https://github.com/M-Phuykong"
+    githubUrl: "https://github.com/M-Phuykong",
   },
   {
     name: "Adyan Chowdhury",
@@ -59,7 +59,7 @@ export const TeamMembers: MemberProps[] = [
     image: "adyanchowdhury.webp",
     role: "",
     linkedinUrl: "https://www.linkedin.com/in/adyan-chowdhury/",
-    githubUrl: "https://github.com/adyan1025"
+    githubUrl: "https://github.com/adyan1025",
   },
   {
     name: "Chyanne Polycarpe",
@@ -193,6 +193,6 @@ export const TeamMembers: MemberProps[] = [
     image: "yashipatel.webp",
     role: "",
     linkedinUrl: "https://www.linkedin.com/in/yashi-patel1027/",
-    githubUrl: "https://github.com/yashipat"
-  }
+    githubUrl: "https://github.com/yashipat",
+  },
 ];

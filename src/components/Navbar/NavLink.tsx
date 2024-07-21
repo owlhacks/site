@@ -10,7 +10,7 @@ import React, { ReactNode } from "react";
 import Link from "next/link";
 
 import Text from "../Typography/Text";
-import { scrollToSection } from "@/app/_utilities/scrolling";
+import { scrollToSection } from "@/utilities/scrolling";
 
 /*
  * Props for NavLink

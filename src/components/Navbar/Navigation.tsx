@@ -13,7 +13,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 
 import NavLink from "./NavLink";
-import Text from "../Typography/Text";
+import Text from "@/components/Typography/Text";
 
 /*
   Variants for motion components. Includes variants for:

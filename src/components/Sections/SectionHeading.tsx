@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import Heading from "../Typography/Heading";
+import Heading from "@/components/Typography/Heading";
 
 export default function SectionHeading({ children }: { children: ReactNode }) {
   return (

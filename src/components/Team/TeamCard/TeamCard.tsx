@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Member, { MemberProps } from "../TeamMember/Member";
+import { MemberProps } from "../TeamMember/Member";
 
 import Heading from "../../Typography/Heading";
 import Text from "../../Typography/Text";

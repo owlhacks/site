@@ -1,8 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
-import Navigation from "../Navbar/Navigation";
-import SectionContent from "../Sections/SectionContent";
+import Navigation from "@/components/Navbar/Navigation";
+import SectionContent from "@/components/Sections/SectionContent";
 import Image from "next/image";
 
 type Props = {};

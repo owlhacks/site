@@ -4,7 +4,7 @@ import Image from "next/image";
 import SectionHeading from "../Sections/SectionHeading";
 import SectionContent from "../Sections/SectionContent";
 import Text from "../Typography/Text";
-import Button from "@/app/_components/Button/Button";
+import Button from "@/components/Button/Button";
 
 type Props = {};
 

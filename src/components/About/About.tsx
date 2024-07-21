@@ -1,7 +1,8 @@
 import React from "react";
-import SectionHeading from "../Sections/SectionHeading";
-import SectionContent from "../Sections/SectionContent";
-import Text from "../Typography/Text";
+
+import SectionHeading from "@/components/Sections/SectionHeading";
+import SectionContent from "@/components/Sections/SectionContent";
+import Text from "@/components/Typography/Text";
 
 type Props = {};
 

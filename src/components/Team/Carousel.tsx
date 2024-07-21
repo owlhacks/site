@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Marquee from "react-fast-marquee";
-import { TeamMembers } from "../../_lib/data";
+import { TeamMembers } from "@/lib/data";
 import { motion } from "framer-motion";
 import TeamDialog from "./TeamDialog/TeamDialog";
 import Member from "./TeamMember/Member";
