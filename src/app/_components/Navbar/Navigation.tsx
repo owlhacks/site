@@ -1,25 +1,24 @@
+/*
+  Implementation of a navbar.
+
+  Dependencies:
+  - The NavLink component
+  - The Text component
+*/
+
 "use client";
 
-import { scrollToSection } from "@/app/_utilities/scrolling";
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
+
+import NavLink from "./NavLink";
 import Text from "../Typography/Text";
 
-import { MouseEventHandler, ReactNode, useState } from "react";
-import { AnimatePresence, easeIn, motion, transform } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
-
-
-type NavLinkProps = {
-  heading: string;
-  href: string;
-  border?: boolean;
-  isLink?: boolean;
-  svgProps?: { viewBox: string; path: string; label: string };
-  children?: ReactNode;
-};
-
 /*
-  variants for motion components
+  Variants for motion components. Includes variants for:
+  - Mobile hamburger bars transitioning to an X animation
+  - Mobile drawer opening and closing
 */
 const topLine = {
   open: {
@@ -97,49 +96,8 @@ const drawer = {
 };
 
 /*
-end of variants
+  End of variants.
 */
-
-function NavLink({ heading, href, border, isLink, svgProps, children }: NavLinkProps) {
-  return (
-    <li
-      className={`text-skin-base h-[3rem] cursor-pointer inline-flex items-center justify-center rounded-lg hover:bg-skin-btn-hover px-3 ${
-        border
-          ? "border-skin-inverted border-[1px] border-opacity-70 hover:border-opacity-100"
-          : ""
-      }`}
-    >
-      {
-        isLink ? (
-          <Link href={href} target="_blank">
-            <Text size="medium">{heading}</Text>
-          </Link>
-        ) :
-
-        (
-          <span
-            className="select-none inline-flex items-center justify-center p-2 font-semibold"
-            onClick={() => scrollToSection(href)}
-          >
-            <Text size="medium">{heading}</Text>
-          </span>
-          )
-      }
-
-      {/* svg for navlinks with icons */}
-      {svgProps && (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox={svgProps.viewBox}
-          className="w-6 h-6"
-        >
-          <path fill="currentColor" d={svgProps.path} />
-        </svg>
-      )}
-      {/* end of svg for navlinks with icons */}
-    </li>
-  );
-}
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -185,11 +143,11 @@ export default function Navigation() {
               <ul className="flex flex-col h-full justify-center items-start space-y-5 mx-10">
                 <div className="flex justify-center w-full">
                   <Image
-                      src="/hero_content/logo.png"
-                      alt="OwlHacks Logo"
-                      width={250}
-                      height={250}
-                    />
+                    src="/hero_content/logo.png"
+                    alt="OwlHacks Logo"
+                    width={250}
+                    height={250}
+                  />
                 </div>
                 <div className="p-2  rounded-2xl">
                   <Text size="medium" className="text-skin-base font-bold">
@@ -208,7 +166,6 @@ export default function Navigation() {
                   isLink
                   border
                 />
-                
               </ul>
             </motion.div>
           )}
@@ -236,7 +193,6 @@ export default function Navigation() {
             isLink
             border
           />
-
         </ul>
       </nav>
     </>
