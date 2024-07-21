@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import Navigation from "../Navbar/Navbar";
+import Navigation from "../Navbar/Navigation";
 import SectionContent from "../Sections/SectionContent";
 import Image from "next/image";
 
@@ -19,7 +19,6 @@ export default function Hero({}: Props) {
           height={1080}
           quality={100}
           className="rounded-2xl w-full lg:h-[750px] h-[500px] block"
-
         />
         {/* <div
           className="rounded-2xl bg-[#563853] w-full lg:h-[950px] h-[400px] block"
