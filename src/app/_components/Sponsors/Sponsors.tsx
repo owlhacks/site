@@ -1,7 +1,8 @@
 import React from "react";
+import Image from "next/image";
+
 import SectionHeading from "../Sections/SectionHeading";
 import SectionContent from "../Sections/SectionContent";
-import Heading from "../Typography/Heading";
 import Text from "../Typography/Text";
 import Button from "@/app/_components/Button/Button";
 
@@ -18,11 +19,13 @@ export default function Sponsors({}: Props) {
         OwlHacks is made possible by its sponsors.
       </Text>
 
-      <div className="flex items-center">
-          <img
-          className="w-52 h-52"
-          src="https://static.mlh.io/brand-assets/sponsors/stand-out-stickers/stand-out-stickers-logo.svg" alt="" />
-      </div>
+      <Image
+        className="w-52 h-52"
+        src="https://static.mlh.io/brand-assets/sponsors/stand-out-stickers/stand-out-stickers-logo.svg"
+        alt="StandOut Stickers"
+        width={100}
+        height={100}
+      />
 
       <Button
         height={50}
@@ -30,6 +33,7 @@ export default function Sponsors({}: Props) {
         ismotion
         variants={{ onclick: { scale: 1.1 } }}
         whileTap="onclick"
+        className="font-semibold"
       >
         Become a Sponsor
       </Button>
