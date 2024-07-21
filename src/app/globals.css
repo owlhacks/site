@@ -22,7 +22,9 @@
   --color-border-base: #181818;
   --color-border-light: #202020;
   --color-border-lighter: #292929;
+  --color-border-alpha: #FFFFFF24;
   --color-border-inverted: #e0e0e0;
+  --color-border-primary: #39A78E;
 
   scrollbar-color: var(--color-body-fill);
   scrollbar-arrow-color: var(--color-body-fill);

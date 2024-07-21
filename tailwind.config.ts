@@ -22,7 +22,9 @@ const config: Config = {
           base: "var(--color-border-base)",
           light: "var(--color-border-light)",
           lighter: "var(--color-border-lighter)",
+          alpha: "var(--color-border-alpha)",
           inverted: "var(--color-border-inverted)",
+          primary: "var(--color-border-primary)",
         },
       },
       backgroundColor: {
@@ -40,9 +42,8 @@ const config: Config = {
         },
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(circle at center)",
-        "gradient-linear":
-          "linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%",
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-linear": "linear-gradient(var(--tw-gradient-stops))",
       },
       fill: {
         skin: {
