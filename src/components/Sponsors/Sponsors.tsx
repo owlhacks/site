@@ -5,6 +5,7 @@ import SectionHeading from "../Sections/SectionHeading";
 import SectionContent from "../Sections/SectionContent";
 import Text from "../Typography/Text";
 import Button from "@/components/Button/Button";
+import Link from "next/link";
 
 type Props = {};
 
@@ -27,16 +28,18 @@ export default function Sponsors({}: Props) {
         height={100}
       />
 
-      <Button
-        height={50}
-        onClick={() => {}}
-        ismotion
-        variants={{ onclick: { scale: 1.1 } }}
-        whileTap="onclick"
-        className="font-semibold"
-      >
-        Become a Sponsor
-      </Button>
+      <Link href="mailto:owlhacks@temple.edu">
+        <Button
+          height={50}
+          onClick={() => {}}
+          ismotion
+          variants={{ onclick: { scale: 1.1 } }}
+          whileTap="onclick"
+          className="font-semibold"
+        >
+          Become a Sponsor
+        </Button>
+      </Link>
     </SectionContent>
   );
 }
