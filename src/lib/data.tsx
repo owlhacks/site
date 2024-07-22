@@ -93,7 +93,7 @@ export const TeamMembers: MemberProps[] = [
     initials: "SP",
     image: "shreypatel.webp",
     role: "Operations",
-    linkedinUrl: "www.linkedin.com/in/sshr3yy",
+    linkedinUrl: "https://www.linkedin.com/in/shr3y",
   },
   {
     name: "Sophie Metille",
