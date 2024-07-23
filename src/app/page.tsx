@@ -1,30 +1,42 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
+
 import Hero from "@/components/Hero/Hero";
 import About from "@/components/About/About";
 import FAQ from "@/components/FAQ/FAQ";
 import Team from "@/components/Team/Team";
 import Sponsors from "@/components/Sponsors/Sponsors";
 import Footer from "@/components/Footer/Footer";
-import dynamic from "next/dynamic";
+import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
+
+import { AnimatePresence, motion } from "framer-motion";
 
 type Props = {};
 
-const DynamicSplashScreen = dynamic(
-  () => import("@/components/SplashScreen/SplashScreen"),
-  { ssr: false }
-);
+export default function Page({}: Props) {
+  const [loading, setLoading] = useState<boolean>(true);
 
-export default function page({}: Props) {
   return (
-    <main className="">
-      <DynamicSplashScreen />
-      <Hero />
-      <About />
-      <Sponsors />
-      <FAQ />
-      <Team />
-      <Footer />
-    </main>
+    <AnimatePresence>
+      {loading ? (
+        <LoadingScreen
+          onAnimationEnd={() => {
+            setLoading(false);
+          }}
+        />
+      ) : (
+        <motion.main
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { duration: 3 } }}
+        >
+          <Hero />
+          <About />
+          <Sponsors />
+          <FAQ />
+          <Team />
+          <Footer />
+        </motion.main>
+      )}
+    </AnimatePresence>
   );
 }
