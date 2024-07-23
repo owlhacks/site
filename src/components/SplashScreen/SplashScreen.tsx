@@ -38,22 +38,9 @@ export default function SplashScreen({}: Props) {
     },
   };
 
-  const text = {
-    initial: {
-      y: 40,
-    },
-    animate: {
-      y: 80,
-      transition: {
-        duration: 2,
-        ease: [0.87, 0, 0.13, 1],
-      },
-    },
-  };
-
   return (
     <motion.div
-      className="fixed z-50 w-full bg-skin-base"
+      className="fixed z-50 w-full"
       initial="initial"
       animate="animate"
       variants={blackBox}
@@ -69,7 +56,7 @@ export default function SplashScreen({}: Props) {
         className="absolute text-center left-0 right-0 w-full h-full z-50"
       >
         <motion.text
-          className="text-4xl font-bold fill-white"
+          className="text-4xl font-bold"
           textAnchor="middle"
           x="50%"
           y="50%"
