@@ -5,10 +5,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    color: var(--color-text-base);
+    color: var(--color-theme-primary);
     overflow: hidden;
     white-space: nowrap;
-    animation: textShift 3s forwards;
+    animation: textShift 2s forwards;
 }
 
 @keyframes textShift {
