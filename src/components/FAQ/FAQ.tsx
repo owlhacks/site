@@ -11,7 +11,7 @@ type Props = {};
 
 export default function FAQ({}: Props) {
   return (
-    <SectionContent sectionId="faq">
+    <SectionContent sectionId="FAQ">
       <SectionHeading>Frequently Asked Questions</SectionHeading>
       <Accordion.Root
         type="single"
