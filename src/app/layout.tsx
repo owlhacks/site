@@ -12,6 +12,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "OwlHacks 2024",
   description: "Temple's Student Run Hackathon",
+  icons: { icon: "/favicon.ico" },
 };
 
 export default function RootLayout({
