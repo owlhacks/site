@@ -1,0 +1,21 @@
+.loadingText::after {
+    content: "OwlHacks";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--color-text-base);
+    overflow: hidden;
+    white-space: nowrap;
+    animation: textShift 3s forwards;
+}
+
+@keyframes textShift {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%
+    }
+}
