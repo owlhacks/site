@@ -14,6 +14,9 @@ import Image from "next/image";
 
 import NavLink from "./NavLink";
 import Text from "@/components/Typography/Text";
+import Link from "next/link";
+
+import MLHBadge from "@/assets/MLHBadge";
 
 /*
   Variants for motion components. Includes variants for:
@@ -104,8 +107,6 @@ export default function Navigation() {
 
   return (
     <>
-
-
       {/* mobile navbar */}
       <nav className="sm:hidden block z-40 fixed select-none">
         <motion.div
@@ -175,19 +176,24 @@ export default function Navigation() {
       </nav>
 
       {/* desktop/tablet navbar */}
-      <nav className="hidden md:block pt-5 px-5">
-        <ul className="flex items-center space-x-2">
+      <nav className="hidden md:block pt-5 px-5 relative">
+        <ul className="flex items-center space-x-4">
           <Image
             src="/hero_content/logo.png"
             alt="OwlHacks Logo"
-            width={100}
-            height={100}
+            width={50}
+            height={50}
           />
+          <Link
+            className="absolute right-10 top-0"
+            href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=black"
+          >
+            <MLHBadge />
+          </Link>
           <NavLink heading="About" href="about" />
           <NavLink heading="Sponsors" href="sponsors" />
 
           <NavLink heading="FAQ" href="FAQ" />
-
           <NavLink heading="Team" href="team" />
           <NavLink
             heading="Register"
