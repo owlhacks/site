@@ -131,6 +131,14 @@ export const TeamMembers: MemberProps[] = [
     linkedinUrl: "https://www.linkedin.com/in/yatri-patel-229710291/",
   },
   {
+    name: "Yashi Patel",
+    initials: "YP",
+    image: "yashipatel.webp",
+    role: "",
+    linkedinUrl: "https://www.linkedin.com/in/yashi-patel1027/",
+    githubUrl: "https://github.com/yashipat"
+  },
+  {
     name: "Seth Bernstein",
     initials: "SB",
     image: "sethbernstein.webp",

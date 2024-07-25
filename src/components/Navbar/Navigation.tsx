@@ -104,6 +104,8 @@ export default function Navigation() {
 
   return (
     <>
+
+
       {/* mobile navbar */}
       <nav className="sm:hidden block z-40 fixed select-none">
         <motion.div
@@ -174,7 +176,7 @@ export default function Navigation() {
 
       {/* desktop/tablet navbar */}
       <nav className="hidden md:block pt-5 px-5">
-        <ul className="flex items-center space-x-8">
+        <ul className="flex items-center space-x-2">
           <Image
             src="/hero_content/logo.png"
             alt="OwlHacks Logo"

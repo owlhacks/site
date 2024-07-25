@@ -17,7 +17,16 @@ export default function Footer({}: Props) {
       <div className="flex flex-col items-center pt-2 justify-center px-10 py-4 h-full gap-y-3">
         <div className="flex flex-col text-center md:flex-row text-skin-base">
           <Text className="font-semibold text-skin-muted" size="medium">
-            OwlHacks © 2024
+            OwlHacks © 2024 &nbsp;&#x2022;&nbsp;
+          </Text>
+
+          <Text
+            className="font-semibold text-skin-muted hidden md:block"
+            size="medium"
+          >
+            <Link href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" className="underline">
+              Code of Conduct
+            </Link>
           </Text>
           <Text
             className="font-semibold text-skin-muted hidden md:block"
