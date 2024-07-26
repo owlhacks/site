@@ -8,7 +8,7 @@
     color: var(--color-theme-primary);
     overflow: hidden;
     white-space: nowrap;
-    animation: textShift 2s forwards;
+    animation: textShift 3s forwards;
 }
 
 @keyframes textShift {

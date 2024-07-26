@@ -45,7 +45,7 @@ export default function LoadingScreen(props: loadingProps) {
   return (
     <motion.div
       key="loading"
-      className="flex flex-col justify-center items-center h-screen overflow-hidden text-nowrap bg-skin-base"
+      className="flex flex-col justify-center items-center h-screen overflow-hidden bg-skin-base"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 1 } }}
       exit={{ width: 0, opacity: 0 }}
@@ -57,7 +57,10 @@ export default function LoadingScreen(props: loadingProps) {
       >
         OwlHacks
       </Heading>
-      <Text size="medium" className="font-semibold text-skin-muted">
+      <Text
+        size="medium"
+        className="font-semibold text-skin-muted text-center mx-4"
+      >
         {randomFact}
       </Text>
     </motion.div>
