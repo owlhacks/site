@@ -184,11 +184,9 @@ export default function Navigation() {
           )}
         </AnimatePresence>
       </nav>
-      <div id="overlay" className="relative">
-        {isOpen && (
-          <div className="w-screen h-screen opacity-30 bg-black absolute " />
-        )}
-      </div>
+      {isOpen && (
+        <div className="w-screen h-screen opacity-30 bg-black fixed " />
+      )}
 
       {/* desktop/tablet navbar */}
       <nav className="hidden md:block pt-5 px-5 relative">

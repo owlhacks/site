@@ -45,6 +45,7 @@ export type NavLinkProps = {
   isLink?: boolean;
   svgProps?: { viewBox: string; path: string; label?: string };
   children?: ReactNode;
+  onClick?: (event: React.MouseEvent<HTMLElement>) => void;
 };
 
 export default function NavLink({
@@ -54,6 +55,7 @@ export default function NavLink({
   isLink,
   svgProps,
   children,
+  onClick,
 }: NavLinkProps) {
   return (
     <li
@@ -64,13 +66,21 @@ export default function NavLink({
       }`}
     >
       {isLink ? (
-        <Link href={href} target="_blank" className="select-none font-semibold">
+        <Link
+          href={href}
+          target="_blank"
+          className="select-none font-semibold"
+          onClick={onClick ?? (() => {})}
+        >
           <Text size="medium">{heading}</Text>
         </Link>
       ) : (
         <span
           className="select-none inline-flex items-center justify-center p-2 font-semibold"
-          onClick={() => scrollToSection(href)}
+          onClick={() => {
+            scrollToSection(href);
+            onClick;
+          }}
         >
           <Text size="medium">{heading}</Text>
         </span>
