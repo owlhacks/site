@@ -40,10 +40,6 @@ nav {
   background-color: var(--color-body-fill);
 }
 
-html, body {
-  overflow-x: hidden;
-}
-
 body {
   position: relative;
   background-color: var(--color-body-fill);
