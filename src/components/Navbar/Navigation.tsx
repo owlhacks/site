@@ -8,7 +8,7 @@
 
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 
@@ -105,14 +105,18 @@ const drawer = {
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
+  useEffect(() => {
+    isOpen
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "unset");
+  }, [isOpen]);
+
   return (
     <>
       {/* mobile navbar */}
       <nav className="sm:hidden block z-40 fixed select-none">
         <motion.div
-          className={`space-y-1 rounded-full px-4 py-5 fixed bottom-0 right-0 m-4 z-50 bg-skin-primary cursor-pointer ${
-            !isOpen && "bg-skin-base"
-          }`}
+          className={`space-y-1 rounded-full px-4 py-5 fixed bottom-0 right-0 m-4 z-50 bg-skin-primary cursor-pointer}`}
           onClick={() => {
             setIsOpen(!isOpen);
           }}
@@ -136,20 +140,26 @@ export default function Navigation() {
         <AnimatePresence>
           {isOpen && (
             <motion.div
-              className={`h-full bg-skin-base fixed opacity-95 ease-in-out ${
-                isOpen ? "w-3/4" : "w-0 overflow-hidden"
+              className={`h-full bg-skin-base fixed opacity-100 ease-in-out rounded-tr-md rounded-br-md ${
+                isOpen ? "w-1/2" : "w-0 overflow-hidden"
               }`}
               variants={drawer}
               animate="open"
               exit="closed"
             >
               <ul className="flex flex-col h-full justify-center items-start space-y-5 mx-10">
+                <Link
+                  className="absolute left-10 top-0"
+                  href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=black"
+                >
+                  <MLHBadge />
+                </Link>
                 <div className="flex justify-center w-full">
                   <Image
                     src="/hero_content/logo.png"
                     alt="OwlHacks Logo"
-                    width={250}
-                    height={250}
+                    width={100}
+                    height={100}
                   />
                 </div>
                 <div className="p-2  rounded-2xl">
@@ -174,10 +184,15 @@ export default function Navigation() {
           )}
         </AnimatePresence>
       </nav>
+      <div id="overlay" className="relative">
+        {isOpen && (
+          <div className="w-screen h-screen opacity-30 bg-black absolute " />
+        )}
+      </div>
 
       {/* desktop/tablet navbar */}
       <nav className="hidden md:block pt-5 px-5 relative">
-        <ul className="flex items-center space-x-4">
+        <ul className="flex items-center space-x-2">
           <Image
             src="/hero_content/logo.png"
             alt="OwlHacks Logo"
