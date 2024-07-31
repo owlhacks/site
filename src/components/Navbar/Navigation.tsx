@@ -17,6 +17,7 @@ import Text from "@/components/Typography/Text";
 import Link from "next/link";
 
 import MLHBadge from "@/assets/MLHBadge";
+import { Expand } from "@theme-toggles/react";
 
 /*
   Variants for motion components. Includes variants for:
@@ -179,6 +180,8 @@ export default function Navigation() {
                   isLink
                   border
                 />
+
+                {/* <Expand placeholder={"Theme Toggler"} duration={750}/> */}
               </ul>
             </motion.div>
           )}
@@ -214,6 +217,9 @@ export default function Navigation() {
             isLink
             border
           />
+
+          {/* <Expand placeholder={"Theme Toggler"} duration={750}/> */}
+
         </ul>
       </nav>
     </>

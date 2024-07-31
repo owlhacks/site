@@ -12,7 +12,7 @@ export default function Hero({}: Props) {
       <Navigation></Navigation>
       <SectionContent sectionId="home">
         <Image
-          src="/hero_content/background.png"
+          src="/hero_content/desktop_hero.jpg"
           alt="Hero Logo"
           width={1920}
           height={1080}

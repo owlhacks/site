@@ -11,6 +11,7 @@ import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
 
 import { AnimatePresence, motion } from "framer-motion";
 
+
 type Props = {};
 
 export default function Page({}: Props) {
