@@ -12,11 +12,12 @@ export default function Hero({}: Props) {
       <Navigation></Navigation>
       <SectionContent sectionId="home">
         <Image
-          src="/hero_content/desktop_hero.jpg"
+          src="/hero_content/desktop_hero.png"
           alt="Hero Logo"
           width={1920}
           height={1080}
           quality={100}
+          objectFit="cover"
           className="rounded-2xl w-full lg:h-[750px] h-[500px] block"
         />
         {/* <div
