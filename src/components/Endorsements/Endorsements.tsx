@@ -17,7 +17,7 @@ export default function Endorsements({}: Props) {
         className="font-bold text-center text-skin-secondary tracking-tight"
         size="large"
       >
-        OwlHacks is made possible by its sponsors.
+        OwlHacks is brought to life by its endorsers.
       </Text>
 
     </SectionContent>
