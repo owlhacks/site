@@ -208,7 +208,7 @@ export default function Navigation() {
           </Link>
           <NavLink heading="About" href="about" />
           <NavLink heading="Sponsors" href="sponsors" />
-
+          <NavLink heading="Endorsements" href="endorsements" />
           <NavLink heading="FAQ" href="FAQ" />
           <NavLink heading="Team" href="team" />
           <NavLink

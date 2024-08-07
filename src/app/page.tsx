@@ -6,6 +6,7 @@ import About from "@/components/About/About";
 import FAQ from "@/components/FAQ/FAQ";
 import Team from "@/components/Team/Team";
 import Sponsors from "@/components/Sponsors/Sponsors";
+import Endorsements from "@/components/Endorsements/Endorsements";
 import Footer from "@/components/Footer/Footer";
 import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
 
@@ -33,6 +34,7 @@ export default function Page({}: Props) {
           <Hero />
           <About />
           <Sponsors />
+          <Endorsements />
           <FAQ />
           <Team />
           <Footer />
