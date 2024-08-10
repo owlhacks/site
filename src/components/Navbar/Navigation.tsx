@@ -157,7 +157,7 @@ export default function Navigation() {
                 </Link>
                 <div className="flex justify-center w-full">
                   <Image
-                    src="/hero_content/logo.png"
+                    src="/hero_content/oh-logo.png"
                     alt="OwlHacks Logo"
                     width={100}
                     height={100}
@@ -195,7 +195,7 @@ export default function Navigation() {
       <nav className="hidden md:block pt-5 px-5 relative">
         <ul className="flex items-center space-x-2">
           <Image
-            src="/hero_content/logo.png"
+            src="/hero_content/oh-logo.png"
             alt="OwlHacks Logo"
             width={50}
             height={50}
@@ -219,7 +219,6 @@ export default function Navigation() {
           />
 
           {/* <Expand placeholder={"Theme Toggler"} duration={750}/> */}
-
         </ul>
       </nav>
     </>
