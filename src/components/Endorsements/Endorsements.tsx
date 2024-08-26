@@ -43,6 +43,17 @@ export default function Endorsements({}: Props) {
             height={200}
           />
         </Link>
+        <Link
+          aria-label="Temple University Math Club"
+          href="https://www.instagram.com/templeuniversitymathclub/" target="_blank">
+          <Image
+            className="w-52 h-52"
+            src="/endorsement_logo/temple_math.webp"
+            alt="Temple Robotics"
+            width={200}
+            height={200}
+          />
+        </Link>
       </div>
 
 

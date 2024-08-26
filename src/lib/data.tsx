@@ -23,6 +23,13 @@ export const TeamMembers: MemberProps[] = [
     linkedinUrl: "https://www.linkedin.com/in/christine-kapp-658b41238",
   },
   {
+    name: "Stephen MacNeil",
+    initials: "SM",
+    image: "stephenmacneil.webp",
+    role: "Faculty Advisor",
+    linkedinUrl: "https://www.linkedin.com/in/stevemacn1/",
+  },
+  {
     name: "Andrew Tran",
     initials: "AT",
     image: "andrewtran.webp",
@@ -166,13 +173,6 @@ export const TeamMembers: MemberProps[] = [
     image: "sophiechen.webp",
     role: "Sponsorship",
     linkedinUrl: "https://linkedin.com/in/sophiechen7/",
-  },
-  {
-    name: "Stephen MacNeil",
-    initials: "SM",
-    image: "stephenmacneil.webp",
-    role: "Advisor",
-    linkedinUrl: "https://www.linkedin.com/in/stevemacn1/",
   },
   {
     name: "Seth Bernstein",
