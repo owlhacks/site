@@ -20,7 +20,18 @@ export default function Endorsements({}: Props) {
         OwlHacks is brought to life by its endorsers.
       </Text>
 
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-wrap gap-4 justify-center">
+        <Link
+          aria-label="Temple HCI Lab"
+          href="https://www.instagram.com/templehci/" target="_blank">
+          <Image
+            className="w-52 h-52"
+            src="/endorsement_logo/temple_hci.webp"
+            alt="Temple HCI Lab"
+            width={300}
+            height={300}
+          />
+        </Link>
         <Link
           aria-label="Temple Trading Technologies"
           href="https://www.instagram.com/templetradingtech/" target="_blank">
