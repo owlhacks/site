@@ -1,6 +1,6 @@
-import { MemberProps } from "@/components/Team/TeamMember/Member";
+import { CardProps } from "@/components/Team/TeamCard/TeamCard";
 
-export const TeamMembers: MemberProps[] = [
+export const TeamMembers: CardProps[] = [
   {
     name: "Chiku Okechukwu",
     initials: "CO",
@@ -36,6 +36,15 @@ export const TeamMembers: MemberProps[] = [
     role: "Sponsorship",
     linkedinUrl: "https://www.linkedin.com/in/andrewtran117/",
     githubUrl: "https://github.com/adrewtran117",
+  },
+  {
+    name: "Devin Rankin",
+    initials: "DR",
+    image: "devinrankin.webp",
+    role: "Web Development",
+    linkedinUrl: "https://www.linkedin.com/in/devin-rankin-div/",
+    githubUrl: "https://github.com/devinrankin",
+    websiteUrl: "https://devinrank.in",
   },
   {
     name: "Phuykong Meng",

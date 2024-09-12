@@ -21,6 +21,7 @@ export default function Team({}: Props) {
             image={member.image}
             linkedinUrl={member.linkedinUrl}
             githubUrl={member.githubUrl}
+            websiteUrl={member.websiteUrl}
           />
         ))}
       </div>
