@@ -9,13 +9,13 @@ export default function Countdown() {
   const [isFinished, setIsFinished] = useState(false);
 
   // countdown states
-  const [days, setDays] = useState("");
-  const [hours, setHours] = useState("");
-  const [minutes, setMinutes] = useState("");
-  const [seconds, setSeconds] = useState("");
+  const [days, setDays] = useState("00");
+  const [hours, setHours] = useState("00");
+  const [minutes, setMinutes] = useState("00");
+  const [seconds, setSeconds] = useState("00");
 
   useEffect(() => {
-    const target = new Date("10-05-2024 08:00:00");
+    const target = new Date("2024-10-05T08:00:00");
     const interval = setInterval(() => {
       const now = new Date();
       const difference = target.getTime() - now.getTime();
