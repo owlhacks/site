@@ -39,7 +39,7 @@ export default function Endorsements({}: Props) {
           </div>
         </div>
 
-        <div>
+        <div className="w-full">
           <div className="grid justify-items-center grid-cols-7">
 
             <div className="flex flex-wrap gap-3 col-span-3 justify-center content-start ">
