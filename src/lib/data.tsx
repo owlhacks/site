@@ -53,6 +53,7 @@ export const TeamMembers: CardProps[] = [
     role: "Web Development",
     linkedinUrl: "https://www.linkedin.com/in/phuykong-meng/",
     githubUrl: "https://github.com/M-Phuykong",
+    websiteUrl: "https://mphuykong.dev/"
   },
   {
     name: "Adyan Chowdhury",
