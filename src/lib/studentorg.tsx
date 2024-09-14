@@ -55,7 +55,7 @@ import type { EndorserProps } from "@/components/Endorsements/Endorser";
         </Link> */
 }
 
-export const Endorsers: EndorserProps[] = [
+export const StudentOrg : EndorserProps[] = [
   {
     src: "/endorsement_logo/temple_hci.svg",
     href: "https://www.instagram.com/templehci/",
