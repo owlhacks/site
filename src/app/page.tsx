@@ -6,12 +6,12 @@ import About from "@/components/About/About";
 import FAQ from "@/components/FAQ/FAQ";
 import Team from "@/components/Team/Team";
 import Sponsors from "@/components/Sponsors/Sponsors";
-import Endorsements from "@/components/Endorsements/Endorsements";
 import Footer from "@/components/Footer/Footer";
 import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
 
 import { AnimatePresence, motion } from "framer-motion";
-
+import Endorsements from "@/components/Endorsements/Endorsements";
+import Countdown from "@/components/Countdown/Countdown";
 
 type Props = {};
 
@@ -33,6 +33,7 @@ export default function Page({}: Props) {
         >
           <Hero />
           <About />
+          <Countdown />
           <Sponsors />
           <Endorsements />
           <FAQ />
