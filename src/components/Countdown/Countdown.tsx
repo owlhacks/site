@@ -97,22 +97,22 @@ export default function Countdown() {
       ) : (
         <Heading
           variant="h3"
-          className="font-black space-x-3 flex justify-center items-end text-skin-base"
+          className="font-black space-x-3 flex justify-center items-end text-skin-base mx-5"
         >
-          <div className="w-[4.5rem]">{days}</div>
-          <Text size="small" className="mb-6 text-skin-secondary">
+          <div className="md:w-[4.5rem] w-8">{days}</div>
+          <Text size="small" className="mb-2 md:mb-6 text-skin-secondary">
             DAYS
           </Text>
-          <div className="w-[4.5rem]">{hours}</div>
-          <Text size="small" className="mb-6 text-skin-secondary">
+          <div className="md:w-[4.5rem] w-8">{hours}</div>
+          <Text size="small" className="mb-2 md:mb-6 text-skin-secondary">
             HOURS
           </Text>
-          <div className="w-[4.5rem]">{minutes}</div>
-          <Text size="small" className="mb-6 text-skin-secondary">
+          <div className="md:w-[4.5rem] w-8">{minutes}</div>
+          <Text size="small" className="mb-2 md:mb-6 text-skin-secondary">
             MINUTES
           </Text>
-          <div className="w-[4.5rem]">{seconds}</div>
-          <Text size="small" className="mb-6 text-skin-secondary">
+          <div className="md:w-[4.5rem] w-8">{seconds}</div>
+          <Text size="small" className="mb-2 md:mb-6 text-skin-secondary">
             SECONDS
           </Text>
         </Heading>
