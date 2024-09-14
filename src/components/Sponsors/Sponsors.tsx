@@ -14,7 +14,7 @@ export default function Sponsors({}: Props) {
     <SectionContent sectionId="sponsors">
       <SectionHeading>Sponsors</SectionHeading>
       <Text
-        className="font-bold text-center text-skin-secondary tracking-tight"
+        className="font-bold text-center text-skin-base tracking-tight"
         size="large"
       >
         OwlHacks is made possible by its sponsors.
@@ -35,7 +35,7 @@ export default function Sponsors({}: Props) {
           ismotion
           variants={{ onclick: { scale: 1.1 } }}
           whileTap="onclick"
-          className="font-semibold"
+          className="font-semibold text-skin-base"
         >
           Become a Sponsor
         </Button>

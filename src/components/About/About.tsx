@@ -12,7 +12,7 @@ export default function About({}: Props) {
       <SectionHeading>Our Mission</SectionHeading>
       <Text
         size="large"
-        className="text-center font-bold text-lg md:w-2/3 text-skin-secondary tracking-tight"
+        className="text-center font-bold text-lg md:w-2/3 text-skin-base tracking-tight"
       >
         OwlHacks is Temple University&apos;s annual, student-organized
         hackathon. First hosted in 2019, OwlHacks received outstanding projects,

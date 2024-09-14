@@ -1,8 +1,12 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+
 import Navigation from "@/components/Navbar/Navigation";
 import SectionContent from "@/components/Sections/SectionContent";
-import Image from "next/image";
+import Text from "@/components/Typography/Text";
+import { scrollToSection } from "@/utilities/scrolling";
 
 type Props = {};
 
@@ -31,8 +35,8 @@ export default function Hero({}: Props) {
             <Image
               src="/hero_content/oh-hero-banner-mobile.svg"
               alt="Hero Banner"
-              layout="responsive"
               className="inset-0 object-cover"
+              layout="responsive"
               width={320}
               height={640}
             />
@@ -43,14 +47,10 @@ export default function Hero({}: Props) {
               layout="responsive"
               className="inset-0 object-cover"
               width={1920}
-              height={640}
+              height={960}
             />
           )}
         </div>
-        {/* <div
-          className="rounded-2xl bg-[#563853] w-full lg:h-[950px] h-[400px] block"
-          id="sky"
-        ></div> */}
       </SectionContent>
     </>
   );

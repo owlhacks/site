@@ -2,15 +2,12 @@ import Link from "next/link";
 import React from "react";
 
 import Text from "@/components/Typography/Text";
-import { ChevronUpIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
 import { scrollToSection } from "@/utilities/scrolling";
 
 type Props = {};
 
 export default function Footer({}: Props) {
-  const MotionChevronUpIcon = motion(ChevronUpIcon);
-
   return (
     <footer className="mx-auto h-40 overflow-hidden">
       <div className="h-px bg-skin-light" />
@@ -24,7 +21,11 @@ export default function Footer({}: Props) {
             className="font-semibold text-skin-muted hidden md:block"
             size="medium"
           >
-            <Link href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" className="underline">
+            <Link
+              href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+              target="_blank"
+              className="underline"
+            >
               Code of Conduct
             </Link>
           </Text>
