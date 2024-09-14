@@ -8,7 +8,8 @@ import Text from "../Typography/Text";
 import Button from "@/components/Button/Button";
 import Link from "next/link";
 
-import { Endorsers } from "@/lib/endorsers";
+import { StudentOrg } from "@/lib/studentorg";
+import { NonProfit } from "@/lib/nonprofit";
 import Endorser from "./Endorser";
 
 type Props = {};
@@ -23,18 +24,56 @@ export default function Endorsements({}: Props) {
       >
         OwlHacks is brought to life by its endorsers.
       </Text>
-      <div className="gap-5 flex w-1/2">
-        {Endorsers.map((endorser) => (
-          <Endorser
-            src={endorser.src}
-            href={endorser.href}
-            ariaLabel={endorser.ariaLabel}
-            altText={endorser.altText}
-            width={endorser.width}
-            height={endorser.height}
-            key={endorser.ariaLabel}
-          ></Endorser>
-        ))}
+
+      <div className="flex flex-wrap justify-center w-2/3">
+
+        <div className="w-full mb-5">
+          <div className="grid grid-cols-7">
+            <div className="col-span-3">
+              <SectionSubHeading>Non Profits</SectionSubHeading>
+            </div>
+            <div></div>
+            <div className="col-span-3">
+              <SectionSubHeading>Student Orgs</SectionSubHeading>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full">
+          <div className="grid justify-items-center grid-cols-7">
+
+            <div className="flex flex-wrap gap-3 col-span-3 justify-center content-start ">
+              {NonProfit.map((org) => (
+                <Endorser
+                  src={org.src}
+                  href={org.href}
+                  ariaLabel={org.ariaLabel}
+                  altText={org.altText}
+                  width={org.width}
+                  height={org.height}
+                  key={org.ariaLabel}
+                ></Endorser>
+              ))}
+            </div>
+
+            <div className="inline-block w-0.5 items-center bg-neutral-100 dark:bg-white" />
+
+            <div className="flex flex-wrap gap-3 col-span-3 justify-center content-start">
+              {StudentOrg.map((org) => (
+                <Endorser
+                  src={org.src}
+                  href={org.href}
+                  ariaLabel={org.ariaLabel}
+                  altText={org.altText}
+                  width={org.width}
+                  height={org.height}
+                  key={org.ariaLabel}
+                ></Endorser>
+              ))}
+            </div>
+
+          </div>
+        </div>
       </div>
     </SectionContent>
   );
