@@ -25,53 +25,41 @@ export default function Endorsements({}: Props) {
         OwlHacks is brought to life by its endorsers.
       </Text>
 
-      <div className="flex flex-wrap justify-center w-2/3">
-
-        <div className="w-full mb-5">
-          <div className="grid grid-cols-7">
-            <div className="col-span-3">
-              <SectionSubHeading>Non Profits</SectionSubHeading>
-            </div>
-            <div></div>
-            <div className="col-span-3">
-              <SectionSubHeading>Student Orgs</SectionSubHeading>
-            </div>
+      <div className="md:flex mx-auto space-y-10 md:space-y-0">
+        <div className="md:flex flex-col  md:mr-10">
+          <SectionSubHeading>Non Profits</SectionSubHeading>
+          <div className="grid justify-items-center grid-cols-2">
+            {NonProfit.map((org) => (
+              <Endorser
+                src={org.src}
+                href={org.href}
+                ariaLabel={org.ariaLabel}
+                altText={org.altText}
+                width={org.width}
+                height={org.height}
+                rounded={org.rounded}
+                key={org.ariaLabel}
+              ></Endorser>
+            ))}
           </div>
         </div>
 
-        <div className="w-full">
-          <div className="grid justify-items-center grid-cols-7">
-
-            <div className="flex flex-wrap gap-3 col-span-3 justify-center content-start ">
-              {NonProfit.map((org) => (
-                <Endorser
-                  src={org.src}
-                  href={org.href}
-                  ariaLabel={org.ariaLabel}
-                  altText={org.altText}
-                  width={org.width}
-                  height={org.height}
-                  key={org.ariaLabel}
-                ></Endorser>
-              ))}
-            </div>
-
-            <div className="inline-block w-0.5 items-center bg-neutral-100 dark:bg-white" />
-
-            <div className="flex flex-wrap gap-3 col-span-3 justify-center content-start">
-              {StudentOrg.map((org) => (
-                <Endorser
-                  src={org.src}
-                  href={org.href}
-                  ariaLabel={org.ariaLabel}
-                  altText={org.altText}
-                  width={org.width}
-                  height={org.height}
-                  key={org.ariaLabel}
-                ></Endorser>
-              ))}
-            </div>
-
+        <div className="hidden md:inline-block w-[1px] items-center bg-skin-lighter" />
+        <div className="md:flex flex-col md:ml-10">
+          <SectionSubHeading>Student Orgs</SectionSubHeading>
+          <div className="grid justify-items-center grid-cols-2 gap-4">
+            {StudentOrg.map((org) => (
+              <Endorser
+                src={org.src}
+                href={org.href}
+                ariaLabel={org.ariaLabel}
+                altText={org.altText}
+                width={org.width}
+                height={org.height}
+                rounded={org.rounded}
+                key={org.ariaLabel}
+              ></Endorser>
+            ))}
           </div>
         </div>
       </div>

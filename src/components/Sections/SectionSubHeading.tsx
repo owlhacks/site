@@ -1,7 +1,11 @@
 import React, { ReactNode } from "react";
 import Heading from "@/components/Typography/Heading";
 
-export default function SectionSubHeading({ children }: { children: ReactNode }) {
+export default function SectionSubHeading({
+  children,
+}: {
+  children: ReactNode;
+}) {
   return (
     <Heading
       variant="h4"

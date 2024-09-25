@@ -55,7 +55,7 @@ import type { EndorserProps } from "@/components/Endorsements/Endorser";
         </Link> */
 }
 
-export const StudentOrg : EndorserProps[] = [
+export const StudentOrg: EndorserProps[] = [
   {
     src: "/endorsement_logo/temple_hci.svg",
     href: "https://www.instagram.com/templehci/",
@@ -63,6 +63,7 @@ export const StudentOrg : EndorserProps[] = [
     altText: "Temple HCI Lab",
     width: 100,
     height: 100,
+    rounded: true,
   },
   {
     src: "/endorsement_logo/temple_trading_tech.svg",
@@ -71,6 +72,7 @@ export const StudentOrg : EndorserProps[] = [
     altText: "Temple Trading Tech",
     width: 100,
     height: 100,
+    rounded: true,
   },
   {
     src: "/endorsement_logo/temple_robotics.svg",
@@ -79,6 +81,7 @@ export const StudentOrg : EndorserProps[] = [
     altText: "Temple Robotics",
     width: 200,
     height: 100,
+    rounded: true,
   },
   {
     src: "/endorsement_logo/temple_math.svg",
@@ -87,5 +90,6 @@ export const StudentOrg : EndorserProps[] = [
     altText: "Temple Math Club",
     width: 100,
     height: 100,
+    rounded: true,
   },
 ];
