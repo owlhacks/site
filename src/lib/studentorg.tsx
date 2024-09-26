@@ -110,4 +110,13 @@ export const StudentOrg: EndorserProps[] = [
     height: 100,
     rounded: true,
   },
+  {
+    src: "/endorsement_logo/GDSC.svg",
+    href: "https://www.instagram.com/gdsc_temple/",
+    ariaLabel: "Google Developer Student Club Temple University",
+    altText: "Google Developer Student Club Temple University",
+    width: 100,
+    height: 100,
+    rounded: true,
+  },
 ];
