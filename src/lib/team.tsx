@@ -1,4 +1,4 @@
-import { CardProps } from "@/components/Team/TeamCard/TeamCard";
+import { CardProps } from "@/components/HomePage/Team/TeamCard/TeamCard";
 
 export const TeamMembers: CardProps[] = [
   {
@@ -53,7 +53,7 @@ export const TeamMembers: CardProps[] = [
     role: "Web Development",
     linkedinUrl: "https://www.linkedin.com/in/phuykong-meng/",
     githubUrl: "https://github.com/M-Phuykong",
-    websiteUrl: "https://mphuykong.dev/"
+    websiteUrl: "https://mphuykong.dev/",
   },
   {
     name: "Adyan Chowdhury",
