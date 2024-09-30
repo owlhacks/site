@@ -1,17 +1,17 @@
 "use client";
 import React, { useState } from "react";
 
-import Hero from "@/components/Hero/Hero";
-import About from "@/components/About/About";
-import FAQ from "@/components/FAQ/FAQ";
-import Team from "@/components/Team/Team";
-import Sponsors from "@/components/Sponsors/Sponsors";
-import Footer from "@/components/Footer/Footer";
-import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
+import Hero from "@/components/HomePage/Hero/Hero";
+import About from "@/components/HomePage/About/About";
+import FAQ from "@/components/HomePage/FAQ/FAQ";
+import Team from "@/components/HomePage/Team/Team";
+import Sponsors from "@/components/HomePage/Sponsors/Sponsors";
+import Footer from "@/components/HomePage/Footer/Footer";
+import LoadingScreen from "@/components/Shared/LoadingScreen/LoadingScreen";
 
 import { AnimatePresence, motion } from "framer-motion";
-import Endorsements from "@/components/Endorsements/Endorsements";
-import Countdown from "@/components/Countdown/Countdown";
+import Endorsements from "@/components/HomePage/Endorsements/Endorsements";
+import Countdown from "@/components/HomePage/Countdown/Countdown";
 
 type Props = {};
 
