@@ -2,7 +2,7 @@
   Implementation of a navbar.
 
   Dependencies:
-  - The NavLink component
+  - The NavElement component
   - The Text component
 */
 
@@ -12,12 +12,11 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 
-import NavLink from "./NavLink";
-import Text from "@/components/Typography/Text";
+import NavElement from "@/components/Shared/Navigation/NavElement";
+import Text from "@/components/Shared/Typography/Text";
 import Link from "next/link";
 
 import MLHBadge from "@/assets/MLHBadge";
-import { Expand } from "@theme-toggles/react";
 
 /*
   Variants for motion components. Includes variants for:
@@ -168,13 +167,14 @@ export default function Navigation() {
                     Menu
                   </Text>
                 </div>
-                <NavLink heading="About" href="about" />
-                <NavLink heading="Sponsors" href="sponsors" />
+                <NavElement heading="About" href="about" />
+                <NavElement heading="Sponsors" href="sponsors" />
 
-                <NavLink heading="FAQ" href="FAQ" />
+                <NavElement heading="FAQ" href="FAQ" />
 
-                <NavLink heading="Team" href="team" />
-                <NavLink
+                <NavElement heading="Team" href="team" />
+                <NavElement heading="Event List" href="/events" isLink />
+                <NavElement
                   heading="Register"
                   href="https://docs.google.com/forms/d/e/1FAIpQLSf1y4jARVJunWbfAOvl3Jm0VMauQC3cJFEJb2l9y2CT00gjTg/viewform?usp=sf_link"
                   isLink
@@ -206,12 +206,13 @@ export default function Navigation() {
           >
             <MLHBadge />
           </Link>
-          <NavLink heading="About" href="about" />
-          <NavLink heading="Sponsors" href="sponsors" />
-          <NavLink heading="Endorsements" href="endorsements" />
-          <NavLink heading="FAQ" href="FAQ" />
-          <NavLink heading="Team" href="team" />
-          <NavLink
+          <NavElement heading="About" href="about" />
+          <NavElement heading="Sponsors" href="sponsors" />
+          <NavElement heading="Endorsements" href="endorsements" />
+          <NavElement heading="FAQ" href="FAQ" />
+          <NavElement heading="Team" href="team" />
+          <NavElement heading="Event List" href="/events" isLink />
+          <NavElement
             heading="Register"
             href="https://docs.google.com/forms/d/e/1FAIpQLSf1y4jARVJunWbfAOvl3Jm0VMauQC3cJFEJb2l9y2CT00gjTg/viewform?usp=sf_link"
             isLink

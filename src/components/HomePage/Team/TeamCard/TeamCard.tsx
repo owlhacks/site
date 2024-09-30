@@ -2,8 +2,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import Heading from "../../Typography/Heading";
-import Text from "../../Typography/Text";
+import Heading from "../../../Shared/Typography/Heading";
+import Text from "../../../Shared/Typography/Text";
 
 export type CardProps = {
   name: string;

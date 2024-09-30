@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "@/styles/LoadingScreen.module.css";
 
-import Heading from "@/components/Typography/Heading";
-import Text from "@/components/Typography/Text";
+import Heading from "@/components/Shared/Typography/Heading";
+import Text from "@/components/Shared/Typography/Text";
 
 import { AnimatePresence, motion } from "framer-motion";
 

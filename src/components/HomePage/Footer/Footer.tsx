@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-import Text from "@/components/Typography/Text";
+import Text from "@/components/Shared/Typography/Text";
 import { motion } from "framer-motion";
 import { scrollToSection } from "@/utilities/scrolling";
 

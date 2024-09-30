@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import Heading from "@/components/Typography/Heading";
+import Heading from "@/components/Shared/Typography/Heading";
 
 export default function SectionSubHeading({
   children,
@@ -9,7 +9,7 @@ export default function SectionSubHeading({
   return (
     <Heading
       variant="h4"
-      className="text-center font-black tracking-wider uppercase select-none text-skin-primary"
+      className="text-center font-bold tracking-wider uppercase select-none text-skin-primary"
     >
       {children}
     </Heading>

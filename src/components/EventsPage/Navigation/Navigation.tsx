@@ -2,7 +2,7 @@
   Implementation of a navbar.
 
   Dependencies:
-  - The NavLink component
+  - The NavElement component
   - The Text component
 */
 
@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 
-import NavLink from "@/components/Shared/Navigation/NavLink";
+import NavElement from "@/components/Shared/Navigation/NavElement";
 import Text from "@/components/Shared/Typography/Text";
 import Link from "next/link";
 
@@ -167,8 +167,8 @@ export default function Navigation() {
                     Menu
                   </Text>
                 </div>
-                <NavLink heading="Home" href="https://owlhacks.com" isLink />
-                <NavLink
+                <NavElement heading="Home" href="https://owlhacks.com" isLink />
+                <NavElement
                   heading="Register"
                   href="https://docs.google.com/forms/d/e/1FAIpQLSf1y4jARVJunWbfAOvl3Jm0VMauQC3cJFEJb2l9y2CT00gjTg/viewform?usp=sf_link"
                   isLink
@@ -200,9 +200,9 @@ export default function Navigation() {
           >
             <MLHBadge />
           </Link>
-          <NavLink heading="Home" href="https://owlhacks.com" isLink />
+          <NavElement heading="Home" href="https://owlhacks.com" isLink />
 
-          <NavLink
+          <NavElement
             heading="Register"
             href="https://docs.google.com/forms/d/e/1FAIpQLSf1y4jARVJunWbfAOvl3Jm0VMauQC3cJFEJb2l9y2CT00gjTg/viewform?usp=sf_link"
             isLink

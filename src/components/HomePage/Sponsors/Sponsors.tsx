@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 
-import SectionHeading from "../Sections/SectionHeading";
-import SectionContent from "../Sections/SectionContent";
-import Text from "../Typography/Text";
-import Button from "@/components/Button/Button";
+import SectionHeading from "@/components/Shared/Sections/SectionHeading";
+import SectionContent from "@/components/Shared/Sections/SectionContent";
+import Text from "@/components/Shared/Typography/Text";
+import Button from "@/components/Shared/Button/Button";
 import Link from "next/link";
 
 type Props = {};

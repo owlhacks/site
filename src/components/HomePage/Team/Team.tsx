@@ -1,9 +1,9 @@
 import React from "react";
-import SectionHeading from "@/components/Sections/SectionHeading";
-import SectionContent from "@/components/Sections/SectionContent";
+import SectionHeading from "@/components/Shared/Sections/SectionHeading";
+import SectionContent from "@/components/Shared/Sections/SectionContent";
 import TeamCard from "./TeamCard/TeamCard";
 
-import { TeamMembers } from "@/lib/data";
+import { TeamMembers } from "@/lib/team";
 
 type Props = {};
 

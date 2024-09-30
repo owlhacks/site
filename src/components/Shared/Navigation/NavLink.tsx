@@ -13,8 +13,8 @@ import Text from "../Typography/Text";
 import { scrollToSection } from "@/utilities/scrolling";
 
 /*
- * Props for NavLink
- * @typedef {Object} NavLinkProps
+ * Props for NavElement
+ * @typedef {Object} NavElementProps
  * @property {string} heading - The heading of the navigation link
  * @property {string} href - The URL the link points to
  * @property {boolean} border - Optional flag to indicate if the link should have a border
@@ -26,7 +26,7 @@ import { scrollToSection } from "@/utilities/scrolling";
  * @property {ReactNode} [children] - Optional child elements to be rendered within the link
  *
  * @example
- * const navLinkProps: NavLinkProps = {
+ * const NavElementProps: NavElementProps = {
  *   heading: "Home",
  *   href: "/home",
  *   border: true,
@@ -38,25 +38,23 @@ import { scrollToSection } from "@/utilities/scrolling";
  *   },
  * };
  */
-export type NavLinkProps = {
+export type NavElementProps = {
   heading: string;
   href: string;
   border?: boolean;
   isLink?: boolean;
   svgProps?: { viewBox: string; path: string; label?: string };
   children?: ReactNode;
-  onClick?: (event: React.MouseEvent<HTMLElement>) => void;
 };
 
-export default function NavLink({
+export default function NavElement({
   heading,
   href,
   border,
   isLink,
   svgProps,
   children,
-  onClick,
-}: NavLinkProps) {
+}: NavElementProps) {
   return (
     <li
       className={`text-skin-base h-[3rem] cursor-pointer inline-flex items-center justify-center rounded-lg hover:bg-skin-btn-hover px-3 ${
@@ -66,27 +64,19 @@ export default function NavLink({
       }`}
     >
       {isLink ? (
-        <Link
-          href={href}
-          target="_blank"
-          className="select-none font-semibold"
-          onClick={onClick ?? (() => {})}
-        >
+        <Link href={href} target="_blank" className="select-none font-semibold">
           <Text size="medium">{heading}</Text>
         </Link>
       ) : (
         <span
           className="select-none inline-flex items-center justify-center p-2 font-semibold"
-          onClick={() => {
-            scrollToSection(href);
-            onClick;
-          }}
+          onClick={() => scrollToSection(href)}
         >
           <Text size="medium">{heading}</Text>
         </span>
       )}
 
-      {/* svg for navlinks with icons */}
+      {/* svg for NavElements with icons */}
       {svgProps && (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +86,7 @@ export default function NavLink({
           <path fill="currentColor" d={svgProps.path} />
         </svg>
       )}
-      {/* end of svg for navlinks with icons */}
+      {/* end of svg for NavElements with icons */}
     </li>
   );
 }

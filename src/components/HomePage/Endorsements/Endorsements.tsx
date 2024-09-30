@@ -1,12 +1,9 @@
 import React from "react";
-import Image from "next/image";
 
-import SectionHeading from "../Sections/SectionHeading";
-import SectionSubHeading from "../Sections/SectionSubHeading";
-import SectionContent from "../Sections/SectionContent";
-import Text from "../Typography/Text";
-import Button from "@/components/Button/Button";
-import Link from "next/link";
+import SectionHeading from "@/components/Shared/Sections/SectionHeading";
+import SectionSubHeading from "@/components/Shared/Sections/SectionSubHeading";
+import SectionContent from "@/components/Shared/Sections/SectionContent";
+import Text from "@/components/Shared/Typography/Text";
 
 import { StudentOrg } from "@/lib/studentorg";
 import { NonProfit } from "@/lib/nonprofit";
@@ -18,13 +15,6 @@ export default function Endorsements({}: Props) {
   return (
     <SectionContent sectionId="endorsements">
       <SectionHeading>Endorsements</SectionHeading>
-      <Text
-        className="font-bold text-center text-skin-base tracking-tight"
-        size="large"
-      >
-        OwlHacks is brought to life by its endorsers.
-      </Text>
-
       <div className="md:flex mx-auto space-y-10 md:space-y-0">
         <div className="md:flex flex-col  md:mr-10">
           <SectionSubHeading>Non Profits</SectionSubHeading>

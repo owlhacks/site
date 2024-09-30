@@ -1,12 +1,9 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
 
-import Navigation from "@/components/Navbar/Navigation";
-import SectionContent from "@/components/Sections/SectionContent";
-import Text from "@/components/Typography/Text";
-import { scrollToSection } from "@/utilities/scrolling";
+import Navigation from "@/components/HomePage/Navigation/Navigation";
+import SectionContent from "@/components/Shared/Sections/SectionContent";
 
 type Props = {};
 

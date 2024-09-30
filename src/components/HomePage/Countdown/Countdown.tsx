@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 
-import Text from "../Typography/Text";
-import Heading from "../Typography/Heading";
-import SectionHeading from "../Sections/SectionHeading";
+import Text from "@/components/Shared/Typography/Text";
+import Heading from "@/components/Shared/Typography/Heading";
+import SectionHeading from "@/components/Shared/Sections/SectionHeading";
 
 export default function Countdown() {
   const [isFinished, setIsFinished] = useState(false);
