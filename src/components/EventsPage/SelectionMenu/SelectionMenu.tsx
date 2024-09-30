@@ -54,15 +54,7 @@ export default function SelectionMenu({}: Props) {
           </div>
         ))}
       </div>
-      {selected === "eventsTab" ? (
-        <Event
-          title="Test Event"
-          content="Welcome to OwlHacks!"
-          type="Test"
-          time="09:45am"
-          location="SERC Lobby"
-        />
-      ) : null}
+      {selected === "eventsTab" ? <Schedule /> : null}
       {selected === "guestsTab" ? <GuestList /> : null}
       {selected === "tracksTab" ? <TrackList /> : null}
     </div>
