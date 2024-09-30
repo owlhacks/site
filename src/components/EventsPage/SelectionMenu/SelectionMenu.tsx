@@ -18,7 +18,7 @@ export default function SelectionMenu({}: Props) {
   ];
 
   const [hovered, setHovered] = useState<string | undefined>();
-  const [selected, setSelected] = useState<string>();
+  const [selected, setSelected] = useState<string>("eventsTab");
 
   return (
     <div className="">
@@ -31,7 +31,7 @@ export default function SelectionMenu({}: Props) {
             className="cursor-pointer relative"
           >
             <motion.span
-              className={`font-bold capitalize ${
+              className={`font-bold capitalize text-skin-base ${
                 selected === item.state &&
                 "text-skin-primary ease-in-out duration-300"
               }`}
