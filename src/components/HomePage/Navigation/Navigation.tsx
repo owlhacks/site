@@ -207,11 +207,11 @@ export default function Navigation() {
             <MLHBadge />
           </Link>
           <NavElement heading="About" href="about" />
+          <NavElement heading="Logistics" href="logistics"/>
           <NavElement heading="Sponsors" href="sponsors" />
           <NavElement heading="Endorsements" href="endorsements" />
           <NavElement heading="FAQ" href="FAQ" />
           <NavElement heading="Team" href="team" />
-          <NavElement heading="Event List" href="/events" isLink />
           <NavElement
             heading="Register"
             href="https://docs.google.com/forms/d/e/1FAIpQLSf1y4jARVJunWbfAOvl3Jm0VMauQC3cJFEJb2l9y2CT00gjTg/viewform?usp=sf_link"

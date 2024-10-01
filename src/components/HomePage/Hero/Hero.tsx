@@ -25,7 +25,6 @@ export default function Hero({}: Props) {
 
   return (
     <>
-      <Navigation></Navigation>
       <SectionContent sectionId="home">
         <div className="rounded-2xl block w-full overflow-hidden">
           {isMobile ? (

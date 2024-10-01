@@ -1,19 +1,14 @@
 "use client";
-import Heading from "@/components/Shared/Typography/Heading";
-import Text from "@/components/Shared/Typography/Text";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import TrackList from "../TrackList/TrackList";
-import GuestList from "../GuestList/GuestList";
 import Schedule from "../EventSchedule/Schedule";
-import Event from "../EventSchedule/Event";
 
 type Props = {};
 
 export default function SelectionMenu({}: Props) {
   const routes = [
     { title: "event schedule", state: "eventsTab" },
-    { title: "guest speakers", state: "guestsTab" },
     { title: "tracks", state: "tracksTab" },
   ];
 
@@ -55,7 +50,6 @@ export default function SelectionMenu({}: Props) {
         ))}
       </div>
       {selected === "eventsTab" ? <Schedule /> : null}
-      {selected === "guestsTab" ? <GuestList /> : null}
       {selected === "tracksTab" ? <TrackList /> : null}
     </div>
   );

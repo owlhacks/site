@@ -1,10 +1,12 @@
 "use client";
 import React, { useState } from "react";
 
+import Navigation from "@/components/HomePage/Navigation/Navigation";
 import Hero from "@/components/HomePage/Hero/Hero";
 import About from "@/components/HomePage/About/About";
 import FAQ from "@/components/HomePage/FAQ/FAQ";
 import Team from "@/components/HomePage/Team/Team";
+import Logistics from "@/components/HomePage/Logistics/Countdown";
 import Sponsors from "@/components/HomePage/Sponsors/Sponsors";
 import Footer from "@/components/HomePage/Footer/Footer";
 import LoadingScreen from "@/components/Shared/LoadingScreen/LoadingScreen";
@@ -31,9 +33,11 @@ export default function Page({}: Props) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { duration: 3 } }}
         >
+          <Navigation />
           <Hero />
           <About />
           <Countdown />
+          <Logistics />
           <Sponsors />
           <Endorsements />
           <FAQ />
