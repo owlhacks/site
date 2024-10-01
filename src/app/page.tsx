@@ -6,7 +6,7 @@ import Hero from "@/components/HomePage/Hero/Hero";
 import About from "@/components/HomePage/About/About";
 import FAQ from "@/components/HomePage/FAQ/FAQ";
 import Team from "@/components/HomePage/Team/Team";
-import Logistics from "@/components/HomePage/Logistics/Countdown";
+import Logistics from "@/components/HomePage/Logistics/Logistics";
 import Sponsors from "@/components/HomePage/Sponsors/Sponsors";
 import Footer from "@/components/HomePage/Footer/Footer";
 import LoadingScreen from "@/components/Shared/LoadingScreen/LoadingScreen";
