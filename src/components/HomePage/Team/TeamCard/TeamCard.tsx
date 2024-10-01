@@ -31,7 +31,7 @@ export default function TeamCard(props: CardProps) {
       <div className="sm:flex sm:flex-col items-center">
         <Heading
           variant="h5"
-          className="mb-1 text-xl font-bold text-skin-base dark:text-skin-muted text-left"
+          className="mb-1 text-xl font-bold text-skin-base dark:text-skin-muted text-left md:text-center"
         >
           {props.name}
         </Heading>
