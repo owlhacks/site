@@ -28,7 +28,7 @@ export default function Endorsements({}: Props) {
       <div className="md:flex mx-auto space-y-10 md:space-y-0">
         <div className="md:flex flex-col  md:mr-10">
           <SectionSubHeading>Non Profits</SectionSubHeading>
-          <div className="grid justify-items-center grid-cols-2">
+          <div className="grid justify-items-center grid-cols-2 gap-4">
             {NonProfit.map((org) => (
               <Endorser
                 src={org.src}

@@ -17,4 +17,12 @@ export const NonProfit: EndorserProps[] = [
     width: 100,
     height: 100,
   },
+  {
+    src: "/endorsement_logo/robotics_coalition.svg",
+    href: "https://roboticscoalition.org/",
+    ariaLabel: "Philadelphia Robotics Coalition",
+    altText: "Philadelphia Robotics Coalition",
+    width: 100,
+    height: 100,
+  },
 ];
