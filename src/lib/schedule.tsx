@@ -3,6 +3,8 @@ type ContentType = {
     title: string;
     description?: string;
     guest?: string;
+    photo_src?: string;
+    linkedin_url?: string;
     type?: string;
 };
 
@@ -59,8 +61,9 @@ const SaturdayEvents: EventType[] = [
             {
                 type: "workshop",
                 title: "Rewriting the Code",
-                description: "RTC something something something",
-                guest: "Kristin Austin",
+                description: "Join Dr. Kristin Austin, VP of I.D.E.As. at Rewriting the Code, to explore how we can reimagine inclusivity by questioning Who is at the table, who is missing, and for whom was it built?' Let's build equitable spaces in tech together.",
+                photo_src: "/guest_speaker/kristin_austin.jpg",
+                guest: "Dr. Kristin Austin @ Rewriting the Code",
             },
         ],
     },
@@ -78,8 +81,13 @@ const SaturdayEvents: EventType[] = [
         start_time: "1:30 PM",
         content: [
             {
-                title: "Ethical Hacking",
-                guest: "Dalain",
+                type: "workshop",
+                title: "Impact of Technology Outcomes that make for Equitable Global Products",
+                description: "Learn what Google's Product Inclusion and Equity team are deploying to help identify and measure inclusion and equity within products. We will review frameworks and approaches, in addition to understanding publicly available tools such as Skin Tone Research with MST Scale.",
+                photo_src: "/guest_speaker/dalain_williams.png",
+                linkedin_url: "https://www.linkedin.com/in/dalain/",
+                guest: "Dalain Williams @ Google",
+
             },
         ],
     },
@@ -87,7 +95,11 @@ const SaturdayEvents: EventType[] = [
         start_time: "2:30 PM",
         content: [
             {
-                title: "Khrys",
+                type: "workshop",
+                title: "Design Thinking and Product Innovation",
+                description: "Learn about the foundations of design thinking- a vital UX framework for creating products for human beings. We will jump into the 'Ideation' section by nailing down the scope for your own project and will cover how to whittle down on your MVP scenarios. Lastly, we will chat about UX career topics such as building out soft skills, developing yourself as a young career professional, and how to create blueprints for yourself if you choose to pivot or explore new fields/jobs/concentrations.",
+                photo_src: "/guest_speaker/khrys_oros.png",
+                guest: "Khrys Oros @ Ford",
             },
         ],
     },
@@ -103,8 +115,9 @@ const SaturdayEvents: EventType[] = [
         start_time: "5:00 PM",
         content: [
             {
-                title: "Workshop Title",
-                guest: "Hannah Strayline",
+                type: "workshop",
+                title: "Figma Foundations: Youtube Recreation",
+                guest: "Hannah Strayline @ Microsoft",
             },
         ]
     },
