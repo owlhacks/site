@@ -1,4 +1,4 @@
-import type { EndorserProps } from "@/components/Endorsements/Endorser";
+import type { EndorserProps } from "@/components/HomePage/Endorsements/Endorser";
 {
   /* <Link
           aria-label="Temple HCI Lab"
