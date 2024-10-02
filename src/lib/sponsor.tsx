@@ -1,4 +1,4 @@
-import type { SponsorerProps } from "@/components/Sponsors/Sponsorer";
+import type { SponsorerProps } from "@/components/HomePage/Sponsors/Sponsorer";
 
 export const Sponsor: SponsorerProps[] = [
   {

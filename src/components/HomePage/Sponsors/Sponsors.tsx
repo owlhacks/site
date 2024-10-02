@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
 
-import SectionHeading from "../Sections/SectionHeading";
-import SectionContent from "../Sections/SectionContent";
+import SectionHeading from "@/components/Shared/Sections/SectionHeading";
+import SectionContent from "@/components/Shared/Sections/SectionContent";
 import Sponsorer from "./Sponsorer";
-import Text from "../Typography/Text";
-import Button from "@/components/Button/Button";
+import Text from "@/components/Shared/Typography/Text";
+import Button from "@/components/Shared/Button/Button";
 import Link from "next/link";
 
 import { Sponsor } from "@/lib/sponsor";
@@ -31,8 +31,7 @@ export default function Sponsors({}: Props) {
             width={sponsor.width}
             height={sponsor.height}
             key={sponsor.altText}
-          >
-          </Sponsorer>
+          ></Sponsorer>
         ))}
       </div>
 

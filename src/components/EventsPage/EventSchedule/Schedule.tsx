@@ -10,31 +10,36 @@ type Props = {};
 
 export default function Schedule({}: Props) {
   return (
-  <section className="mx-auto p-4 gap-y-5 flex flex-col items-center mb-10 mt-5">
-    <Heading
-      variant="h5"
-      className="mb-1 font-bold text-skin-base dark:text-skin-muted text-left">
+    <section className="mx-auto p-4 gap-y-5 flex flex-col items-center mb-10 mt-5">
+      <Heading
+        variant="h5"
+        className="mb-1 font-bold text-skin-base dark:text-skin-muted text-left"
+      >
         Saturday, October 5th
-    </Heading>
+      </Heading>
 
-    {SaturdayEvents.map((event) => (
-      <Event
-      start_time={event.start_time}
-      content={event.content} />
-    ))}
+      {SaturdayEvents.map((event, idx) => (
+        <Event
+          key={idx}
+          start_time={event.start_time}
+          content={event.content}
+        />
+      ))}
 
-    <Heading
-      variant="h5"
-      className="mb-1 font-bold text-skin-base dark:text-skin-muted text-left">
+      <Heading
+        variant="h5"
+        className="mb-1 font-bold text-skin-base dark:text-skin-muted text-left"
+      >
         Sunday, October 6th
-    </Heading>
+      </Heading>
 
-    {SundayEvents.map((event) => (
-      <Event
-      start_time={event.start_time}
-      content={event.content} />
-    ))}
-
-  </section>
+      {SundayEvents.map((event, idx) => (
+        <Event
+          key={idx}
+          start_time={event.start_time}
+          content={event.content}
+        />
+      ))}
+    </section>
   );
 }
