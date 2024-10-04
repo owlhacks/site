@@ -10,7 +10,7 @@ export default function SectionContent(props: SectionProps) {
 
   return (
     <section
-      className="mx-auto p-4 gap-y-10 flex flex-col items-center mb-10"
+      className="mx-auto p-4 gap-y-8 flex flex-col items-center mb-10"
       id={sectionId}
     >
       {children}

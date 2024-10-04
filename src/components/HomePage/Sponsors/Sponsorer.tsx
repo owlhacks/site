@@ -11,11 +11,11 @@ export type SponsorerProps = {
 export default function Sponsorer(props: SponsorerProps) {
 
   return (
-    <Image
-        src={props.src}
-        alt={props.altText}
-        width={props.width}
-        height={props.height}
-    />
+      <Image
+          src={props.src}
+          alt={props.altText}
+          width={props.width}
+          height={props.height}
+      />
   );
 }

@@ -8,7 +8,8 @@ import Text from "@/components/Shared/Typography/Text";
 import Button from "@/components/Shared/Button/Button";
 import Link from "next/link";
 
-import { Sponsor } from "@/lib/sponsor";
+import { Sponsor, Donator } from "@/lib/sponsor";
+import SectionSubHeading from "@/components/Shared/Sections/SectionSubHeading";
 
 type Props = {};
 
@@ -23,7 +24,10 @@ export default function Sponsors({}: Props) {
         OwlHacks is made possible by its sponsors.
       </Text>
 
-      <div className="grid justify-items-center gap-20 items-center grid-cols-2">
+      <div className="flex flex-wrap justify-center
+      justify-items-center
+      gap-20 items-center
+      mx-20 mb-10">
         {Sponsor.map((sponsor) => (
           <Sponsorer
             src={sponsor.src}
@@ -33,9 +37,34 @@ export default function Sponsors({}: Props) {
             key={sponsor.altText}
           ></Sponsorer>
         ))}
+
       </div>
 
-      <Link href="mailto:owlhacks@temple.edu">
+      <SectionSubHeading>Donations</SectionSubHeading>
+      <Text
+        className="font-bold text-center text-skin-base tracking-tight"
+        size="large"
+      >
+        Thanks to our donors for their contributions.
+      </Text>
+      <div className="flex flex-wrap
+      justify-center
+      justify-items-center gap-20 items-center mx-20">
+        {Donator.map((sponsor) => (
+          <Sponsorer
+            src={sponsor.src}
+            altText={sponsor.altText}
+            width={sponsor.width}
+            height={sponsor.height}
+            key={sponsor.altText}
+          ></Sponsorer>
+        ))}
+
+      </div>
+
+      <Link
+      className="mt-10"
+      href="mailto:owlhacks@temple.edu">
         <Button
           height={50}
           onClick={() => {}}
