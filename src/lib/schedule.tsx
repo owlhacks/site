@@ -118,6 +118,7 @@ const SaturdayEvents: EventType[] = [
                 type: "workshop",
                 title: "Figma Foundations: Youtube Recreation",
                 guest: "Hannah Strayline @ Microsoft",
+                photo_src: "/guest_speaker/.png"
             },
         ]
     },
@@ -166,6 +167,7 @@ const SundayEvents: EventType[] = [
         content: [
             {
                 title: "Breakfast / Soft Deadline",
+                description: "",
             },
         ]
     },
@@ -194,6 +196,7 @@ const SundayEvents: EventType[] = [
         content: [
             {
                 title: "Lunch / Judging Begins",
+                description: "Lunch will be served and judging will begin."
             },
         ]
     },
@@ -202,6 +205,7 @@ const SundayEvents: EventType[] = [
         content: [
             {
                 title: "Closing Ceremony / Awards",
+                description: "Join us for the closing ceremony to celebrate the end of OwlHacks 2024 and announce the winners of the hackathon."
             }
         ]
     }
