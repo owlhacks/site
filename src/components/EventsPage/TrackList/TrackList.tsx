@@ -6,23 +6,28 @@ import Text from "@/components/Shared/Typography/Text";
 const Tracks = [
   {
     title: "Smart Health",
-    description: "Many parts of the world lack access to basic healthcare services. Technology can help bridge this gap by providing remote diagnostics, telemedicine, and affordable healthcare solutions. Develop innovative technology solutions to improve healthcare access and outcomes in regions worldwide!"
+    description: "Many parts of the world lack access to basic healthcare services. Technology can help bridge this gap by providing remote diagnostics, telemedicine, and affordable healthcare solutions. Develop innovative technology solutions to improve healthcare access and outcomes in regions worldwide!",
+    logo_src: "/track_logo/health.svg",
   },
   {
     title: "Urban Tech",
-    description: "Urban towns and cities have a host of challenges, including traffic congestion, pollution, and resource scarcity. Technology can help these cities become more sustainable, efficient, and livable by optimizing transportation systems, improving energy efficiency, and promoting smart infrastructure. Design technology to create more sustainable and equitable urban environments around the globe!"
+    description: "Urban towns and cities have a host of challenges, including traffic congestion, pollution, and resource scarcity. Technology can help these cities become more sustainable, efficient, and livable by optimizing transportation systems, improving energy efficiency, and promoting smart infrastructure. Design technology to create more sustainable and equitable urban environments around the globe!",
+    logo_src: "/track_logo/urban.svg",
   },
   {
     title: "Inclusive Education",
-    description: "Many students face barriers to accessing quality education, such as cultural, linguistic, and socioeconomic challenges. Technology can help create more inclusive and equitable learning environments. Develop technology solutions to address barriers to education and promote inclusive learning experiences for all students worldwide!"
+    description: "Many students face barriers to accessing quality education, such as cultural, linguistic, and socioeconomic challenges. Technology can help create more inclusive and equitable learning environments. Develop technology solutions to address barriers to education and promote inclusive learning experiences for all students worldwide!",
+    logo_src: "/track_logo/education.svg",
   },
   {
     title: "Philly Special",
-    description: "Philadelphia was highlighted as one of the top 10 cities to visit around the globe in the Lonely Planet’s “Best in Travel” 2024 awards because of its attractions, landmarks, and delicious food. Develop technology to further enhance Philadelphia's reputation as a global destination!"
+    description: "Philadelphia was highlighted as one of the top 10 cities to visit around the globe in the Lonely Planet’s “Best in Travel” 2024 awards because of its attractions, landmarks, and delicious food. Develop technology to further enhance Philadelphia's reputation as a global destination!",
+    logo_src: "/track_logo/bell.svg",
   },
   {
     title: "Strategic Trading",
-    description: "Businesses across the globe are increasingly incorporating machine learning to improve their financial operations and decision-making. This includes tasks such as fraud detection, risk assessment, personalized financial advice, and algorithmic trading. Businesses leverage machine learning to gain a competitive advantage, reduce costs, and enhance customer satisfaction. Take part in this all-new track and take advantage of machine learning to address global financial challenges!"
+    description: "Businesses across the globe are increasingly incorporating machine learning to improve their financial operations and decision-making. This includes tasks such as fraud detection, risk assessment, personalized financial advice, and algorithmic trading. Businesses leverage machine learning to gain a competitive advantage, reduce costs, and enhance customer satisfaction. Take part in this all-new track and take advantage of machine learning to address global financial challenges!",
+    logo_src: "/track_logo/finance.svg",
   }
 ]
 
@@ -32,6 +37,7 @@ type Props = {};
 type TrackCardProps = {
   title: string;
   description: string;
+  src: string;
 };
 
 
@@ -43,9 +49,11 @@ function TrackCard(props: TrackCardProps) {
             ">
             <div className="text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-skin-primary left-4 -top-6">
 
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                </svg>
+                <img
+                  src={props.src}
+                  alt="Track Logo"
+                  width={30}
+                />
             </div>
             <div className="flex flex-col gap-y-2 mt-5">
               <Heading
@@ -90,6 +98,7 @@ export default function TrackList({}: Props) {
                 key = {index}
                 title = {track.title}
                 description = {track.description}
+                src = {track.logo_src}
               />
             ))
           }

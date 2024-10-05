@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-
 import SectionHeading from "@/components/Shared/Sections/SectionHeading";
 import SectionContent from "@/components/Shared/Sections/SectionContent";
 import Sponsorer from "./Sponsorer";
