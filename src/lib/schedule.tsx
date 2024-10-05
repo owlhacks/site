@@ -118,7 +118,7 @@ const SaturdayEvents: EventType[] = [
                 type: "workshop",
                 title: "Figma Foundations: Youtube Recreation",
                 guest: "Hannah Strayline @ Microsoft",
-                photo_src: "/guest_speaker/.png"
+                photo_src: "/guest_speaker/hannah_strayline.png"
             },
         ]
     },
