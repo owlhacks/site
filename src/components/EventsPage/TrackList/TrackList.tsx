@@ -26,7 +26,7 @@ const Tracks = [
   },
   {
     title: "Strategic Trading",
-    description: "Businesses across the globe are increasingly incorporating machine learning to improve their financial operations and decision-making. This includes tasks such as fraud detection, risk assessment, personalized financial advice, and algorithmic trading. Businesses leverage machine learning to gain a competitive advantage, reduce costs, and enhance customer satisfaction. Take part in this all-new track and take advantage of machine learning to address global financial challenges!",
+    description: "Algorithmic trading has transformed global financial markets, with over 70% of trades now executed by automated systems using quantitative models and technical indicators like Moving Averages, RSI, and MACD. This track draws inspiration from the increasing demand for innovative trading strategies that can navigate dynamic market conditions. Participants will leverage Python to develop and backtest strategies that integrate these indicators while managing risk. The challenge invites creative problem-solving and technical expertise, combining finance, data science, and programming to design trading models that excel in real-world markets.",
     logo_src: "/track_logo/finance.svg",
   }
 ]
