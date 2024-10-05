@@ -31,6 +31,12 @@ const Sponsor: SponsorerProps[] = [
     width: 220,
     height: 200,
   },
+  {
+    src: "/sponsor_logo/HCI.png",
+    altText: "Temple Human-Computer Interaction Lab",
+    width: 150,
+    height: 150,
+  },
 ];
 
 const Donator: SponsorerProps[] = [
