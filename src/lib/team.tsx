@@ -38,6 +38,13 @@ export const TeamMembers: CardProps[] = [
     githubUrl: "https://github.com/adrewtran117",
   },
   {
+    name: "Camryn Stuhmuller",
+    initials: "CS",
+    image: "camrynstuhmuller.jpg",
+    role: "Photographer",
+    linkedinUrl: "https://www.linkedin.com/in/camryn-stuhlmuller/"
+  },
+  {
     name: "Devin Rankin",
     initials: "DR",
     image: "devinrankin.webp",
