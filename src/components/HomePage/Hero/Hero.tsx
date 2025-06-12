@@ -2,6 +2,10 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
+import Countdown from "@/components/HomePage/Countdown/Countdown";
+import SectionHeading from "@/components/Shared/Sections/SectionHeading";
+import Text from "@/components/Shared/Typography/Text";
+
 import Navigation from "@/components/HomePage/Navigation/Navigation";
 import SectionContent from "@/components/Shared/Sections/SectionContent";
 
@@ -25,9 +29,16 @@ export default function Hero({}: Props) {
 
   return (
     <>
-      <SectionContent sectionId="home">
-        <div className="rounded-2xl block w-full overflow-hidden">
-          {isMobile ? (
+      <div className="flex flex-grow justify-center items-center min-h-screen w-full overflow-hidden">
+          <div className="text-center">
+            <SectionHeading >OwlHacks </SectionHeading>
+            <Text size="medium" className="mb-5">
+                September 27 - 28, 2025 | In Person | Temple University, PA
+            </Text>
+            <Countdown />
+          </div>
+
+          {/* {isMobile ? (
             <Image
               src="/hero_content/oh-hero-banner-mobile.svg"
               alt="Hero Banner"
@@ -45,9 +56,8 @@ export default function Hero({}: Props) {
               width={1920}
               height={960}
             />
-          )}
+          )} */}
         </div>
-      </SectionContent>
     </>
   );
 }

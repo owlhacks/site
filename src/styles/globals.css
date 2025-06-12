@@ -3,8 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --color-theme-primary: #39A78E;
+  /* #39A78E */
+  --color-theme-primary: #81188A;
   --color-theme-secondary: #3EB69A;
+
+  --color-theme-primary-indigo: #4A0F73;
+  --color-theme-primary-dark_magenta: #81188A;
+  --color-theme-primary-rusty_red: #De3749;
+  --color-theme-primary-earth_yellow: #f5ab4e;
+  --color-theme-primary-jasmine: #fad970;
 
   --color-theme-light-background: #C5F5FF;
   --color-theme-dark-background: #181818;

@@ -36,14 +36,14 @@ export default function TeamCard(props: CardProps) {
           {props.name}
         </Heading>
 
-        <span className="">
+        {/* <span className="">
           <Text
             size="small"
             className="text-muted dark:text-skin-primary font-semibold flex items-end"
           >
             {props.role}
           </Text>
-        </span>
+        </span> */}
 
         <div className="flex items-center mt-2 gap-3">
           <Link href={props.linkedinUrl} target="_blank">

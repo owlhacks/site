@@ -18,7 +18,8 @@ import Countdown from "@/components/HomePage/Countdown/Countdown";
 type Props = {};
 
 export default function Page({}: Props) {
-  const [loading, setLoading] = useState<boolean>(true);
+  // change this back to true to enable loading
+  const [loading, setLoading] = useState<boolean>(false);
 
   return (
     <AnimatePresence>
@@ -33,13 +34,14 @@ export default function Page({}: Props) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { duration: 3 } }}
         >
-          <Navigation />
-          <Hero />
+          <div className="h-screen min-h-screen">
+            <Navigation />
+            <Hero />
+          </div>
           <About />
-          <Countdown />
-          <Logistics />
-          <Sponsors />
-          <Endorsements />
+          {/* <Logistics /> */}
+          {/* <Sponsors /> */}
+          {/* <Endorsements /> */}
           <FAQ />
           <Team />
           <Footer />

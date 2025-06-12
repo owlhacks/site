@@ -15,7 +15,7 @@ export default function Countdown() {
   const [seconds, setSeconds] = useState("00");
 
   useEffect(() => {
-    const target = new Date("2024-10-05T08:00:00");
+    const target = new Date("2025-09-27T08:00:00");
     const interval = setInterval(() => {
       const now = new Date();
       const difference = target.getTime() - now.getTime();
@@ -48,7 +48,6 @@ export default function Countdown() {
 
   return (
     <>
-      <SectionHeading>Your Adventure Begins In</SectionHeading>
       {isFinished ? (
         <>
           <Heading

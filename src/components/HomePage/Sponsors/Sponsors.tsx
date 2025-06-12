@@ -25,7 +25,7 @@ export default function Sponsors({}: Props) {
       <div className="flex flex-wrap justify-center
       justify-items-center
       gap-20 items-center
-      mx-20 mb-10">
+      mx-20">
         {Sponsor.map((sponsor) => (
           <Sponsorer
             src={sponsor.src}
@@ -38,7 +38,7 @@ export default function Sponsors({}: Props) {
 
       </div>
 
-      <SectionSubHeading>Donations</SectionSubHeading>
+      {/* <SectionSubHeading>Donations</SectionSubHeading>
       <Text
         className="font-bold text-center text-skin-base tracking-tight"
         size="large"
@@ -57,11 +57,10 @@ export default function Sponsors({}: Props) {
             key={sponsor.altText}
           ></Sponsorer>
         ))}
-
-      </div>
+      </div> */}
 
       <Link
-      className="mt-10"
+      className="mt-0"
       href="mailto:owlhacks@temple.edu">
         <Button
           height={50}

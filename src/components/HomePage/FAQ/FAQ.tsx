@@ -73,7 +73,7 @@ export default function FAQ({}: Props) {
               When does the hackathon take place?
             </AccordionTrigger>
             <AccordionContent>
-              OwlHacks takes place from October 5th - 6th. Keep an eye on this
+              OwlHacks takes place from September 27th - 28th. Keep an eye on this
               page or our Discord for any updates.
             </AccordionContent>
           </AccordionItem>
