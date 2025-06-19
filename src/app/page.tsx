@@ -10,7 +10,12 @@ import Logistics from "@/components/HomePage/Logistics/Logistics";
 import Sponsors from "@/components/HomePage/Sponsors/Sponsors";
 import Footer from "@/components/HomePage/Footer/Footer";
 import LoadingScreen from "@/components/Shared/LoadingScreen/LoadingScreen";
+import Background from "@/components/Background/Background";
 
+import MLHBadge from "@/assets/MLHBadge";
+
+
+import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import Endorsements from "@/components/HomePage/Endorsements/Endorsements";
 import Countdown from "@/components/HomePage/Countdown/Countdown";
@@ -34,11 +39,24 @@ export default function Page({}: Props) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { duration: 3 } }}
         >
-          <div className="h-screen min-h-screen">
+
+          <Link
+            className="md:hidden z-10 absolute right-5 top-0"
+            target="_blank"
+            href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=black"
+          >
+            <MLHBadge />
+          </Link>
+
+          {/* <Background /> */}
+
+          <div className="h-screen min-h-screen w-full">
             <Navigation />
             <Hero />
           </div>
+
           <About />
+
           {/* <Logistics /> */}
           {/* <Sponsors /> */}
           {/* <Endorsements /> */}

@@ -148,12 +148,6 @@ export default function Navigation() {
               exit="closed"
             >
               <ul className="flex flex-col h-full justify-center items-start space-y-5 mx-10">
-                <Link
-                  className="absolute left-10 top-0"
-                  href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=black"
-                >
-                  <MLHBadge />
-                </Link>
                 <div className="flex justify-center w-full">
                   <Image
                     src="/hero_content/oh-logo.png"
@@ -176,7 +170,7 @@ export default function Navigation() {
                 {/* <NavElement heading="Event Info" href="/events" isLink /> */}
                 <NavElement
                   heading="Register"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSf1y4jARVJunWbfAOvl3Jm0VMauQC3cJFEJb2l9y2CT00gjTg/viewform?usp=sf_link"
+                  href="https://forms.gle/mpA4a96N4W72Lgqe6"
                   isLink
                   border
                 />

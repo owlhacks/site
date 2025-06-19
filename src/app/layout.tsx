@@ -10,7 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "OwlHacks 2024",
+  title: "OwlHacks 2025",
   description: "Temple's Student Run Hackathon",
   icons: { icon: "/favicon.ico" },
 };

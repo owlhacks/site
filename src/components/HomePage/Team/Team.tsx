@@ -15,7 +15,7 @@ export default function Team({}: Props) {
   const tabHeader: string[] = ["Director", "Web Development", "Logistics", "Operations",
     "Design", "Sponsorship", "Outreach", "DEI"];
 
-  const [tabContent, setTabContent] = useState({})
+  const [tabContent, setTabContent] = useState<Record<string, CardProps[]>>({})
 
   useEffect(() => {
 
@@ -38,12 +38,13 @@ export default function Team({}: Props) {
       <Tabs.Root
       defaultValue="Director">
         <Tabs.List
-        className="flex shrink-0 gap-5 mb-8 pt-0 justify-center
+        className="flex flex-wrap shrink-0 gap-5 mb-8 pt-0 justify-center
         " >
           {tabHeader.map((header) => (
             <Tabs.Trigger
+            key={`tab-${header}`}
             value={header}
-            className="text-xl font-semibold text-skin-muted
+            className="text-xl sm:text-lg font-semibold text-skin-muted
 
             data-[state=active]:font-extrabold data-[state=active]:text-white">
               {header}
@@ -51,8 +52,9 @@ export default function Team({}: Props) {
           ))}
         </Tabs.List>
 
-        { Object.entries(tabContent).map(([role, users]) => (
+        {Object.entries(tabContent).map(([role, users]) => (
             <Tabs.Content
+            key={`tab-content-${role}`}
             value={role}
             className="flex flex-wrap gap-5 justify-center">
               {users.map(member => (
@@ -69,22 +71,6 @@ export default function Team({}: Props) {
             </Tabs.Content>
           ))}
       </Tabs.Root>
-{/*
-      <div className="flex flex-wrap gap-5 justify-center">
-        {TeamMembers.map((member) => (
-          <TeamCard
-            key={member.name}
-            name={member.name}
-            role={member.role}
-            image={member.image}
-            linkedinUrl={member.linkedinUrl}
-            githubUrl={member.githubUrl}
-            websiteUrl={member.websiteUrl}
-          />
-        ))}
-      </div> */}
-
-      {/* <Carousel direction="right" /> */}
     </SectionContent>
   );
 }
