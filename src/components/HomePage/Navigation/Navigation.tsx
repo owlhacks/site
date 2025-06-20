@@ -207,7 +207,7 @@ export default function Navigation() {
             <NavElement heading="Team" href="team" />
             <NavElement
               heading="Register"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSf1y4jARVJunWbfAOvl3Jm0VMauQC3cJFEJb2l9y2CT00gjTg/viewform?usp=sf_link"
+              href="https://forms.gle/mpA4a96N4W72Lgqe6"
               isLink
               border
             />
