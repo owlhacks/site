@@ -28,6 +28,7 @@ export default function Page({}: Props) {
 
   return (
     <AnimatePresence>
+
       {loading ? (
         <LoadingScreen
           onAnimationEnd={() => {
@@ -35,35 +36,37 @@ export default function Page({}: Props) {
           }}
         />
       ) : (
-        <motion.main
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { duration: 3 } }}
-        >
-
-          <Link
-            className="md:hidden z-10 absolute right-5 top-0"
-            target="_blank"
-            href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=black"
+        <>
+          <Background />
+          <motion.main
+            className=""
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 3 } }}
           >
-            <MLHBadge />
-          </Link>
+            <Link
+              className="md:hidden z-10 absolute right-5 top-0"
+              target="_blank"
+              href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=black"
+            >
+              <MLHBadge />
+            </Link>
 
-          {/* <Background /> */}
+            <div className="w-full">
+              <Navigation />
+              <Hero />
+            </div>
 
-          <div className="h-screen min-h-screen w-full">
-            <Navigation />
-            <Hero />
-          </div>
+            <About />
 
-          <About />
+            {/* <Logistics /> */}
+            {/* <Sponsors /> */}
+            {/* <Endorsements /> */}
+            <FAQ />
+            <Team />
+            <Footer />
+          </motion.main>
+        </>
 
-          {/* <Logistics /> */}
-          {/* <Sponsors /> */}
-          {/* <Endorsements /> */}
-          <FAQ />
-          <Team />
-          <Footer />
-        </motion.main>
       )}
     </AnimatePresence>
   );

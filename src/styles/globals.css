@@ -46,9 +46,9 @@
   scroll-behavior: smooth;
 }
 
-nav {
+/* nav {
   background-color: var(--color-body-fill);
-}
+} */
 
 body {
   position: relative;
