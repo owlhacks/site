@@ -186,35 +186,45 @@ export default function Navigation() {
       )}
 
       {/* desktop/tablet navbar */}
-      <nav className="hidden md:block pt-5 px-5 relative">
-        <ul className="flex items-center space-x-2">
+      <nav className="hidden md:flex items-center justify-between px-10 ">
+
+        <div>
           <Image
             src="/hero_content/oh-logo.png"
             alt="OwlHacks Logo"
-            width={50}
-            height={50}
+            width={75}
+            height={75}
           />
+        </div>
+
+        <div >
+          <ul className="flex items-center space-x-2">
+            <NavElement heading="About" href="about" />
+            {/* <NavElement heading="Event Info" href="logistics"/> */}
+            {/* <NavElement heading="Sponsors" href="sponsors" /> */}
+            {/* <NavElement heading="Endorsements" href="endorsements" /> */}
+            <NavElement heading="FAQ" href="FAQ" />
+            <NavElement heading="Team" href="team" />
+            <NavElement
+              heading="Register"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSf1y4jARVJunWbfAOvl3Jm0VMauQC3cJFEJb2l9y2CT00gjTg/viewform?usp=sf_link"
+              isLink
+              border
+            />
+
+            {/* <Expand placeholder={"Theme Toggler"} duration={750}/> */}
+          </ul>
+        </div>
+
+        <div >
           <Link
-            className="absolute right-10 top-0"
+            target="_blank"
             href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=black"
           >
             <MLHBadge />
           </Link>
-          <NavElement heading="About" href="about" />
-          {/* <NavElement heading="Event Info" href="logistics"/> */}
-          {/* <NavElement heading="Sponsors" href="sponsors" /> */}
-          {/* <NavElement heading="Endorsements" href="endorsements" /> */}
-          <NavElement heading="FAQ" href="FAQ" />
-          <NavElement heading="Team" href="team" />
-          <NavElement
-            heading="Register"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSf1y4jARVJunWbfAOvl3Jm0VMauQC3cJFEJb2l9y2CT00gjTg/viewform?usp=sf_link"
-            isLink
-            border
-          />
+        </div>
 
-          {/* <Expand placeholder={"Theme Toggler"} duration={750}/> */}
-        </ul>
       </nav>
     </>
   );

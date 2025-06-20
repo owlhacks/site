@@ -186,14 +186,14 @@ export default function Navigation() {
       )}
 
       {/* desktop/tablet navbar */}
-      <nav className="hidden md:block pt-5 px-5 relative">
-        <ul className="flex items-center space-x-2">
-          <Image
-            src="/hero_content/oh-logo.png"
-            alt="OwlHacks Logo"
-            width={50}
-            height={50}
-          />
+      <nav className="hidden items-center md:block pt-5 px-5 relative">
+        {/* <Image
+          src="/hero_content/oh-logo.png"
+          alt="OwlHacks Logo"
+          width={50}
+          height={50}
+        /> */}
+        <ul className="flex justify-center-safe items-center space-x-2">
           <Link
             className="absolute right-10 top-0"
             href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=black"
