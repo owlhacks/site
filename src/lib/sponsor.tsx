@@ -13,12 +13,12 @@ const Sponsor: SponsorerProps[] = [
   //   width: 280,
   //   height: 0,
   // },
-  // {
-  //   src: "/sponsor_logo/SAP.png",
-  //   altText: "SAP",
-  //   width: 200,
-  //   height: 200,
-  // },
+  {
+    src: "/sponsor_logo/SAP.png",
+    altText: "SAP",
+    width: 200,
+    height: 200,
+  },
   // {
   //   src: "https://static.mlh.io/brand-assets/sponsors/stand-out-stickers/stand-out-stickers-logo.svg",
   //   altText: "StandOut Stickers",
@@ -37,6 +37,18 @@ const Sponsor: SponsorerProps[] = [
     width: 150,
     height: 150,
   },
+  {
+    src: "/sponsor_logo/ez_cater.png",
+    altText: "EZ Cater",
+    width: 220,
+    height: 200,
+  },
+  {
+    src: "/sponsor_logo/blackstone.png",
+    altText: "Blackstone launchpad",
+    width: 160,
+    height: 100,
+  }
 ];
 
 const Donator: SponsorerProps[] = [

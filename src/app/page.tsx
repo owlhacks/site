@@ -59,7 +59,7 @@ export default function Page({}: Props) {
             <About />
 
             {/* <Logistics /> */}
-            {/* <Sponsors /> */}
+            <Sponsors />
             {/* <Endorsements /> */}
             <FAQ />
             <Team />
