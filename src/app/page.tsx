@@ -60,7 +60,7 @@ export default function Page({}: Props) {
 
             {/* <Logistics /> */}
             <Sponsors />
-            {/* <Endorsements /> */}
+            <Endorsements />
             <FAQ />
             <Team />
             <Footer />

@@ -65,38 +65,38 @@ export const TeamMembers: CardProps[] = [
   {
     name: "Antonio Lazaro",
     initials: "AL",
-    image: "empty.webp",
+    image: "antoniolazaro.webp",
     role: "Logistics",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/antonio-lazaro-13848b308/",
   },
-  {
-    name: "Morgan Butler",
-    initials: "MB",
-    image: "empty.webp",
-    role: "Logistics",
-    linkedinUrl: "",
-  },
-  {
-    name: "Zack Aidarov",
-    initials: "ZA",
-    image: "empty.webp",
-    role: "Logistics",
-    linkedinUrl: "",
-  },
+  // {
+  //   name: "Morgan Butler",
+  //   initials: "MB",
+  //   image: "empty.webp",
+  //   role: "Logistics",
+  //   linkedinUrl: "",
+  // },
+  // {
+  //   name: "Zack Aidarov",
+  //   initials: "ZA",
+  //   image: "empty.webp",
+  //   role: "Logistics",
+  //   linkedinUrl: "",
+  // },
   {
     name: "John Kroll",
     initials: "JK",
-    image: "empty.webp",
+    image: "gregkroll.webp",
     role: "Logistics",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/johnkroll22/",
   },
-  {
-    name: "Elijah Hubbard",
-    initials: "EH",
-    image: "empty.webp",
-    role: "Logistics",
-    linkedinUrl: "",
-  },
+  // {
+  //   name: "Elijah Hubbard",
+  //   initials: "EH",
+  //   image: "empty.webp",
+  //   role: "Logistics",
+  //   linkedinUrl: "",
+  // },
   {
     name: "Kriti Baru",
     initials: "KB",
@@ -121,16 +121,16 @@ export const TeamMembers: CardProps[] = [
   {
     name: "Sheena Nnam",
     initials: "SN",
-    image: "empty.webp",
+    image: "sheenannam.webp",
     role: "Operations",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/snnam/",
   },
   {
     name: "Lydon Gavin",
     initials: "LG",
-    image: "empty.webp",
+    image: "lydongavin.webp",
     role: "Operations",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/lydon-gavin/",
   },
   {
     name: "Victor Awoleye",
@@ -142,17 +142,17 @@ export const TeamMembers: CardProps[] = [
   {
     name: "Maahin Mirza",
     initials: "MM",
-    image: "empty.webp",
+    image: "maahinmirza.webp",
     role: "Operations",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/maahinmirza/",
   },
-  {
-    name: "Hyunsoo Jin",
-    initials: "HJ",
-    image: "empty.webp",
-    role: "Operations",
-    linkedinUrl: "",
-  },
+  // {
+  //   name: "Hyunsoo Jin",
+  //   initials: "HJ",
+  //   image: "empty.webp",
+  //   role: "Operations",
+  //   linkedinUrl: "",
+  // },
   {
     name: "Oswayne Smith",
     initials: "OS",
@@ -170,24 +170,24 @@ export const TeamMembers: CardProps[] = [
   {
     name: "Nandita Reddy",
     initials: "NR",
-    image: "empty.webp",
+    image: "nanditareddy.webp",
     role: "Design",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/nandita-reddy/",
   },
   {
     name: "Billy Phan",
     initials: "BP",
-    image: "empty.webp",
+    image: "billyphan.webp",
     role: "Design",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/billyphann/",
   },
-  {
-    name: "Angel Chason",
-    initials: "AC",
-    image: "empty.webp",
-    role: "Design",
-    linkedinUrl: "",
-  },
+  // {
+  //   name: "Angel Chason",
+  //   initials: "AC",
+  //   image: "empty.webp",
+  //   role: "Design",
+  //   linkedinUrl: "",
+  // },
   {
     name: "Rapheal Ankrah",
     initials: "RA",
@@ -195,13 +195,13 @@ export const TeamMembers: CardProps[] = [
     role: "Design",
     linkedinUrl: "",
   },
-  {
-    name: "Eric Eleam",
-    initials: "EE",
-    image: "empty.webp",
-    role: "Design",
-    linkedinUrl: "",
-  },
+  // {
+  //   name: "Eric Eleam",
+  //   initials: "EE",
+  //   image: "empty.webp",
+  //   role: "Design",
+  //   linkedinUrl: "",
+  // },
   {
     name: "Sara Fuertes",
     initials: "SF",
@@ -209,13 +209,13 @@ export const TeamMembers: CardProps[] = [
     role: "Design",
     linkedinUrl: "",
   },
-  {
-    name: "Manifest(Eric) Akosah Jr.",
-    initials: "MA",
-    image: "empty.webp",
-    role: "Design",
-    linkedinUrl: "",
-  },
+  // {
+  //   name: "Manifest(Eric) Akosah Jr.",
+  //   initials: "MA",
+  //   image: "empty.webp",
+  //   role: "Design",
+  //   linkedinUrl: "",
+  // },
   {
     name: "Daniel Bicalho",
     initials: "DB",
@@ -231,13 +231,13 @@ export const TeamMembers: CardProps[] = [
     linkedinUrl: "https://www.linkedin.com/in/yashi-patel1027/",
     githubUrl: "https://github.com/yashipat",
   },
-  {
-    name: "Silas Carvalho",
-    initials: "SC",
-    image: "empty.webp",
-    role: "Sponsorship",
-    linkedinUrl: ""
-  },
+  // {
+  //   name: "Silas Carvalho",
+  //   initials: "SC",
+  //   image: "empty.webp",
+  //   role: "Sponsorship",
+  //   linkedinUrl: ""
+  // },
   {
     name: "Ashfin Rahman",
     initials: "AR",
@@ -248,23 +248,23 @@ export const TeamMembers: CardProps[] = [
   {
     name: "Lavdrim Islami",
     initials: "LI",
-    image: "empty.webp",
+    image: "lavdrimislami.webp",
     role: "Sponsorship",
-    linkedinUrl: ""
+    linkedinUrl: "https://www.linkedin.com/in/lavdrimislami/"
   },
   {
     name: "Dev Patel",
     initials: "DP",
-    image: "empty.webp",
+    image: "devpatel.webp",
     role: "Sponsorship",
-    linkedinUrl: ""
+    linkedinUrl: "https://www.linkedin.com/in/dev-patelll/"
   },
   {
     name: "Chandrahas Rachamadugu",
     initials: "CR",
-    image: "empty.webp",
+    image: "chandrahas.webp",
     role: "Sponsorship",
-    linkedinUrl: ""
+    linkedinUrl: "https://www.linkedin.com/in/chandrahas-rachamadugu/"
   },
   {
     name: "Michael Zach",
@@ -273,98 +273,100 @@ export const TeamMembers: CardProps[] = [
     role: "Sponsorship",
     linkedinUrl: ""
   },
+  // {
+  //   name: "Gino Russo",
+  //   initials: "GR",
+  //   image: "empty.webp",
+  //   role: "Sponsorship",
+  //   linkedinUrl: ""
+  // },
   {
-    name: "Gino Russo",
-    initials: "GR",
-    image: "empty.webp",
+    name: "Mit Patel",
+    initials: "MPP",
+    image: "mitpatel.webp",
     role: "Sponsorship",
-    linkedinUrl: ""
-  },
-  {
-    name: "Minh Doan",
-    initials: "MD",
-    image: "empty.webp",
-    role: "Sponsorship",
-    linkedinUrl: ""
+    linkedinUrl: "https://www.linkedin.com/in/mit-patel-a176a6226/"
   },
   {
     name: "Meet Patel",
     initials: "MP",
-    image: "empty.webp",
+    image: "meetpatel.webp",
     role: "Sponsorship",
     linkedinUrl: ""
   },
-  {
-    name: "Kenneth Angelikas",
-    initials: "KA",
-    image: "kennethangelikas.webp",
-    role: "Outreach",
-    linkedinUrl: "https://www.linkedin.com/in/kenneth-angelikas/",
-  },
+  // },
+  // {
+  //   name: "Kenneth Angelikas",
+  //   initials: "KA",
+  //   image: "kennethangelikas.webp",
+  //   role: "Outreach",
+  //   linkedinUrl: "https://www.linkedin.com/in/kenneth-angelikas/",
+  // },
   {
     name: "Srishty Muthusekaran",
     initials: "SM",
-    image: "empty.webp",
+    image: "srishtymuthusekaran.webp",
     role: "Outreach",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/srishty-m/",
   },
-  {
-    name: "Tyree Milord",
-    initials: "TM",
-    image: "empty.webp",
-    role: "Outreach",
-    linkedinUrl: "",
-  },
+  // {
+  //   name: "Tyree Milord",
+  //   initials: "TM",
+  //   image: "empty.webp",
+  //   role: "Outreach",
+  //   linkedinUrl: "",
+  // },
   {
     name: "Fatoumata Jalloh",
     initials: "FJ",
-    image: "empty.webp",
+    image: "fatoumatajalloh.webp",
     role: "Outreach",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/fatoumataj/",
   },
   {
     name: "Jenni Sorathiya",
     initials: "JS",
-    image: "empty.webp",
+    image: "jenisorathiya.webp",
     role: "Outreach",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/jeni-sorathiya/",
   },
   {
     name: "Huyen La",
     initials: "HL",
-    image: "empty.webp",
+    image: "huyenla.webp",
     role: "Outreach",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/huyen-la-74063125a/",
   },
-  {
-    name: "Saumika Pandey",
-    initials: "SP",
-    image: "empty.webp",
-    role: "Outreach",
-    linkedinUrl: "",
-  },
+  // {
+  //   name: "Saumika Pandey",
+  //   initials: "SP",
+  //   image: "empty.webp",
+  //   role: "Outreach",
+  //   linkedinUrl: "",
+  // },
   {
     name: "Yesha Shah",
     initials: "SM",
-    image: "empty.webp",
+    image: "yeshashah.webp",
     role: "Outreach",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/yesha-shah0021/",
   },
 
   {
     name: "Rayhona Nasimova ",
     initials: "RN",
-    image: "empty.webp",
+    image: "rayhonanasimova.webp",
     role: "DEI",
-    linkedinUrl: "",
-  },
+    linkedinUrl: "https://www.linkedin.com/in/rayhona-nasimova/",
+  }
+  // },
 
-  {
-    name: "Manya Khullar",
-    initials: "MK",
-    image: "empty.webp",
-    role: "DEI",
-    linkedinUrl: "",
-  },
+  // {
+  //   name: "Manya Khullar",
+  //   initials: "MK",
+  //   image: "empty.webp",
+  //   role: "DEI",
+  //   linkedinUrl: "",
+  // },
 
 ];
