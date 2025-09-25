@@ -212,7 +212,7 @@ export const TeamMembers: CardProps[] = [
   {
     name: "Sara Fuertes",
     initials: "SF",
-    image: "sara.webp",
+    image: "sarafuertes.webp",
     role: "Design",
     linkedinUrl: "https://www.linkedin.com/in/sara-fuertes-642819293/",
   },
@@ -269,7 +269,7 @@ export const TeamMembers: CardProps[] = [
   {
     name: "Chandrahas Rachamadugu",
     initials: "CR",
-    image: "chandrahas.webp",
+    image: "chandrahasrachamadugu.webp",
     role: "Sponsorship",
     linkedinUrl: "https://www.linkedin.com/in/chandrahas-rachamadugu/"
   },
