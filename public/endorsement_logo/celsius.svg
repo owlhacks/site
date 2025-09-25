@@ -1,0 +1,145 @@
+<svg version="1.1" id="Layer_1" xmlns:x="ns_extend;" xmlns:i="ns_ai;" xmlns:graph="ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 308.6 106" style="enable-background:new 0 0 308.6 106;" xml:space="preserve">
+ <style type="text/css">
+  .st0{fill:url(#Light_Grey_1_);}
+	.st1{fill:url(#Dark_Grey_1_);}
+	.st2{fill:url(#Degree_1_);}
+	.st3{fill:url(#Orange_Gradient_1_);}
+	.st4{fill:#1A1818;}
+	.st5{fill:#F6780D;}
+ </style>
+ <metadata>
+  <sfw xmlns="ns_sfw;">
+   <slices>
+   </slices>
+   <sliceSourceBounds bottomLeftOrigin="true" height="106" width="308.6" x="45.5" y="-253.2">
+   </sliceSourceBounds>
+  </sfw>
+ </metadata>
+ <g id="Layer_2_1_">
+  <g id="Celsius_Logo">
+   <linearGradient id="Light_Grey_1_" gradientUnits="userSpaceOnUse" x1="-503.5334" y1="-885.5544" x2="-502.5334" y2="-885.5544" gradientTransform="matrix(88.89 0 0 76.59 44777.7461 67892.3281)">
+    <stop offset="0" style="stop-color:#C7C9CB">
+    </stop>
+    <stop offset="0.16" style="stop-color:#B4B5B7">
+    </stop>
+    <stop offset="0.36" style="stop-color:#A1A2A3">
+    </stop>
+    <stop offset="0.59" style="stop-color:#CECFD0">
+    </stop>
+    <stop offset="0.7" style="stop-color:#E0E1E3">
+    </stop>
+   </linearGradient>
+   <path id="Light_Grey" class="st0" d="M78.9,77.6c-3,1.3-6.2,2-9.5,2c-13.1,0-23.8-10.7-23.8-23.8c0,0,0,0,0,0
+			c0-8.8,4.8-16.8,12.5-21.1c8.6-4.5,15.5-4.5,24.1-5.3c-2.3,0.1-7.7,0.2-13.4,0.1c-3.1-0.1-6.3,0.1-9.4,0.4
+			c-25,2.4-39.4,21-40.1,23c0,0.5,0,1.1,0,1.6c0,27.7,22.5,51.5,50.2,51.5c15,0,29.2-6.7,38.7-18.2C108.1,87.8,95.6,70.2,78.9,77.6z
+			">
+   </path>
+   <g id="Celsius_Logomark">
+    <linearGradient id="Dark_Grey_1_" gradientUnits="userSpaceOnUse" x1="-503.3118" y1="-886.113" x2="-502.7818" y2="-884.913" gradientTransform="matrix(88.89 0 0 76.59 44778.2148 67892.3672)">
+     <stop offset="0" style="stop-color:#464749">
+     </stop>
+     <stop offset="0.22" style="stop-color:#373738;stop-opacity:0.67">
+     </stop>
+     <stop offset="0.52" style="stop-color:#272626;stop-opacity:0.3">
+     </stop>
+     <stop offset="0.79" style="stop-color:#1D1B1B;stop-opacity:8.000000e-02">
+     </stop>
+     <stop offset="1" style="stop-color:#1A1818;stop-opacity:0">
+     </stop>
+    </linearGradient>
+    <path id="Dark_Grey" class="st1" d="M108.1,87.8c0,0-12.5-17.5-29.2-10.1c-3,1.3-6.2,2-9.5,2c-13.1,0-23.8-10.7-23.8-23.8
+				c0,0,0,0,0,0c0-8.8,4.8-16.8,12.5-21.1c8.6-4.5,15.5-4.5,24.1-5.3h-0.1h-0.9c-2.7,0.1-7.4,0.2-12.4,0.1c-3.1-0.1-6.3,0.1-9.4,0.4
+				c-25,2.4-39.4,21-40.1,23c0,0.5,0,1.1,0,1.6c0,27.7,22.5,51.5,50.2,51.5C84.4,106,98.6,99.3,108.1,87.8z">
+    </path>
+    <linearGradient id="Degree_1_" gradientUnits="userSpaceOnUse" x1="-485.7381" y1="-847.9912" x2="-484.7381" y2="-847.9912" gradientTransform="matrix(24.92 0 0 24.92 12106.3389 21144.4004)">
+     <stop offset="0" style="stop-color:#C7C9CB">
+     </stop>
+     <stop offset="0.29" style="stop-color:#A1A3A5">
+     </stop>
+     <stop offset="0.49" style="stop-color:#8E9091">
+     </stop>
+     <stop offset="0.8" style="stop-color:#B0B2B3">
+     </stop>
+     <stop offset="1" style="stop-color:#C2C4C6">
+     </stop>
+    </linearGradient>
+    <path id="Degree" class="st2" d="M12.5,0C5.6,0,0,5.6,0,12.5s5.6,12.5,12.5,12.5s12.5-5.6,12.5-12.5l0,0l0,0
+				C24.9,5.6,19.3,0,12.5,0z M12.5,17.6c-2.9,0-5.2-2.3-5.2-5.2c0-2.9,2.3-5.2,5.2-5.2c2.9,0,5.2,2.3,5.2,5.2S15.3,17.6,12.5,17.6
+				L12.5,17.6z">
+    </path>
+    <linearGradient id="Orange_Gradient_1_" gradientUnits="userSpaceOnUse" x1="-503.862" y1="-875.6473" x2="-502.862" y2="-875.6473" gradientTransform="matrix(93.22 0 0 49.72 46989.3438 43565.3242)">
+     <stop offset="0.13" style="stop-color:#FFC861">
+     </stop>
+     <stop offset="0.26" style="stop-color:#FCB44C">
+     </stop>
+     <stop offset="0.54" style="stop-color:#F78218">
+     </stop>
+     <stop offset="0.59" style="stop-color:#F6780D">
+     </stop>
+    </linearGradient>
+    <path id="Orange_Gradient" class="st3" d="M68.8,29.5c7.7,0,13.5-0.1,14.3-0.1c21.7-1.6,28.8-24.5,29.4-26.1
+				C96.1,4.9,69.9,4.1,69.9,4.1C42.9,3.5,19.8,25.7,19.2,52.8V53c0.2-1.4,14.7-20.6,40.1-23.1C62.5,29.6,65.6,29.5,68.8,29.5z">
+    </path>
+   </g>
+   <g id="Celsius">
+    <g id="Group_24">
+     <path id="Path_55" class="st4" d="M306.6,68.6c0.4-0.1,0.6-0.5,0.4-0.9c0,0,0,0,0,0c-0.1-0.1-0.1-0.2-0.2-0.3
+					c-0.3-0.2-0.6-0.2-0.9-0.2h0c-0.3,0-0.6,0-1,0.1h0 M304.8,67.3L304.8,67.3v2.6c0,0,0,0.1,0.1,0.1h0.6c0,0,0.1,0,0.1-0.1l0,0V69
+					h0.2c0.3,0,0.4,0.1,0.5,0.3v0.1c0,0.2,0.1,0.4,0.2,0.5l0,0h0.6c0,0,0,0,0,0c0,0,0,0,0-0.1c-0.1-0.2-0.2-0.4-0.2-0.6
+					c0-0.3-0.2-0.5-0.4-0.6L304.8,67.3z M306.3,68.1c0,0.1,0,0.1-0.1,0.2c-0.1,0.1-0.3,0.1-0.5,0.1h-0.2v-0.6h0.3
+					C306.1,67.8,306.3,67.9,306.3,68.1z">
+     </path>
+     <path id="Path_56" class="st4" d="M305.9,65.9L305.9,65.9c-1.5,0-2.7,1.2-2.7,2.6v0.1c0,0.7,0.3,1.4,0.8,1.9
+					c0.5,0.5,1.2,0.8,1.9,0.8l0,0c1.5,0,2.7-1.2,2.7-2.6v-0.1C308.6,67.1,307.4,65.9,305.9,65.9L305.9,65.9z M307.8,68.6
+					c0,0.5-0.2,1.1-0.6,1.5c-0.3,0.4-0.8,0.5-1.3,0.6l0,0c-0.5,0-1-0.2-1.4-0.6c-0.4-0.4-0.6-0.9-0.6-1.4c0-0.5,0.2-1,0.5-1.4
+					c0.4-0.4,0.8-0.6,1.4-0.6l0,0c0.5,0,1,0.2,1.4,0.6C307.6,67.5,307.8,68.1,307.8,68.6z">
+     </path>
+    </g>
+    <g id="Group_25">
+     <path id="Path_57" class="st4" d="M125.8,71.9c-3.7,0.1-7.2-1.4-9.8-4.1c-3.7-3.8-3.6-8.4-3.6-14.8s-0.1-11.1,3.6-14.8
+					c2.5-2.7,6.1-4.1,9.7-4.1c6.7,0,12,4,13.3,11.8h-7.2c-0.7-3-2.5-5.3-6.1-5.3c-1.7-0.1-3.4,0.6-4.5,1.9
+					c-1.4,1.6-1.8,3.3-1.8,10.5s0.4,8.9,1.8,10.5c1.1,1.3,2.8,2,4.5,1.9c3.6,0,5.4-2.3,6.1-5.3h7.2
+					C137.8,67.9,132.4,71.9,125.8,71.9z">
+     </path>
+     <path id="Path_58" class="st4" d="M143.9,71.6V35.5h23.8v6.3h-16.7v8.5h14.3v6.3h-14.3v8.8h16.7v6.3L143.9,71.6z">
+     </path>
+     <path id="Path_59" class="st4" d="M174.6,71.6V35.5h7.1v29.8H198v6.3L174.6,71.6z">
+     </path>
+     <path id="Path_60" class="st4" d="M213.7,71.9c-5.5,0-9.6-1.2-13.2-4.8l4.6-4.6c2.3,2.3,5.4,3,8.7,3c4.2,0,6.4-1.6,6.4-4.5
+					c0.1-1.1-0.3-2.2-1.1-3c-0.9-0.8-2-1.2-3.2-1.3l-4.4-0.6c-2.6-0.2-5-1.3-7-3c-1.8-1.9-2.7-4.5-2.6-7.1c0-6.4,4.8-11,12.6-11
+					c5,0,8.6,1.2,11.7,4.2l-4.5,4.4c-2.3-2.2-5-2.5-7.4-2.5c-3.8,0-5.6,2.1-5.6,4.6c0,1,0.4,1.9,1.1,2.6c1,0.8,2.1,1.3,3.4,1.4
+					l4.3,0.6c3.3,0.5,5.4,1.4,6.9,2.8c1.9,1.8,2.8,4.5,2.8,7.7C227.1,67.9,221.2,71.9,213.7,71.9L213.7,71.9z">
+     </path>
+     <path id="Path_61" class="st4" d="M232.5,71.6V35.5h7v36.1H232.5z">
+     </path>
+     <path id="Path_62" class="st4" d="M259.9,71.9c-7.4,0-13.3-5-13.3-12.7V35.5h7V59c0,4.2,2.4,6.7,6.2,6.7s6.3-2.5,6.3-6.7V35.5h7
+					v23.7C273.1,66.9,267.3,71.9,259.9,71.9L259.9,71.9z">
+     </path>
+     <path id="Path_63" class="st4" d="M289.7,71.9c-5.5,0-9.6-1.2-13.2-4.8l4.6-4.6c2.3,2.3,5.4,3,8.7,3c4.1,0,6.4-1.6,6.4-4.5
+					c0.1-1.1-0.3-2.2-1.1-3c-0.9-0.8-2-1.2-3.2-1.3l-4.4-0.6c-2.6-0.2-5-1.3-7-3c-1.8-1.9-2.7-4.5-2.6-7.1c0-6.4,4.8-11,12.6-11
+					c5,0,8.6,1.2,11.7,4.2l-4.5,4.4c-2.3-2.2-5-2.5-7.4-2.5c-3.8,0-5.6,2.1-5.6,4.6c0,1,0.4,1.9,1.1,2.6c1,0.8,2.1,1.3,3.4,1.4
+					l4.3,0.6c3.3,0.5,5.4,1.4,6.9,2.8c1.9,1.8,2.8,4.5,2.8,7.7C303.2,67.9,297.3,71.9,289.7,71.9L289.7,71.9z">
+     </path>
+    </g>
+   </g>
+   <g id="Live_Fit">
+    <g id="Group_27">
+     <path id="Path_64" class="st5" d="M232.5,91.5V79.2h2.4v10.2h5.6v2.2H232.5z">
+     </path>
+     <path id="Path_65" class="st5" d="M243.3,91.5V79.2h2.4v12.3H243.3z">
+     </path>
+     <path id="Path_66" class="st5" d="M253.9,91.5h-1.8l-4.1-12.3h2.5l2.5,8l2.5-8h2.5L253.9,91.5z">
+     </path>
+     <path id="Path_67" class="st5" d="M260.4,91.5V79.2h8.1v2.2h-5.7v2.9h4.9v2.1h-4.9v3h5.7v2.2H260.4z">
+     </path>
+     <path id="Path_68" class="st5" d="M279,81.3v3h4.9v2.2H279v5h-2.4V79.2h8.1v2.2H279z">
+     </path>
+     <path id="Path_69" class="st5" d="M287.7,91.5V79.2h2.4v12.3H287.7z">
+     </path>
+     <path id="Path_70" class="st5" d="M298.6,81.3v10.2h-2.4V81.3h-3.2v-2.2h8.9v2.2H298.6z">
+     </path>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
