@@ -78,33 +78,16 @@ export default function TrackList({}: Props) {
   return (
   <section className="mx-32 p-4 gap-y-5 flex flex-col items-center mb-10 mt-5">
 
-    {(new Date()) <= (new Date("2024-10-05")) &&
-    <Heading variant="h3" className="font-bold" >
-      To Be Announce !
+    <Heading variant="h3" className="font-bold text-center" >
+      Tracks Will Be Announced Soon!
     </Heading>
-    }
 
-    {(new Date()) >= (new Date("2024-10-05")) &&
-    <div>
-      <Heading variant="h3" className="font-bold text-center">
-        Tracks
-      </Heading>
-
-
-      <div className="flex flex-col gap-y-10 items-center justify-center">
-          {
-            Tracks.map((track, index) => (
-              <TrackCard
-                key = {index}
-                title = {track.title}
-                description = {track.description}
-                src = {track.logo_src}
-              />
-            ))
-          }
-      </div>
-    </div>
-    }
+    <Text
+      size="large"
+      className="text-skin-muted text-center mt-4"
+    >
+      Stay tuned for exciting track announcements coming soon.
+    </Text>
 
   </section>
   );

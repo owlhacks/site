@@ -15,7 +15,7 @@ export default function Schedule({}: Props) {
         variant="h5"
         className="mb-1 font-bold text-skin-base dark:text-skin-muted text-left"
       >
-        Saturday, October 5th
+        Saturday, September 27th
       </Heading>
 
       {SaturdayEvents.map((event, idx) => (
@@ -30,7 +30,7 @@ export default function Schedule({}: Props) {
         variant="h5"
         className="mb-1 font-bold text-skin-base dark:text-skin-muted text-left"
       >
-        Sunday, October 6th
+        Sunday, September 28th
       </Heading>
 
       {SundayEvents.map((event, idx) => (
