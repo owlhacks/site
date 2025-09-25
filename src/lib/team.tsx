@@ -2,31 +2,38 @@ import { CardProps } from "@/components/HomePage/Team/TeamCard/TeamCard";
 
 export const TeamMembers: CardProps[] = [
   {
+    name: "Stephen MacNeil",
+    initials: "SM",
+    image: "stephenmacneil.webp",
+    role: "Faculty Advisor",
+    linkedinUrl: "https://www.linkedin.com/in/stevemacn1/",
+  },
+  {
     name: "Christine Kapp",
     initials: "CK",
     image: "christinekapp.webp",
-    role: "Director",
+    role: "Directors",
     linkedinUrl: "https://www.linkedin.com/in/christine-kapp-658b41238",
   },
   {
     name: "Shrey Patel",
     initials: "SP",
-    image: "shreypatel.webp",
-    role: "Director",
+    image: "shrey.webp",
+    role: "Directors",
     linkedinUrl: "https://www.linkedin.com/in/shr3y",
   },
   {
     name: "Kush Patel",
     initials: "KP",
     image: "kushpatel.webp",
-    role: "Director",
+    role: "Directors",
     linkedinUrl: "https://www.linkedin.com/in/kushpatel00/",
   },
   {
     name: "Yatri Patel",
     initials: "YP",
     image: "yatripatel.webp",
-    role: "Director",
+    role: "Directors",
     linkedinUrl: "https://www.linkedin.com/in/yatri-patel-229710291/",
   },
   {
@@ -58,9 +65,9 @@ export const TeamMembers: CardProps[] = [
   {
     name: "Nene Coulibaly",
     initials: "NC",
-    image: "empty.webp",
+    image: "nenecoulibaly.webp",
     role: "Logistics",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/nene-coulibaly-84b766214/",
   },
   {
     name: "Antonio Lazaro",
@@ -135,9 +142,9 @@ export const TeamMembers: CardProps[] = [
   {
     name: "Victor Awoleye",
     initials: "VA",
-    image: "empty.webp",
+    image: "victora.webp",
     role: "Operations",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/victora000/",
   },
   {
     name: "Maahin Mirza",
@@ -163,9 +170,9 @@ export const TeamMembers: CardProps[] = [
   {
     name: "Nana Korsah",
     initials: "NK",
-    image: "empty.webp",
+    image: "nanakorsah.webp",
     role: "Design",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/nana-korsah-5a0973250/",
   },
   {
     name: "Nandita Reddy",
@@ -191,9 +198,9 @@ export const TeamMembers: CardProps[] = [
   {
     name: "Rapheal Ankrah",
     initials: "RA",
-    image: "empty.webp",
+    image: "raphealankrah.webp",
     role: "Design",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/rapheal-nii-adjabeng-ankrah-058688231/",
   },
   // {
   //   name: "Eric Eleam",
@@ -205,17 +212,17 @@ export const TeamMembers: CardProps[] = [
   {
     name: "Sara Fuertes",
     initials: "SF",
-    image: "empty.webp",
+    image: "sara.webp",
     role: "Design",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/sara-fuertes-642819293/",
   },
-  // {
-  //   name: "Manifest(Eric) Akosah Jr.",
-  //   initials: "MA",
-  //   image: "empty.webp",
-  //   role: "Design",
-  //   linkedinUrl: "",
-  // },
+  {
+    name: "Manifest(Eric) Akosah Jr.",
+    initials: "MA",
+    image: "ericakosah.webp",
+    role: "Design",
+    linkedinUrl: "https://www.linkedin.com/in/eakosahjr/",
+  },
   {
     name: "Daniel Bicalho",
     initials: "DB",
@@ -238,13 +245,13 @@ export const TeamMembers: CardProps[] = [
   //   role: "Sponsorship",
   //   linkedinUrl: ""
   // },
-  {
-    name: "Ashfin Rahman",
-    initials: "AR",
-    image: "empty.webp",
-    role: "Sponsorship",
-    linkedinUrl: ""
-  },
+  // {
+  //   name: "Ashfin Rahman",
+  //   initials: "AR",
+  //   image: "empty.webp",
+  //   role: "Sponsorship",
+  //   linkedinUrl: ""
+  // },
   {
     name: "Lavdrim Islami",
     initials: "LI",
@@ -266,13 +273,13 @@ export const TeamMembers: CardProps[] = [
     role: "Sponsorship",
     linkedinUrl: "https://www.linkedin.com/in/chandrahas-rachamadugu/"
   },
-  {
-    name: "Michael Zach",
-    initials: "MZ",
-    image: "empty.webp",
-    role: "Sponsorship",
-    linkedinUrl: ""
-  },
+  // {
+  //   name: "Michael Zach",
+  //   initials: "MZ",
+  //   image: "empty.webp",
+  //   role: "Sponsorship",
+  //   linkedinUrl: ""
+  // },
   // {
   //   name: "Gino Russo",
   //   initials: "GR",
@@ -292,7 +299,7 @@ export const TeamMembers: CardProps[] = [
     initials: "MP",
     image: "meetpatel.webp",
     role: "Sponsorship",
-    linkedinUrl: ""
+    linkedinUrl: "https://www.linkedin.com/in/meet-patel-3458a51b3/"
   },
   // },
   // {
@@ -337,13 +344,13 @@ export const TeamMembers: CardProps[] = [
     role: "Outreach",
     linkedinUrl: "https://www.linkedin.com/in/huyen-la-74063125a/",
   },
-  // {
-  //   name: "Saumika Pandey",
-  //   initials: "SP",
-  //   image: "empty.webp",
-  //   role: "Outreach",
-  //   linkedinUrl: "",
-  // },
+  {
+    name: "Saumika Pandey",
+    initials: "SP",
+    image: "saumikapandey.webp",
+    role: "Outreach",
+    linkedinUrl: "https://www.linkedin.com/in/saumika-pandey/",
+  },
   {
     name: "Yesha Shah",
     initials: "SM",
@@ -353,7 +360,7 @@ export const TeamMembers: CardProps[] = [
   },
 
   {
-    name: "Rayhona Nasimova ",
+    name: "Rayhona Nasimova",
     initials: "RN",
     image: "rayhonanasimova.webp",
     role: "DEI",

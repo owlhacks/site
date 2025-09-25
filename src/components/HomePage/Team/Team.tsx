@@ -12,7 +12,7 @@ type Props = {};
 
 export default function Team({}: Props) {
 
-  const tabHeader: string[] = ["Director", "Web Development", "Logistics", "Operations",
+  const tabHeader: string[] = ["Faculty Advisor", "Directors", "Web Development", "Logistics", "Operations",
     "Design", "Sponsorship", "Outreach", "DEI"];
 
   const [tabContent, setTabContent] = useState<Record<string, CardProps[]>>({})
@@ -36,7 +36,7 @@ export default function Team({}: Props) {
     <SectionContent sectionId="team">
       <SectionHeading>Meet Our Team</SectionHeading>
       <Tabs.Root
-      defaultValue="Director">
+      defaultValue="Directors">
         <Tabs.List
         className="flex flex-wrap shrink-0 gap-5 mb-8 pt-0 justify-center
         " >
