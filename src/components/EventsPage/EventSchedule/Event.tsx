@@ -38,6 +38,11 @@ export default function Event(event: EventType) {
             </p>
             }
 
+            {content.room && <p className="mt-1 text-sm font-semibold text-white">
+              📍 {content.room}
+            </p>
+            }
+
             { content.guest &&
             <a href={content.linkedin_url} target="_blank">
               <button type="button"
