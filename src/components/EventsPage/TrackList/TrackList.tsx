@@ -5,29 +5,35 @@ import Text from "@/components/Shared/Typography/Text";
 
 const Tracks = [
   {
-    title: "Smart Health",
-    description: "Many parts of the world lack access to basic healthcare services. Technology can help bridge this gap by providing remote diagnostics, telemedicine, and affordable healthcare solutions. Develop innovative technology solutions to improve healthcare access and outcomes in regions worldwide!",
-    logo_src: "/track_logo/health.svg",
+    title: "🌌 Spotlight Challenge: Galactic Market Challenge",
+    teaserTitle: "🌌 The Big Idea",
+    description: "No Code. Big Ideas. Not every hacker needs to code. This challenge is for students in business, finance, marketing, or design who want to pitch the next big venture—from Earth to orbit. Create a business plan, pitch deck, or market strategy. Propose a product or service that could exist 10+ years from now. Optional visuals (mockups, branding, demos—no code required).",
+    logo_src: "/track_logo/finance.svg",
+    special: true,
   },
   {
-    title: "Urban Tech",
-    description: "Urban towns and cities have a host of challenges, including traffic congestion, pollution, and resource scarcity. Technology can help these cities become more sustainable, efficient, and livable by optimizing transportation systems, improving energy efficiency, and promoting smart infrastructure. Design technology to create more sustainable and equitable urban environments around the globe!",
+    title: "Future Mobility",
+    teaserTitle: "Getting Around",
+    description: "From travel solutions to smarter infrastructure, how can we reshape our cities, countries, — or even planets? Focus on innovation in transportation, sustainability, and logistics. Develop technology solutions that revolutionize how we move people and goods across the globe!",
     logo_src: "/track_logo/urban.svg",
   },
   {
-    title: "Inclusive Education",
-    description: "Many students face barriers to accessing quality education, such as cultural, linguistic, and socioeconomic challenges. Technology can help create more inclusive and equitable learning environments. Develop technology solutions to address barriers to education and promote inclusive learning experiences for all students worldwide!",
+    title: "Next Frontier Health (ML Track)",
+    teaserTitle: "Feeling Better",
+    description: "As tech pushes into new frontiers, so should healthcare. Build tools that pivot from the traditional data sets to machine learning/AI solutions to support physical or mental wellness. Develop next-gen health tech where it's needed most. Create innovative solutions that leverage AI and ML to transform healthcare delivery worldwide!",
+    logo_src: "/track_logo/health.svg",
+  },
+  {
+    title: "Equity by Design",
+    teaserTitle: "For Everyone",
+    description: "The future needs to work for everyone. This track is designed to make tech inclusive, and accessible. From education to public services. How do we build a better world for everyone? Develop technology solutions that break down barriers and create equitable access to opportunities for all communities worldwide!",
     logo_src: "/track_logo/education.svg",
   },
   {
     title: "Philly Special",
-    description: "Philadelphia was highlighted as one of the top 10 cities to visit around the globe in the Lonely Planet’s “Best in Travel” 2024 awards because of its attractions, landmarks, and delicious food. Develop technology to further enhance Philadelphia's reputation as a global destination!",
+    teaserTitle: "Local Flavor",
+    description: "The wildcard track is set for takeoff. Whether it is an intergalactic AR tour of Philly history, or a hyper-local app to provide nearby help. Anything goes. Be bold, be creative, and shoot for the stars! Develop innovative technology solutions that showcase Philadelphia's unique character and creativity!",
     logo_src: "/track_logo/bell.svg",
-  },
-  {
-    title: "Strategic Trading",
-    description: "Algorithmic trading has transformed global financial markets, with over 70% of trades now executed by automated systems using quantitative models and technical indicators like Moving Averages, RSI, and MACD. This track draws inspiration from the increasing demand for innovative trading strategies that can navigate dynamic market conditions. Participants will leverage Python to develop and backtest strategies that integrate these indicators while managing risk. The challenge invites creative problem-solving and technical expertise, combining finance, data science, and programming to design trading models that excel in real-world markets.",
-    logo_src: "/track_logo/finance.svg",
   }
 ]
 
@@ -38,16 +44,20 @@ type TrackCardProps = {
   title: string;
   description: string;
   src: string;
+  special?: boolean;
 };
 
 
 function TrackCard(props: TrackCardProps) {
 
   return (
-        <div className="relative p-10 rounded-2xl w-full my-4
-            bg-gradient-to-tr from-[#202020] from-0% to-[#292929] to-100%
-            ">
-            <div className="text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-skin-primary left-4 -top-6">
+        <div className={`relative p-10 rounded-2xl w-full my-4
+            ${props.special 
+              ? 'bg-gradient-to-tr from-[#4A0F73] from-0% to-[#81188A] to-100% border-2 border-[#F5AB4E]' 
+              : 'bg-gradient-to-tr from-[#202020] from-0% to-[#292929] to-100%'
+            }`}>
+            <div className={`text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl left-4 -top-6
+                ${props.special ? 'bg-[#F5AB4E]' : 'bg-skin-primary'}`}>
 
                 <img
                   src={props.src}
@@ -75,19 +85,31 @@ function TrackCard(props: TrackCardProps) {
 
 
 export default function TrackList({}: Props) {
+  // Set the reveal date - change this to when you want tracks to be visible
+  const revealDate = new Date("2025-09-27T08:00:00"); // For example, January 15, 2025 at midnight
+  const currentDate = new Date();
+  const shouldShowTracks = currentDate >= revealDate;
+
   return (
   <section className="mx-32 p-4 gap-y-5 flex flex-col items-center mb-10 mt-5">
 
-    <Heading variant="h3" className="font-bold text-center" >
-      Tracks Will Be Announced Soon!
+    <Heading variant="h3" className="font-bold text-center">
+      Tracks
     </Heading>
 
-    <Text
-      size="large"
-      className="text-skin-muted text-center mt-4"
-    >
-      Stay tuned for exciting track announcements coming soon.
-    </Text>
+    <div className="flex flex-col gap-y-10 items-center justify-center">
+        {
+          Tracks.map((track, index) => (
+            <TrackCard
+              key = {index}
+              title = {shouldShowTracks ? track.title : track.teaserTitle}
+              description = {shouldShowTracks ? track.description : "Coming Soon..."}
+              src = {track.logo_src}
+              special = {track.special}
+            />
+          ))
+        }
+    </div>
 
   </section>
   );
