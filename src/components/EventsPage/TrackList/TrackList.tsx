@@ -86,7 +86,7 @@ function TrackCard(props: TrackCardProps) {
 
 export default function TrackList({}: Props) {
   // Set the reveal date - change this to when you want tracks to be visible
-  const revealDate = new Date("2025-09-27T08:00:00"); // For example, January 15, 2025 at midnight
+  const revealDate = new Date("2025-09-27T09:30:00"); // For example, January 15, 2025 at midnight
   const currentDate = new Date();
   const shouldShowTracks = currentDate >= revealDate;
 
