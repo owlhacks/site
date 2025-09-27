@@ -162,7 +162,7 @@ const SaturdayEvents: EventType[] = [
         start_time: "09:00 PM",
         content: [
             {
-                title: "Bob Ross Painting Social Event Presented by Blackstone Launchpad",
+                title: "Bob Ross Painting Social Event Presented by MLH",
                 description: "Paint like Bob Ross but in an ancient version of Windows Paint while watching Bob Ross on Twitch. It’s funny AND impressive!",
                 room: "To be Announced",
             },
