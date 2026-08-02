@@ -19,7 +19,7 @@ export type CardProps = {
 
 export default function TeamCard(props: CardProps) {
   return (
-    <div className="flex sm:flex-col sm:justify-center items-center sm:w-60 w-full sm:h-60 h-32 border border-skin-alpha bg-gradient-to-tr from-[#202020] from-0% to-[#292929] to-100% rounded-lg p-4 space-x-10 sm:space-y-5 sm:space-x-0">
+    <div className="flex sm:flex-col sm:justify-center items-center sm:w-60 w-full sm:h-60 h-32 border border-skin-alpha bg-gradient-to-tr from-[#0f1c4d] from-0% to-[#142987] to-100% rounded-lg p-4 space-x-10 sm:space-y-5 sm:space-x-0">
       <Image
         className="w-24 h-24 rounded-full border-2 border-skin-light object-cover"
         src={`/team/${props.image}`}
@@ -46,7 +46,7 @@ export default function TeamCard(props: CardProps) {
         </span> */}
 
         <div className="flex items-center mt-2 gap-3">
-          <Link href={props.linkedinUrl} target="_blank">
+          <Link href={props.linkedinUrl} target="_blank" rel="noopener noreferrer">
             <svg
               className="text-skin-muted hover:text-skin-primary"
               aria-hidden="true"
@@ -64,7 +64,7 @@ export default function TeamCard(props: CardProps) {
           </Link>
 
           {props.githubUrl && (
-            <Link href={props.githubUrl} target="_blank">
+            <Link href={props.githubUrl} target="_blank" rel="noopener noreferrer">
               <svg
                 className="text-skin-muted hover:text-skin-primary"
                 xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +80,7 @@ export default function TeamCard(props: CardProps) {
             </Link>
           )}
           {props.websiteUrl && (
-            <Link href={props.websiteUrl} target="_blank">
+            <Link href={props.websiteUrl} target="_blank" rel="noopener noreferrer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 640 512"

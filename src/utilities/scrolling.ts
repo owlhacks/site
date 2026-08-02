@@ -5,6 +5,16 @@ export function scrollToSection(sectionId: string) {
     return;
   }
 
+  // "home" / "top" always scroll to page start
+  if (sectionId === "home" || sectionId === "top") {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    return;
+  }
+
   const section = document.getElementById(sectionId);
-  if (section) section?.scrollIntoView({ behavior: "smooth" });
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  } else {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 }

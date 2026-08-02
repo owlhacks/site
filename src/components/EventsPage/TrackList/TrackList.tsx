@@ -53,11 +53,11 @@ function TrackCard(props: TrackCardProps) {
   return (
         <div className={`relative p-10 rounded-2xl w-full my-4
             ${props.special 
-              ? 'bg-gradient-to-tr from-[#4A0F73] from-0% to-[#81188A] to-100% border-2 border-[#F5AB4E]' 
-              : 'bg-gradient-to-tr from-[#202020] from-0% to-[#292929] to-100%'
+              ? 'bg-gradient-to-tr from-[#142987] from-0% to-[#2d85eb] to-100% border-2 border-[#ffe66d]' 
+              : 'bg-gradient-to-tr from-[#0f1c4d] from-0% to-[#142987] to-100%'
             }`}>
             <div className={`text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl left-4 -top-6
-                ${props.special ? 'bg-[#F5AB4E]' : 'bg-skin-primary'}`}>
+                ${props.special ? 'bg-[#ffe66d]' : 'bg-skin-primary'}`}>
 
                 <img
                   src={props.src}
@@ -86,7 +86,7 @@ function TrackCard(props: TrackCardProps) {
 
 export default function TrackList({}: Props) {
   // Set the reveal date - change this to when you want tracks to be visible
-  const revealDate = new Date("2025-09-27T09:30:00"); // For example, January 15, 2025 at midnight
+  const revealDate = new Date("2026-09-26T08:00:00"); // same as Countdown
   const currentDate = new Date();
   const shouldShowTracks = currentDate >= revealDate;
 

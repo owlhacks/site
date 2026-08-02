@@ -64,7 +64,12 @@ export default function NavElement({
       }`}
     >
       {isLink ? (
-        <Link href={href} target="_blank" className="select-none font-semibold">
+        <Link
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="select-none font-semibold"
+        >
           <Text size="medium">{heading}</Text>
         </Link>
       ) : (

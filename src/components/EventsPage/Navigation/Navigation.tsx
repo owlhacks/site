@@ -150,7 +150,9 @@ export default function Navigation() {
               <ul className="flex flex-col h-full justify-center items-start space-y-5 mx-10">
                 <Link
                   className="absolute left-10 top-0"
-                  href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=black"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white"
                 >
                   <MLHBadge />
                 </Link>
@@ -196,7 +198,9 @@ export default function Navigation() {
         <ul className="flex justify-center-safe items-center space-x-2">
           <Link
             className="absolute right-10 top-0"
-            href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=black"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white"
           >
             <MLHBadge />
           </Link>

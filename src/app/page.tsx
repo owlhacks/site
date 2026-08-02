@@ -1,24 +1,23 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 
-import Navigation from "@/components/HomePage/Navigation/Navigation";
-import Hero from "@/components/HomePage/Hero/Hero";
+import Background from "@/components/Background/Background";
 import About from "@/components/HomePage/About/About";
 import FAQ from "@/components/HomePage/FAQ/FAQ";
-import Team from "@/components/HomePage/Team/Team";
-import Logistics from "@/components/HomePage/Logistics/Logistics";
-import Sponsors from "@/components/HomePage/Sponsors/Sponsors";
 import Footer from "@/components/HomePage/Footer/Footer";
+import Hero from "@/components/HomePage/Hero/Hero";
+import Logistics from "@/components/HomePage/Logistics/Logistics";
+import Navigation from "@/components/HomePage/Navigation/Navigation";
+import Sponsors from "@/components/HomePage/Sponsors/Sponsors";
+import Team from "@/components/HomePage/Team/Team";
 import LoadingScreen from "@/components/Shared/LoadingScreen/LoadingScreen";
-import Background from "@/components/Background/Background";
 
 import MLHBadge from "@/assets/MLHBadge";
 
 
-import Link from "next/link";
-import { AnimatePresence, motion } from "framer-motion";
 import Endorsements from "@/components/HomePage/Endorsements/Endorsements";
-import Countdown from "@/components/HomePage/Countdown/Countdown";
+import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 
 type Props = {};
 
@@ -46,7 +45,8 @@ export default function Page({}: Props) {
             <Link
               className="md:hidden z-10 absolute right-5 top-0"
               target="_blank"
-              href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=black"
+              rel="noopener noreferrer"
+              href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white"
             >
               <MLHBadge />
             </Link>

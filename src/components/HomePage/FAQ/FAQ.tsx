@@ -1,10 +1,10 @@
-import React, { ReactNode } from "react";
 import * as Accordion from "@radix-ui/react-accordion";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
+import { ReactNode } from "react";
 
-import SectionHeading from "@/components/Shared/Sections/SectionHeading";
 import SectionContent from "@/components/Shared/Sections/SectionContent";
+import SectionHeading from "@/components/Shared/Sections/SectionHeading";
 import Text from "@/components/Shared/Typography/Text";
 
 type Props = {};
@@ -73,7 +73,7 @@ export default function FAQ({}: Props) {
               When does the hackathon take place?
             </AccordionTrigger>
             <AccordionContent>
-              OwlHacks takes place from September 27th - 28th. Keep an eye on this
+              OwlHacks takes place from September 26th - 27th. Keep an eye on this
               page or our Discord for any updates.
             </AccordionContent>
           </AccordionItem>

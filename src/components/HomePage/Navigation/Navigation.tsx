@@ -8,9 +8,9 @@
 
 "use client";
 
-import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 import NavElement from "@/components/Shared/Navigation/NavElement";
 import Text from "@/components/Shared/Typography/Text";
@@ -207,7 +207,7 @@ export default function Navigation() {
             <NavElement heading="Team" href="team" />
             <NavElement
               heading="Register"
-              href="https://forms.gle/mpA4a96N4W72Lgqe6"
+              href="https://forms.gle/KFxhAmuUdTH3aouy8"
               isLink
               border
             />
@@ -219,7 +219,8 @@ export default function Navigation() {
         <div >
           <Link
             target="_blank"
-            href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=black"
+            rel="noopener noreferrer"
+            href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white"
           >
             <MLHBadge />
           </Link>
