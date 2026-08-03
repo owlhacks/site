@@ -1,20 +1,19 @@
 import Link from "next/link";
-import React from "react";
 
 import Text from "@/components/Shared/Typography/Text";
-import { motion } from "framer-motion";
 import { scrollToSection } from "@/utilities/scrolling";
+import { motion } from "framer-motion";
 
 type Props = {};
 
 export default function Footer({}: Props) {
   return (
-    <footer className="mx-auto h-40 overflow-hidden">
+    <footer className="relative z-10 mx-auto h-40 overflow-hidden">
       <div className="h-px bg-skin-light" />
       <div className="flex flex-col items-center pt-2 justify-center px-10 py-4 h-full gap-y-3">
         <div className="flex flex-col text-center md:flex-row text-skin-base">
           <Text className="font-semibold text-skin-muted" size="medium">
-            OwlHacks © 2025 &nbsp;&#x2022;&nbsp;
+            OwlHacks © 2026 &nbsp;&#x2022;&nbsp;
           </Text>
 
           <Text
@@ -24,6 +23,7 @@ export default function Footer({}: Props) {
             <Link
               href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
               target="_blank"
+              rel="noopener noreferrer"
               className="underline"
             >
               Code of Conduct
@@ -46,6 +46,7 @@ export default function Footer({}: Props) {
           <Link
             href="https://www.linkedin.com/company/templeowlhacks/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <svg
               className="min-w-8 text-skin-muted hover:text-skin-base"
@@ -63,7 +64,7 @@ export default function Footer({}: Props) {
             </svg>
           </Link>
 
-          <Link href="https://discord.gg/haUbmXeXHA" target="_blank">
+          <Link href="https://discord.gg/xYs3M2jcw" target="_blank" rel="noopener noreferrer">
             <svg
               className="min-w-[2rem] text-skin-muted hover:text-skin-base"
               aria-hidden="true"
@@ -92,7 +93,7 @@ export default function Footer({}: Props) {
               />
             </svg>
           </Link>
-          <Link href="https://instagram.com/owlhacks">
+          <Link href="https://instagram.com/owlhacks" target="_blank" rel="noopener noreferrer">
             <svg
               className="min-w-[2rem] text-skin-muted hover:text-skin-base"
               xmlns="http://www.w3.org/2000/svg"

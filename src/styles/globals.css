@@ -3,38 +3,44 @@
 @tailwind utilities;
 
 :root {
-  /* #39A78E */
-  --color-theme-primary: #81188A;
-  --color-theme-secondary: #3EB69A;
+  /* Aquatic 2026 — Coolors: cotton-candy, royal-gold, tropical-mint, brilliant-azure, true-cobalt */
+  --color-theme-primary: #2d85eb;
+  --color-theme-secondary: #48e2b4;
 
-  --color-theme-primary-indigo: #4A0F73;
-  --color-theme-primary-dark_magenta: #81188A;
-  --color-theme-primary-rusty_red: #De3749;
-  --color-theme-primary-earth_yellow: #f5ab4e;
-  --color-theme-primary-jasmine: #fad970;
+  --color-theme-primary-indigo: #142987;
+  --color-theme-primary-dark_magenta: #2d85eb;
+  --color-theme-primary-rusty_red: #ff8fa3;
+  --color-theme-primary-earth_yellow: #ffe66d;
+  --color-theme-primary-jasmine: #ffe66d;
 
-  --color-theme-light-background: #C5F5FF;
-  --color-theme-dark-background: #181818;
+  --color-theme-light-background: #a8e6f0;
+  --color-theme-dark-background: #0a1438;
 
-  --color-body-fill: #181818;
-  --color-body-light: #202020;
-  --color-body-lighter: #292929;
-  --color-body-inverted: #e0e0e0;
-  --color-sky-fill: #c2e5e7;
+  --color-body-fill: #0a1438;
+  --color-body-light: #0f1c4d;
+  --color-body-lighter: #142987;
+  --color-body-inverted: #e8f4fc;
+  --color-sky-fill: #48e2b4;
 
-  --color-button: #181818;
-  --color-button-hover:#202020;
+  --color-button: #0a1438;
+  --color-button-hover: #0f1c4d;
 
-  --color-text-base: #e0e0e0;
-  --color-text-secondary: #C2C2C2;
-  --color-text-muted: #8F8F8F;
+  --color-text-base: #e8f4fc;
+  --color-text-secondary: #a8c4e0;
+  --color-text-muted: #7a96b8;
 
-  --color-border-base: #181818;
-  --color-border-light: #202020;
-  --color-border-lighter: #292929;
+  --color-border-base: #0a1438;
+  --color-border-light: #0f1c4d;
+  --color-border-lighter: #142987;
   --color-border-alpha: #FFFFFF24;
-  --color-border-inverted: #e0e0e0;
-  --color-border-primary: #39A78E;
+  --color-border-inverted: #e8f4fc;
+  --color-border-primary: #2d85eb;
+
+  --color-discord: #5865F2;
+
+  /* Scroll-driven deep-sea background (updated by Background.tsx) */
+  --ocean-depth: 0;
+  --ocean-depth-bg: #0a1438;
 
   scrollbar-color: var(--color-body-fill);
   scrollbar-arrow-color: var(--color-body-fill);
@@ -52,7 +58,8 @@
 
 body {
   position: relative;
-  background-color: var(--color-body-fill);
+  background-color: var(--ocean-depth-bg, var(--color-body-fill));
+  transition: background-color 80ms linear;
 }
 
 h1 {

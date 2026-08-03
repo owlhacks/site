@@ -1,13 +1,10 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import Image from "next/image";
+import { useEffect, useState } from "react";
 
 import Countdown from "@/components/HomePage/Countdown/Countdown";
 import SectionHeading from "@/components/Shared/Sections/SectionHeading";
 import Text from "@/components/Shared/Typography/Text";
 
-import Navigation from "@/components/HomePage/Navigation/Navigation";
-import SectionContent from "@/components/Shared/Sections/SectionContent";
 
 
 type Props = {};
@@ -30,11 +27,11 @@ export default function Hero({}: Props) {
 
   return (
     <>
-      <div className="flex flex-grow justify-center items-center min-h-screen w-full overflow-hidden">
+      <div id="home" className="flex flex-grow justify-center items-center min-h-screen w-full overflow-hidden">
           <div className="text-center">
             <SectionHeading >OwlHacks </SectionHeading>
             <Text size="medium" className="mb-5">
-                September 27 - 28, 2025 | In Person | Temple University | 1925 N. 12th St., Philadelphia, Pa 19122
+                September 26 - 27, 2026 | In Person | Temple University | 1925 N. 12th St., Philadelphia, Pa 19122
             </Text>
             <Countdown />
           </div>

@@ -19,6 +19,7 @@ export default function Endorser(props: EndorserProps) {
       aria-label={props.ariaLabel}
       href={props.href}
       target="_blank"
+      rel="noopener noreferrer"
       className="w-32 h-32 bg-skin-inverted rounded-2xl flex justify-center items-center hover:opacity-85 select-none duration-200 ease-in-out"
     >
       <img

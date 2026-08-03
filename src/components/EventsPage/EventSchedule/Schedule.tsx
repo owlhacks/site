@@ -1,4 +1,3 @@
-import React from "react";
 
 import Heading from "@/components/Shared/Typography/Heading";
 
@@ -15,7 +14,7 @@ export default function Schedule({}: Props) {
         variant="h5"
         className="mb-1 font-bold text-skin-base dark:text-skin-muted text-left"
       >
-        Saturday, September 27th
+        Saturday, September 26th
       </Heading>
 
       {SaturdayEvents.map((event, idx) => (
@@ -30,7 +29,7 @@ export default function Schedule({}: Props) {
         variant="h5"
         className="mb-1 font-bold text-skin-base dark:text-skin-muted text-left"
       >
-        Sunday, September 28th
+        Sunday, September 27th
       </Heading>
 
       {SundayEvents.map((event, idx) => (
