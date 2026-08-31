@@ -32,6 +32,7 @@ export default function Sponsors({}: Props) {
             altText={sponsor.altText}
             width={sponsor.width}
             height={sponsor.height}
+            href={sponsor.href}
             key={sponsor.altText}
           ></Sponsorer>
         ))}

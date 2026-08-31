@@ -48,7 +48,14 @@ const Sponsor: SponsorerProps[] = [
     altText: "Blackstone launchpad",
     width: 160,
     height: 100,
-  }
+  },
+  {
+    src: "/sponsor_logo/pure-buttons.png",
+    altText: "Pure Buttons",
+    width: 220,
+    height: 200,
+    href: "https://www.purebuttons.com/?utm_source=mlh&utm_medium=referral",
+  },
 ];
 
 const Donator: SponsorerProps[] = [
