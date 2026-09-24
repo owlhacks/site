@@ -64,7 +64,7 @@ export default function Footer({}: Props) {
             </svg>
           </Link>
 
-          <Link href="https://discord.gg/xYs3M2jcw" target="_blank" rel="noopener noreferrer">
+          <Link href="https://discord.gg/gCxdsghnPJ" target="_blank" rel="noopener noreferrer">
             <svg
               className="min-w-[2rem] text-skin-muted hover:text-skin-base"
               aria-hidden="true"
