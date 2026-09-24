@@ -28,6 +28,7 @@ export default function Endorsements({}: Props) {
                 width={org.width}
                 height={org.height}
                 rounded={org.rounded}
+                rel={org.rel}
                 key={org.ariaLabel}
               ></Endorser>
             ))}
