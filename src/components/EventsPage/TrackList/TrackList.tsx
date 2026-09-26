@@ -3,39 +3,45 @@ import Heading from "@/components/Shared/Typography/Heading";
 import Text from "@/components/Shared/Typography/Text";
 
 
-const Tracks = [
+type Track = {
+  title: string;
+  description: string;
+  logo_src: string;
+  special?: boolean;
+};
+
+const Tracks: Track[] = [
   {
-    title: "🌌 Spotlight Challenge: Galactic Market Challenge",
-    teaserTitle: "🌌 The Big Idea",
-    description: "No Code. Big Ideas. Not every hacker needs to code. This challenge is for students in business, finance, marketing, or design who want to pitch the next big venture—from Earth to orbit. Create a business plan, pitch deck, or market strategy. Propose a product or service that could exist 10+ years from now. Optional visuals (mockups, branding, demos—no code required).",
-    logo_src: "/track_logo/finance.svg",
-    special: true,
-  },
-  {
-    title: "Future Mobility",
-    teaserTitle: "Getting Around",
-    description: "From travel solutions to smarter infrastructure, how can we reshape our cities, countries, — or even planets? Focus on innovation in transportation, sustainability, and logistics. Develop technology solutions that revolutionize how we move people and goods across the globe!",
-    logo_src: "/track_logo/urban.svg",
-  },
-  {
-    title: "Next Frontier Health (ML Track)",
-    teaserTitle: "Feeling Better",
-    description: "As tech pushes into new frontiers, so should healthcare. Build tools that pivot from the traditional data sets to machine learning/AI solutions to support physical or mental wellness. Develop next-gen health tech where it's needed most. Create innovative solutions that leverage AI and ML to transform healthcare delivery worldwide!",
+    title: "Health and Wellness",
+    description:
+      "Build tech that actually helps people feel better. We are looking for smart designs and practical tools that tackle real-world health challenges, whether that is physical fitness, mental health, or community medical care. Bring your best ideas to improve human lives.",
     logo_src: "/track_logo/health.svg",
   },
   {
-    title: "Equity by Design",
-    teaserTitle: "For Everyone",
-    description: "The future needs to work for everyone. This track is designed to make tech inclusive, and accessible. From education to public services. How do we build a better world for everyone? Develop technology solutions that break down barriers and create equitable access to opportunities for all communities worldwide!",
-    logo_src: "/track_logo/education.svg",
+    title: "AI & Agents",
+    description:
+      "Some parts of the tech ocean are still filled with mysteries waiting to be explored, and AI & Agents might be the deepest trench of them all. Build agents or intelligent tools that can think and act on their own, and push the boundaries of what\u2019s possible.",
+    logo_src: "/track_logo/ai.svg",
+  },
+  {
+    title: "Sustainability",
+    description:
+      "Every tide tells a story about the health of our planet. Build solutions that support it, from clean energy to conservation and marine protection\u2014just make it count.",
+    logo_src: "/track_logo/sustainability.svg",
+  },
+  {
+    title: "Human-Computer Interaction (HCI)",
+    description:
+      "This track challenges you to build intuitive interfaces, accessible designs, or novel ways for humans to interact with digital systems. Whether you are rethinking everyday apps or building next-generation hardware interfaces, your goal is to make technology more accessible and seamless to use.",
+    logo_src: "/track_logo/hci.svg",
   },
   {
     title: "Philly Special",
-    teaserTitle: "Local Flavor",
-    description: "The wildcard track is set for takeoff. Whether it is an intergalactic AR tour of Philly history, or a hyper-local app to provide nearby help. Anything goes. Be bold, be creative, and shoot for the stars! Develop innovative technology solutions that showcase Philadelphia's unique character and creativity!",
+    description:
+      "This wildcard track is for any idea that doesn\u2019t fit neatly into a single harbor\u2014maybe it\u2019s a water quality tracker for the Schuylkill\u2019s riverfront, maybe it\u2019s something nobody\u2019s thought of yet. However you steer it, make a splash.",
     logo_src: "/track_logo/bell.svg",
-  }
-]
+  },
+];
 
 
 type Props = {};
@@ -85,13 +91,8 @@ function TrackCard(props: TrackCardProps) {
 
 
 export default function TrackList({}: Props) {
-  // Set the reveal date - change this to when you want tracks to be visible
-  const revealDate = new Date("2026-09-26T08:00:00"); // same as Countdown
-  const currentDate = new Date();
-  const shouldShowTracks = currentDate >= revealDate;
-
   return (
-  <section className="mx-32 p-4 gap-y-5 flex flex-col items-center mb-10 mt-5">
+  <section className="md:mx-32 p-4 gap-y-5 flex flex-col items-center mb-10 mt-5">
 
     <Heading variant="h3" className="font-bold text-center">
       Tracks
@@ -101,11 +102,11 @@ export default function TrackList({}: Props) {
         {
           Tracks.map((track, index) => (
             <TrackCard
-              key = {index}
-              title = {shouldShowTracks ? track.title : track.teaserTitle}
-              description = {shouldShowTracks ? track.description : "Coming Soon..."}
-              src = {track.logo_src}
-              special = {track.special}
+              key={index}
+              title={track.title}
+              description={track.description}
+              src={track.logo_src}
+              special={track.special}
             />
           ))
         }
