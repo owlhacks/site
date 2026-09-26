@@ -47,7 +47,7 @@ export default function Event(event: EventType) {
             <a href={content.linkedin_url} target="_blank" rel="noopener noreferrer">
               <button type="button"
               className="mt-1 -ms-1 p-1 inline-flex items-center gap-x-2 text-xs rounded-lg border border-transparent text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700">
-                    <img className="shrink-0 object-cover size-8 rounded-full" src={content.photo_src} alt={content.guest}/>
+                    <img className={`shrink-0 size-8 rounded-full ${content.photo_src?.endsWith('.svg') ? 'object-contain p-1' : 'object-cover'}`} src={content.photo_src} alt={content.guest}/>
                     <p className="mt-1 text-lg text-white">
                       {content.guest}
                     </p>
