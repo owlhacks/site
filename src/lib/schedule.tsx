@@ -107,11 +107,11 @@ const SaturdayEvents: EventType[] = [
         ],
     },
     {
-        start_time: "2:30 PM",
+        start_time: "3:00 PM",
         content: [
             {
                 title: "Hacking w/ GitHub Copilot",
-                description: "2:30 \u2013 3:00 PM",
+                description: "3:00 \u2013 3:30 PM",
                 guest: "MLH",
                 photo_src: "https://static.mlh.io/brand-assets/logo/official/mlh-logo-white.svg",
                 type: "workshop",
@@ -273,8 +273,8 @@ const SundayEvents: EventType[] = [
 ];
 
 export {
-    SundayEvents,
-    SaturdayEvents,
+    SaturdayEvents, SundayEvents
 };
 
-export type { EventType };
+    export type { EventType };
+
